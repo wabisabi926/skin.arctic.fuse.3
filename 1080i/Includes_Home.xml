@@ -486,8 +486,8 @@
     <include name="Home_Group_Definition">
         <left>view_pad</left>
         <right>view_pad</right>
-        <centertop>170</centertop>
-        <height>80</height>
+        <centertop>140</centertop>
+        <height>60</height>
     </include>
 
     <include name="Home_Grouplist_Definition">
