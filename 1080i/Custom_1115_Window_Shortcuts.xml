@@ -175,16 +175,6 @@
                                     <onclick>ActivateWindow(1125)</onclick>
                                     <visible>!String.IsEmpty(Container(30000).ListItem.Property(rename))</visible>
                                     <visible>String.IsEqual(Container(30000).ListItem.Property(enabled),true)</visible>
-                                </include>
-                                <include content="Settings_Button" description="Layout (Search)">
-                                    <param name="control">button</param>
-                                    <param name="id">9053</param>
-                                    <label>$LOCALIZE[31158]</label>
-                                    <label2>$VAR[Label_Setting_Search_Mode]</label2>
-                                    <onclick>Skin.ToggleSetting(Search.DisableCombined)</onclick>
-                                    <visible>String.IsEqual(Container(30000).ListItem.Property(enabled),true)</visible>
-                                    <visible>String.IsEqual(Container(30000).ListItem.Property(editmenu),menu=search)</visible>
-                                </include>
 
                                 <!-- Customisation -->
                                 <include content="Settings_Label">
