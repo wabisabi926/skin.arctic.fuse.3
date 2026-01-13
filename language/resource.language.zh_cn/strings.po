@@ -1668,12 +1668,12 @@ msgstr "降雨概率"
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
-msgstr "瓷砖配置"
+msgstr "磁贴配置"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31468"
 msgid "Tile layout"
-msgstr "瓷砖布局"
+msgstr "磁贴布局"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31469"
