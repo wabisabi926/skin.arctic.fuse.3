@@ -552,11 +552,11 @@ msgstr "详细"
 
 msgctxt "#31138"
 msgid "Aqua Classic"
-msgstr "水蓝经典色"
+msgstr "水蓝经典"
 
 msgctxt "#31139"
 msgid "Tropical Sunset"
-msgstr "热带日落色"
+msgstr "热带日落"
 
 msgctxt "#31140"
 msgid "Miami Vaporwave"
@@ -822,12 +822,12 @@ msgstr "紫色"
 #: /1080i/Includes_Items.xml
 msgctxt "#31221"
 msgid "Slate"
-msgstr "石板灰"
+msgstr "板岩色"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31222"
 msgid "Coal"
-msgstr "煤黑色"
+msgstr "炭黑色"
 
 msgctxt "#31223"
 msgid "Gridlines"
@@ -861,7 +861,7 @@ msgstr "水蓝色"
 #: /1080i/Custom_1115_Dialog_ColourPresets.xml
 msgctxt "#31229"
 msgid "Vaporwave"
-msgstr "蒸汽波"
+msgstr "蒸汽波色系"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31230"
@@ -920,12 +920,12 @@ msgstr "配色方案"
 #: /1080i/Includes_Items.xml
 msgctxt "#31242"
 msgid "Blue Slate"
-msgstr "蓝板岩色"
+msgstr "蓝板岩"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31243"
 msgid "Midnight Purple"
-msgstr "午夜紫色"
+msgstr "午夜紫"
 
 msgctxt "#31244"
 msgid "Now playing"
