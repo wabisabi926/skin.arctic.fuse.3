@@ -384,6 +384,16 @@ msgctxt "#31077"
 msgid "More Information"
 msgstr "更多信息"
 
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31078"
+msgid "Use fake label textboxes"
+msgstr "启用简易标签文本框"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31079"
+msgid "improves performance on Omega"
+msgstr "提升 Omega 版本的运行性能"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31083"
 msgid "Combined"
@@ -1858,7 +1868,7 @@ msgstr "为每个皮肤用户单独保存小组件配置"
 #: /1080i/SkinSettings.xml
 msgctxt "#31507"
 msgid "pseudo profiles"
-msgstr "伪配置文件"
+msgstr "简易配置文件"
 
 #: /1080i/Custom_1195_SkinUserLoginScreen.xml
 msgctxt "#31508"
