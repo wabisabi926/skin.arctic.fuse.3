@@ -1141,7 +1141,7 @@ msgstr "已播放"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31284"
 msgid "Discover movies and tvshows on TMDb."
-msgstr "在 TMDb 上探索电影和剧集。"
+msgstr "在 TMDb 上探索电影和电视剧。"
 
 msgctxt "#31285"
 msgid "Classification (MPAA)"
