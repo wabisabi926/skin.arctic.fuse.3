@@ -603,7 +603,7 @@ msgstr "待看列表"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31123"
 msgid "Plot line"
-msgstr "剧情单行"
+msgstr "剧情简介"
 
 msgctxt "#31124"
 msgid "Indicator"
