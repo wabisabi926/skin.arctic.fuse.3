@@ -1381,7 +1381,7 @@
             "path": "Reboot",
             "icon": "special://skin/extras/icons/recycle.png",
             "link": "true"
-        }，
+        },
         {
             "name": "重启到安卓",
             "comment": "Reboot to Android",
