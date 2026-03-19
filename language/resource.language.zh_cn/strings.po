@@ -298,7 +298,7 @@ msgstr "循环环绕"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31059"
 msgid "Side"
-msgstr "侧边栏"
+msgstr "侧边"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31060"
@@ -1387,7 +1387,7 @@ msgstr "切换用户"
 #: /1080i/Includes_Items.xml
 msgctxt "#31362"
 msgid "Side items"
-msgstr "侧边栏项目"
+msgstr "侧边项目"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31363"
