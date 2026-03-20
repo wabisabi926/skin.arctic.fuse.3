@@ -130,7 +130,7 @@
             "rule": "String.IsEqual(Window(Home).Property(Shortcuts.Groupings.Links),Links)"
         },
         {
-            "name": "Kodi命令",
+            "name": "Kodi 命令",
             "comment": "Kodi Commands",
             "path": "grouping://shortcuts/links/commands/",
             "icon": "special://skin/extras/icons/kodi.png",
@@ -545,7 +545,7 @@
             "node": "programs"
         },
         {
-            "name": "Android插件",
+            "name": "安卓插件",
             "comment": "Android Add-ons",
             "path": "androidapp://sources/apps/",
             "icon": "special://skin/extras/icons/addon.png",
@@ -1362,7 +1362,7 @@
             "link": "true"
         },
         {
-            "name": "电源",
+            "name": "关机",
             "comment": "Power",
             "path": "Powerdown",
             "icon": "special://skin/extras/icons/power.png",
@@ -1398,7 +1398,7 @@
             "link": "true"
         },
         {
-            "name": "挂起",
+            "name": "睡眠",
             "comment": "Suspend",
             "path": "Suspend",
             "icon": "special://skin/extras/icons/bed.png",
