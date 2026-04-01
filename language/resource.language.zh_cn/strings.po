@@ -1070,23 +1070,19 @@ msgstr "处理器"
 
 msgctxt "#31259"
 msgid "FPS"
-msgstr "帧率"
+msgstr "FPS"
 
 msgctxt "#31260"
 msgid "AR"
-msgstr "宽高比"
+msgstr "AR"
 
 msgctxt "#31261"
 msgid "px"
-msgstr "像素"
+msgstr "px"
 
 msgctxt "#31262"
 msgid "Hz"
-msgstr "赫兹"
-
-msgctxt "#31263"
-msgid "bits"
-msgstr "位"
+msgstr "Hz"
 
 msgctxt "#31264"
 msgid "Revenue"
