@@ -130,7 +130,7 @@
             "rule": "String.IsEqual(Window(Home).Property(Shortcuts.Groupings.Links),Links)"
         },
         {
-            "name": "Kodi命令",
+            "name": "Kodi 命令",
             "comment": "Kodi Commands",
             "path": "grouping://shortcuts/links/commands/",
             "icon": "special://skin/extras/icons/kodi.png",
@@ -164,7 +164,7 @@
             "link": "false"
         },
         {
-            "name": "枢纽播放列表",
+            "name": "分类中心播放列表",
             "comment": "Hub Playlists",
             "path": "special://skin/extras/hub/",
             "icon": "special://skin/extras/icons/folder.png",
@@ -406,7 +406,7 @@
             "link": "true"
         },
         {
-            "name": "Spotify艺术家",
+            "name": "Spotify 艺术家",
             "comment": "Spotify Artists",
             "icon": "special://skin/extras/icons/spotify.png",
             "path": "DefaultSearch-SpotifyArtists",
@@ -414,7 +414,7 @@
             "link": "true"
         },
         {
-            "name": "Spotify专辑",
+            "name": "Spotify 专辑",
             "comment": "Spotify Albums",
             "icon": "special://skin/extras/icons/spotify.png",
             "path": "DefaultSearch-SpotifyAlbums",
@@ -422,7 +422,7 @@
             "link": "true"
         },
         {
-            "name": "Spotify歌曲",
+            "name": "Spotify 歌曲",
             "comment": "Spotify Songs",
             "icon": "special://skin/extras/icons/spotify.png",
             "path": "DefaultSearch-SpotifySongs",
@@ -430,7 +430,7 @@
             "link": "true"
         },
         {
-            "name": "Spotify播放列表",
+            "name": "Spotify 播放列表",
             "comment": "Spotify Playlists",
             "icon": "special://skin/extras/icons/spotify.png",
             "path": "DefaultSearch-SpotifyPlaylists",
@@ -446,7 +446,7 @@
             "link": "true"
         },
         {
-            "name": "TMDb电影",
+            "name": "TMDb 电影",
             "comment": "TMDb Movies",
             "icon": "special://skin/extras/icons/film.png",
             "path": "DefaultSearch-TMDBMovies",
@@ -454,7 +454,7 @@
             "link": "true"
         },
         {
-            "name": "TMDb电视剧",
+            "name": "TMDb 电视剧",
             "comment": "TMDb Shows",
             "icon": "special://skin/extras/icons/tv.png",
             "path": "DefaultSearch-TMDBShows",
@@ -462,7 +462,7 @@
             "link": "true"
         },
         {
-            "name": "TMDb合集",
+            "name": "TMDb 合集",
             "comment": "TMDb Sets",
             "icon": "special://skin/extras/icons/sets.png",
             "path": "DefaultSearch-TMDBSets",
@@ -470,7 +470,7 @@
             "link": "true"
         },
         {
-            "name": "TMDb人物",
+            "name": "TMDb 人物",
             "comment": "TMDb People",
             "icon": "special://skin/extras/icons/person3.png",
             "path": "DefaultSearch-TMDBPeople",
@@ -478,7 +478,7 @@
             "link": "true"
         },
         {
-            "name": "TMDb关键词",
+            "name": "TMDb 关键词",
             "comment": "TMDb Keywords",
             "icon": "special://skin/extras/icons/key.png",
             "path": "DefaultSearch-TMDBKeywords",
@@ -486,7 +486,7 @@
             "link": "true"
         },
         {
-            "name": "Trakt列表",
+            "name": "Trakt 列表",
             "comment": "Trakt Lists",
             "icon": "special://skin/extras/icons/trakttv.png",
             "path": "DefaultSearch-TMDBListsTrakt",
@@ -494,7 +494,7 @@
             "link": "true"
         },
         {
-            "name": "MDB列表",
+            "name": "MDB 列表",
             "comment": "MDB Lists",
             "icon": "special://skin/extras/icons/list.png",
             "path": "DefaultSearch-TMDBListsMDBList",
@@ -545,7 +545,7 @@
             "node": "programs"
         },
         {
-            "name": "Android插件",
+            "name": "安卓插件",
             "comment": "Android Add-ons",
             "path": "androidapp://sources/apps/",
             "icon": "special://skin/extras/icons/addon.png",
@@ -615,7 +615,7 @@
     ],
     "grouping://shortcuts/tmdbhelper/": [
         {
-            "name": "SkinVariables自定义过滤器",
+            "name": "SkinVariables 自定义过滤器",
             "comment": "SkinVariables Custom Filter",
             "icon": "special://skin/extras/icons/filter.png",
             "link": "false",
@@ -623,7 +623,7 @@
             "path": "plugin://script.skinvariables/?info=get_filter_files"
         },
         {
-            "name": "TMDbHelper节点",
+            "name": "TMDbHelper 节点",
             "comment": "TMDbHelper Nodes",
             "path": "plugin://plugin.video.themoviedb.helper/?info=dir_custom_node",
             "icon": "special://skin/extras/icons/plug.png",
@@ -632,7 +632,7 @@
             "node": "videos"
         },
         {
-            "name": "TMDbHelper电影",
+            "name": "TMDbHelper 电影",
             "comment": "TMDbHelper Movies",
             "path": "plugin://plugin.video.themoviedb.helper/?info=dir_movie",
             "icon": "special://skin/extras/icons/plug.png",
@@ -641,7 +641,7 @@
             "node": "videos"
         },
         {
-            "name": "TMDbHelper电视剧",
+            "name": "TMDbHelper 电视剧",
             "comment": "TMDbHelper TV Shows",
             "path": "plugin://plugin.video.themoviedb.helper/?info=dir_tv",
             "icon": "special://skin/extras/icons/plug.png",
@@ -650,7 +650,7 @@
             "node": "videos"
         },
         {
-            "name": "TMDbHelper随机",
+            "name": "TMDbHelper 随机",
             "comment": "TMDbHelper Randomised",
             "path": "plugin://plugin.video.themoviedb.helper/?info=dir_random",
             "icon": "special://skin/extras/icons/plug.png",
@@ -659,7 +659,7 @@
             "node": "videos"
         },
         {
-            "name": "TMDbHelper全部",
+            "name": "TMDbHelper 全部",
             "comment": "TMDbHelper All",
             "path": "plugin://plugin.video.themoviedb.helper/",
             "icon": "special://skin/extras/icons/plug.png",
@@ -768,7 +768,7 @@
             "icon": "special://skin/extras/icons/list-ol.png"
         },
         {
-            "name": "未观看电影",
+            "name": "未观看的电影",
             "comment": "Unwatched Movies",
             "path": "special://skin/extras/playlists/UnwatchedMovies.xsp",
             "node": "videos",
@@ -892,7 +892,7 @@
             "link": "false"
         },
         {
-            "name": "未观看剧集",
+            "name": "未观看的剧集",
             "comment": "Unwatched Episodes",
             "icon": "DefaultTVShows.png",
             "node": "videos",
@@ -1260,7 +1260,7 @@
             "link": "true"
         },
         {
-            "name": "配置TMDbHelper",
+            "name": "配置 TMDbHelper",
             "comment": "Configure TMDbHelper",
             "path": "RunPlugin(plugin://plugin.video.themoviedb.helper/?info=dir_settings)",
             "icon": "special://skin/extras/icons/configure.png",
@@ -1327,7 +1327,7 @@
     ],
     "grouping://shortcuts/links/commands/": [
         {
-            "name": "枢纽子菜单",
+            "name": "分类中心子菜单",
             "comment": "Hub Submenu",
             "path": "ActivateWindow(1181)",
             "icon": "special://skin/extras/icons/bars.png",
@@ -1383,7 +1383,7 @@
             "link": "true"
         },
         {
-            "name": "重启到Android",
+            "name": "重启到安卓",
             "comment": "Reboot to Android",
             "path": "RebootToAndroid",
             "icon": "special://skin/extras/icons/recycle.png",
