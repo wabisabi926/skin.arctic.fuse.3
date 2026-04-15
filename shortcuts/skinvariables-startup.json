@@ -145,7 +145,7 @@
                     "rules": ["Skin.HasSetting(TMDbHelper.Service)"],
                     "value": "Skin.SetBool(TMDbHelper.EnableData)"
                 }],
-                "SetProperty(InitStatus,Reticulating Splines,1198)",
+                "SetProperty(InitStatus,正在初始化图形系统,1198)",
                 "RunScript(plugin.video.themoviedb.helper,blur_image={var_image_simplebackground},prefix=SimpleBackground)"
             ]
         }],
