@@ -1,4 +1,5 @@
 魔改内容
+
 增加豆瓣评分（需要搭配魔改版 tmdb 助手） https://github.com/wabisabi926/plugin.video.themoviedb.helper/tree/douban
 更新中文翻译
 
