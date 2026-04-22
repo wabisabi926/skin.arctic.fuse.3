@@ -614,7 +614,7 @@ msgid "Invert Text Colour"
 msgstr "反转文本颜色"
 
 #： /1080i/Includes_SkinSettings.xml
-msgctxt “#31126
+msgctxt “#31126"
 msgid "Plotline"
 msgstr "剧情简介"
 
