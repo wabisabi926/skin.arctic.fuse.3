@@ -1024,7 +1024,7 @@
         <definition>
             <control type="group">
                 <nested />
-                <centerbottom>0</centerbottom>
+                <centerbottom>10</centerbottom>
                 <right>25</right>
                 <width>64</width>
                 <height>64</height>
