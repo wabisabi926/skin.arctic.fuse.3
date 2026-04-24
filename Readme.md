@@ -4,7 +4,9 @@
 
 2.增加海报墙标题
 
-3.完善中文翻译
+3.优化海报墙的播放状态指示器
+
+4.完善中文翻译
 
 # Arctic Fuse [![License](https://img.shields.io/badge/license-CC--NC--SA%204.0-green)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
