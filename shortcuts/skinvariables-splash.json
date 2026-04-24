@@ -29,7 +29,7 @@
                 "!Skin.HasSetting(Startup.DisableWaitForLoad)"
             ],
             "value": [
-                "SetProperty(InitStatus,Preloading Hubs,1198)",
+                "SetProperty(InitStatus,正在预加载分类中心,1198)",
                 "SetProperty(SplashIsVisible,True,1198)",
                 "SetProperty(HasPreloadedHubs,True,1198)",
                 [
@@ -92,7 +92,7 @@
             ],
             "value": [
                 "SetProperty(SplashIsVisible,True,1198)",
-                "SetProperty(InitStatus,Loading Widgets,1198)",
+                "SetProperty(InitStatus,正在加载小组件,1198)",
                 "sleep=0.5",
                 "route=run_executebuiltin=special://skin/shortcuts/skinvariables-splash.json&use_rules=True"
             ]
