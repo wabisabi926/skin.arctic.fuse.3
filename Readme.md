@@ -15,9 +15,9 @@
 
 # 额外推荐
 
-1.搭配 script.keymap 魔改版可以：实现一键字幕/一键音轨/一键/OSD 播放列表等功能；
+1.搭配 script.keymap 魔改版可以实现：一键字幕/一键音轨/一键/OSD 播放列表等功能；
 
-2.搭配 plugin.video.skipintro 可实现 手动记录剧集片头片尾点，从而跳过片头片尾（自动播放下一集）功能。
+2.搭配 plugin.video.skipintro 可实现：手动记录剧集片头片尾点，从而跳过片头片尾（自动播放下一集）功能。
 
 # Arctic Fuse [![License](https://img.shields.io/badge/license-CC--NC--SA%204.0-green)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
