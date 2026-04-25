@@ -8,7 +8,9 @@
 
 4.OSD 播放列表顺序优化及聚焦到当前播放剧集
 
-5.完善中文翻译
+5.播放器处理窗口移植为 fuse2 风格
+
+6.完善中文翻译
 
 # Arctic Fuse [![License](https://img.shields.io/badge/license-CC--NC--SA%204.0-green)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
