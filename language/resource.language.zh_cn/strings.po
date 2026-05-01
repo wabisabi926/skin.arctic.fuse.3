@@ -1474,7 +1474,7 @@ msgstr "外语"
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31379"
 msgid "Edit categories"
-msgstr "编辑分类"
+msgstr "编辑类别"
 
 msgctxt "#31380"
 msgid "Forecast"
