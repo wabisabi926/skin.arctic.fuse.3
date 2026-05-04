@@ -1,3 +1,25 @@
+# 魔改内容
+
+1.支持 cpm 系统 ；
+
+2.增加豆瓣评分及显示个数（需要搭配魔改版 tmdb 助手） https://github.com/wabisabi926/plugin.video.themoviedb.helper/tree/douban ；
+
+3.增加海报墙标题；
+
+4.优化海报墙的播放状态指示器；
+
+5.OSD 播放列表顺序优化及聚焦到当前播放剧集；
+
+6.播放器处理窗口移植为 fuse2 风格；
+
+7.完善中文翻译。
+
+
+# 额外推荐
+
+1.搭配 script.keymap 魔改版可以实现：一键字幕/一键音轨/一键/OSD 播放列表等功能；
+
+2.搭配 plugin.video.skipintro 可实现：手动记录剧集片头片尾点，从而跳过片头片尾（自动播放下一集）功能。
 
 # Arctic Fuse [![License](https://img.shields.io/badge/license-CC--NC--SA%204.0-green)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
