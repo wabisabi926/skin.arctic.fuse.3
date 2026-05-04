@@ -1049,17 +1049,6 @@
         <definition>
             <control type="group">
                 <nested />
-                <include content="Dimension_Padding">
-                    <param name="pad">4</param>
-                </include>
-                <control type="image">
-                    <include content="Dimension_Padding">
-                        <param name="pad">-32</param>
-                    </include>
-                    <texture colordiffuse="$VAR[ColorHighlight]">indicator/circle-fo.png</texture>
-                    <bordertexture colordiffuse="shadow_hard">indicator/circle-fo-shadow.png</bordertexture>
-                    <bordersize>32</bordersize>
-                </control>
             </control>
         </definition>
     </include>
@@ -1073,8 +1062,8 @@
         <definition>
             <control type="group">
                 <nested />
-                <centerbottom>0</centerbottom>
-                <right>25</right>
+                <centerbottom>30</centerbottom>
+                <right>0</right>
                 <width>64</width>
                 <height>64</height>
 
