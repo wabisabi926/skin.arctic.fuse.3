@@ -3,8 +3,7 @@
     <zorder>0</zorder>
     <defaultcontrol always="true">7000</defaultcontrol>
     <onload>CancelAlarm(osd_timeout,true)</onload>
-    <onload condition="VideoPlayer.Content(episodes)">AlarmClock(osd_playlist_focus,SetFocus(7000,$INFO[VideoPlayer.Episode],absolute),00:00,silent)</onload>
-    <onload condition="VideoPlayer.Content(episodes)">AlarmClock(osd_playlist_focus_adjust,Control.Move(7000,-1),00:00,silent)</onload>
+    <onload condition="VideoPlayer.Content(episodes) + !Integer.IsEqual(VideoPlayer.PlaylistLength,1) + !Integer.IsEqual(VideoPlayer.PlaylistLength,0)">AlarmClock(osd_playlist_focus,SetFocus(7000,$INFO[VideoPlayer.PlaylistPosition],absolute),00:01,silent)</onload>
     <include>Animation_OSD_Dialog_WindowChange</include>
     <controls>
         <control type="group">
