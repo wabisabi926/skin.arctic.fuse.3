@@ -3,7 +3,8 @@
     <zorder>0</zorder>
     <defaultcontrol always="true">7000</defaultcontrol>
     <onload>CancelAlarm(osd_timeout,true)</onload>
-    <onload condition="VideoPlayer.Content(episodes) + !Integer.IsEqual(VideoPlayer.PlaylistLength,1) + !Integer.IsEqual(VideoPlayer.PlaylistLength,0)">AlarmClock(osd_playlist_focus,SetFocus(7000,$INFO[VideoPlayer.PlaylistPosition],absolute),00:01,silent)</onload>
+    <onload condition="VideoPlayer.Content(episodes)">AlarmClock(osd_playlist_focus,SetFocus(7000,$INFO[VideoPlayer.Episode],absolute),00:00,silent)</onload>
+    <onload condition="VideoPlayer.Content(episodes)">AlarmClock(osd_playlist_focus_adjust,Control.Move(7000,-1),00:00,silent)</onload>
     <include>Animation_OSD_Dialog_WindowChange</include>
     <controls>
         <control type="group">
@@ -30,8 +31,15 @@
                         <param name="sortorder">descending</param>
                         <param name="content">pvr://channels/tv/*</param>
                     </include>
-                    <include content="Object_ContentDynamic" condition="!VideoPlayer.Content(livetv)">
+                    <include content="Object_ContentDynamic" condition="VideoPlayer.Content(episodes)">
                         <param name="content">$VAR[Path_OSD_Episodes]</param>
+                        <param name="sortby">episode</param>
+                        <param name="sortorder">ascending</param>
+                    </include>
+                    <include content="Object_ContentDynamic" condition="!VideoPlayer.Content(livetv) + !VideoPlayer.Content(episodes)">
+                        <param name="content">$VAR[Path_OSD_Episodes]</param>
+                        <param name="sortby">position</param>
+                        <param name="sortorder">ascending</param>
                     </include>
                     <include>OSD_List_Dimensions</include>
                     <onup>Close</onup>
