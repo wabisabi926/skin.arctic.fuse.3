@@ -5,2302 +5,2302 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 11-01-2025\n"
-"PO-Revision-Date: 11-01-2025\n"
-"Last-Translator: Havokdan\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: pt-br\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.9\n"
 
 msgctxt "#31000"
 msgid "Live TV / PVR"
-msgstr "TV Ao Vivo / PVR"
+msgstr "ТВ / PVR"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31001"
 msgid "In-Progress Episodes"
-msgstr "Episódios Em Andamento"
+msgstr "Продолжить просмотр (серии)"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31002"
 msgid "Combined Square"
-msgstr "Quadrado Combinado"
+msgstr "Комбинированный квадрат"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31003"
 msgid "Combined Landscape"
-msgstr "Paisagem Combinada"
+msgstr "Комбинированный ландшафт"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31004"
 msgid "Combined Poster"
-msgstr "Poster Combinado"
+msgstr "Комбинированный постер"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31005"
 msgid "Combined Circle"
-msgstr "Círculo Combinado"
+msgstr "Комбинированный круг"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31006"
 msgid "Combined Board"
-msgstr "Painel Combinado"
+msgstr "Комбинированная доска"
 
 #: /1080i/Dialog_DialogSelect.xml
 msgctxt "#31007"
 msgid "Row"
-msgstr "Linha"
+msgstr "Ряд"
 
 #: /1080i/Dialog_DialogSelect.xml
 msgctxt "#31008"
 msgid "Wall"
-msgstr "Parede"
+msgstr "Стена"
 
 #: /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31009"
 msgid "Widget Customisation"
-msgstr "Personalização de Widget"
+msgstr "Настройка виджетов"
 
 #: /1080i/Includes_Hubs.xml
 msgctxt "#31010"
 msgid "Program"
-msgstr "Programa"
+msgstr "Программа"
 
 #: /1080i/Includes_Hubs.xml
 msgctxt "#31011"
 msgid "Picture"
-msgstr "Imagem"
+msgstr "Картинка"
 
 #: /1080i/Includes_Hubs.xml
 msgctxt "#31012"
 msgid "Recent"
-msgstr "Recente"
+msgstr "Недавний"
 
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31013"
 msgid "List Standard"
-msgstr "Lista Padrão"
+msgstr "Стандартный список"
 
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31014"
 msgid "List Info"
-msgstr "Lista de Informações"
+msgstr "Информационный список"
 
 msgctxt "#31015"
 msgid "Order"
-msgstr "Ordem"
+msgstr "Порядок"
 
 msgctxt "#31016"
 msgid "Sort by"
-msgstr "Ordenar por"
+msgstr "Сортировать по"
 
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31017"
 msgid "List Details"
-msgstr "Lista de Detalhes"
+msgstr "Список деталей"
 
 msgctxt "#31018"
 msgid "Recommendations"
-msgstr "Recomendações"
+msgstr "Рекомендации"
 
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31019"
 msgid "List Planner"
-msgstr "Lista de Planejador"
+msgstr "Планировщик списков"
 
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31020"
 msgid "List Outline"
-msgstr "Lista de Contorno"
+msgstr "Структура списка"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31021"
 msgid "Combined Expanded"
-msgstr "Expandido Combinado"
+msgstr "Развернутый совмещенный"
 
 msgctxt "#31022"
 msgid "items"
-msgstr "itens"
+msgstr "элементы"
 
 msgctxt "#31023"
 msgid "Loading"
-msgstr "Carregando"
+msgstr "Загрузка"
 
 msgctxt "#31024"
 msgid "Critics Consensus"
-msgstr "Consenso dos Críticos"
+msgstr "Заключение критиков"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31025"
 msgid "Item"
-msgstr "Item"
+msgstr "Элемент"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31026"
 msgid "Hub"
-msgstr "Hub"
+msgstr "Хаб"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31027"
 msgid "Focus widgets on startup"
-msgstr "Foco nos widgets na inicialização"
+msgstr "Фокусировать виджеты на запуске"
 
 msgctxt "#31028"
 msgid "Outline"
-msgstr "Contorno"
+msgstr "Описание"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31029"
 msgid "Images"
-msgstr "Imagens"
+msgstr "Изображения"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31030"
 msgid "Critics"
-msgstr "Críticos"
+msgstr "Рецензии"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31031"
 msgid "HDR type"
-msgstr "Tipo de HDR"
+msgstr "тип HDR"
 
 #: /1080i/DialogPVRChannelManager.xml
 msgctxt "#31032"
 msgid "Apply"
-msgstr "Aplicar"
+msgstr "Применить"
 
 msgctxt "#31033"
 msgid "People"
-msgstr "Pessoas"
+msgstr "Актёры"
 
 msgctxt "#31034"
 msgid "Cast member"
-msgstr "Membro do elenco"
+msgstr "Актёрский состав"
 
 msgctxt "#31035"
 msgid "Crew member"
-msgstr "Membro da equipe"
+msgstr "Съёмочная группа"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31036"
 msgid "Limited widgets use Show More folder item"
-msgstr "Widgets limitados usam o item Mostrar Mais pasta"
+msgstr "Ограничить количество виджетов кнопкой \"Показать еще\""
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31037"
 msgid "Side submenu"
-msgstr "Submenu lateral"
+msgstr "Боковое подменю"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31038"
 msgid "Directing"
-msgstr "Direção"
+msgstr "Режиссёр"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31039"
 msgid "Writing"
-msgstr "Roteiro"
+msgstr "Сценарий"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31040"
 msgid "List Flixart 2"
-msgstr "Lista Flixart 2"
+msgstr "Список Flixart 2"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31041"
 msgid "Similar"
-msgstr "Similar"
+msgstr "Похожие"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31042"
 msgid "Jump to widget"
-msgstr "Ir para o widget"
+msgstr "Переход к виджету"
 
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31043"
 msgid "Tray"
-msgstr "Bandeja"
+msgstr "Панель"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31044"
 msgid "Viewtypes"
-msgstr "Tipos de Exibição"
+msgstr "Виды"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31045"
 msgid "Landscape"
-msgstr "Paisagem"
+msgstr "Ландшафт"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31046"
 msgid "No Results"
-msgstr "Sem Resultados"
+msgstr "Ничего не найдено"
 
 #: /1080i/Custom_1154_Dialog_SearchDiscover_Sort.xml
 msgctxt "#31047"
 msgid "Popularity"
-msgstr "Popularidade"
+msgstr "Популярность"
 
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31048"
 msgid "tiles"
-msgstr "blocos"
+msgstr "плитки"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31049"
 msgid "Customise shortcuts and widgets"
-msgstr "Personalizar atalhos e widgets"
+msgstr "Настройка клавиш и виджетов"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31050"
 msgid "Crew"
-msgstr "Equipe"
+msgstr "Съёмочная группа"
 
 #: /1080i/Custom_1153_Dialog_SearchDiscover_Actors.xml
 msgctxt "#31051"
 msgid "Person"
-msgstr "Pessoa"
+msgstr "Актёр"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31052"
 msgid "Sound"
-msgstr "Som"
+msgstr "Звук"
 
 msgctxt "#31053"
 msgid "Profile"
-msgstr "Perfil"
+msgstr "Профиль"
 
 msgctxt "#31054"
 msgid "Liked by"
-msgstr "Curtido por"
+msgstr "Понравилось"
 
 msgctxt "#31055"
 msgid "out of"
-msgstr "de"
+msgstr "из"
 
 msgctxt "#31056"
 msgid "critics"
-msgstr "críticos"
+msgstr "критикам"
 
 msgctxt "#31057"
 msgid "Years Old"
-msgstr "Idade"
+msgstr "Лет"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31058"
 msgid "Wrap"
-msgstr "Encapsular"
+msgstr "Обернуть"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31059"
 msgid "Side"
-msgstr "Lateral"
+msgstr "Сторона"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31060"
 msgid "Slide"
-msgstr "Deslizar"
+msgstr "Слайд"
 
 #: /shortcuts/template.xml
 msgctxt "#31061"
 msgid "User rating"
-msgstr "Avaliação do usuário"
+msgstr "Пользовательский рейтинг"
 
 #: /shortcuts/template.xml
 msgctxt "#31062"
 msgid "Playlist order"
-msgstr "Ordem da lista de reprodução"
+msgstr "Порядок плейлиста"
 
 #: /shortcuts/template.xml
 msgctxt "#31063"
 msgid "Watched episodes"
-msgstr "Episódios assistidos"
+msgstr "Просмотренные серии"
 
 msgctxt "#31064"
 msgid "Awards"
-msgstr "Prêmios"
+msgstr "Награды"
 
 msgctxt "#31065"
 msgid "Creator"
-msgstr "Criador"
+msgstr "Автор"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31066"
 msgid "Discover"
-msgstr "Descobrir"
+msgstr "Обзор"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31067"
 msgid "Cinematography"
-msgstr "Cinematografia"
+msgstr "Операторская работа"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31068"
 msgid "Experimental"
-msgstr "Experimental"
+msgstr "Экспериментальные"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31069"
 msgid "Background video"
-msgstr "Vídeo de fundo"
+msgstr "Фоновое воспроизведение видео"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31070"
 msgid "Fixed aspect ratio"
-msgstr "Proporção fixa"
+msgstr "Фиксированный формат изображения"
 
 msgctxt "#31071"
 msgid "Playback Speed"
-msgstr "Velocidade de reprodução"
+msgstr "Скорость воспроизведения"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31072"
 msgid "Art Department"
-msgstr "Departamento de Arte"
+msgstr "Художественный отдел"
 
 msgctxt "#31073"
 msgid "mins"
-msgstr "mins"
+msgstr "мин"
 
 msgctxt "#31074"
 msgid "hr"
-msgstr "hr"
+msgstr "ч"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31075"
 msgid "Editing"
-msgstr "Edição"
+msgstr "Монтаж"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31076"
 msgid "Starring"
-msgstr "Estrelando"
+msgstr "В ролях"
 
 msgctxt "#31077"
 msgid "More Information"
-msgstr "Mais Informações"
+msgstr "Детали"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31078"
 msgid "Use fake label textboxes"
-msgstr "Usar caixas de texto com rótulos falsos"
+msgstr "Использовать фиктивные поля для меток"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31079"
 msgid "improves performance on Omega"
-msgstr "melhora o desempenho no Omega"
+msgstr "улучшает производительность на Omega"
 
 #: /1080i/Dialog_DialogCustom.xml
 msgctxt "#31080"
 msgid "Button"
-msgstr "Botão"
+msgstr "Кнопка"
 
 #: /1080i/Dialog_DialogCustom.xml
 msgctxt "#31081"
 msgid "Others"
-msgstr "Outros"
+msgstr "Другие"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31082"
 msgid "Ratings style"
-msgstr "Estilo de Avaliação"
+msgstr "Стиль рейтингов"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31083"
 msgid "Combined"
-msgstr "Combinado"
+msgstr "Комбинированные"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31084"
 msgid "Preload hubs during startup initialisation"
-msgstr "Pré-carregar hubs durante a inicialização"
+msgstr "Предварительно загрузить узлы во время инициализации запуска"
 
 msgctxt "#31085"
 msgid "Live TV"
-msgstr "TV Ao Vivo"
+msgstr "ТВ"
 
 msgctxt "#31086"
 msgid "Customise options"
-msgstr "Opções de personalização"
+msgstr "Настроить параметры"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31087"
 msgid "Game Saves"
-msgstr "Jogos Salvos"
+msgstr "Сохранения в игре"
 
 #: /1080i/VideoOSDBookmarks.xml
 msgctxt "#31088"
 msgid "No bookmarks"
-msgstr "Sem marcadores"
+msgstr "Нет закладок"
 
 #: /1080i/VideoOSDBookmarks.xml
 msgctxt "#31089"
 msgid "Add a bookmark here"
-msgstr "Adicionar um marcador aqui"
+msgstr "Добавить закладку здесь"
 
 msgctxt "#31090"
 msgid "In-Progress"
-msgstr "Em Andamento"
+msgstr "Продолжить просмотр"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31091"
 msgid "In-Game Saves"
-msgstr "Salvamentos Durante o Jogo"
+msgstr "Сохранения в игре"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31092"
 msgid "Detailed information"
-msgstr "Informações detalhadas"
+msgstr "Подробная информация"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31093"
 msgid "Cycle extra fanart"
-msgstr "Circular fanart extras"
+msgstr "Смена дополнительного фан-арта"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31094"
 msgid "Mouse pointer size"
-msgstr "Tamanho do ponteiro do mouse"
+msgstr "Размер курсора"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31095"
 msgid "Translations"
-msgstr "Traduções"
+msgstr "Переводы"
 
 #: /1080i/Dialog_DialogPictureInfo.xml
 msgctxt "#31096"
 msgid "plays"
-msgstr "reproduções"
+msgstr ""
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31097"
 msgid "File details"
-msgstr "Detalhes do arquivo"
+msgstr "Сведения о файле"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Items.xml
 msgctxt "#31098"
 msgid "Gallery"
-msgstr "Galeria"
+msgstr "Галерея"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31099"
 msgid "Last aired"
-msgstr "Última exibição"
+msgstr "Последний выпуск"
 
 #: /1080i/Includes_Views_Row.xml
 msgctxt "#31100"
 msgid "Row Board"
-msgstr "Linhas de Painéis"
+msgstr "Ряд панелей"
 
 #: /1080i/Includes_Views_Wall.xml
 msgctxt "#31101"
 msgid "Wall Board"
-msgstr "Paredes de Painéis"
+msgstr "Стена панелей"
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31102"
 msgid "Extension"
-msgstr "Extensão"
+msgstr "Расширение"
 
 msgctxt "#31103"
 msgid "Widgets"
-msgstr "Widgets"
+msgstr "Виджеты"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31104"
 msgid "Position"
-msgstr "Posição"
+msgstr "Позиция"
 
 msgctxt "#31105"
 msgid "Spotlight"
-msgstr "Destaque"
+msgstr "Сцена"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31106"
 msgid "Top"
-msgstr "Superior"
+msgstr "Топ"
 
 #: /1080i/Dialog_DialogGameControllers.xml
 msgctxt "#31107"
 msgid "Edit buttons"
-msgstr "Editar botões"
+msgstr "Кнопки редактирования"
 
 msgctxt "#31108"
 msgid "Collections"
-msgstr "Coleções"
+msgstr "Коллекции"
 
 #: /1080i/Dialog_DialogPVRGroupManager.xml
 msgctxt "#31109"
 msgid "Edit group"
-msgstr "Editar grupo"
+msgstr "Редактировать группу"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31110"
 msgid "Starts at"
-msgstr "Começa às"
+msgstr "Начнется в"
 
 msgctxt "#31111"
 msgid "Row Poster"
-msgstr "Linha de Pôsteres"
+msgstr "Ряд постеров"
 
 msgctxt "#31112"
 msgid "Row Landscape"
-msgstr "Linha de Paisagens"
+msgstr "Ряд ландшафтов"
 
 msgctxt "#31113"
 msgid "Row Square"
-msgstr "Linha de Quadrados"
+msgstr "Ряд квадратов"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31114"
 msgid "Hubs"
-msgstr "Hubs"
+msgstr "Хабы"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31115"
 msgid "Australian summer"
-msgstr "Verão Australiano"
+msgstr "Австралийское лето"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31116"
 msgid "Winter frost"
-msgstr "Geada de inverno"
+msgstr "Зимний мороз"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31117"
 msgid "RAM"
-msgstr "RAM"
+msgstr "ОЗУ"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31118"
 msgid "Expanded"
-msgstr "Expandido"
+msgstr "Расширенный"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31119"
 msgid "EOTF and Gamut"
-msgstr "EOTF e Gamute"
+msgstr "EOTF и гамма"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31120"
 msgid "List Basic"
-msgstr "Lista Básica"
+msgstr "Базовый список"
 
 #: /1080i/Dialog_FileBrowser.xml
 msgctxt "#31121"
 msgid "Mirror"
-msgstr "Espelho"
+msgstr "Зеркало"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31122"
 msgid "Watchlist"
-msgstr "Minha Lista"
+msgstr "Список просмотренного"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31123"
 msgid "Plot line"
-msgstr "Enredo"
+msgstr "Сюжетная линия"
 
 msgctxt "#31124"
 msgid "Indicator"
-msgstr "Indicador"
+msgstr "Индикатор"
 
 msgctxt "#31125"
 msgid "Invert Text Colour"
-msgstr "Inverter Cor do Texto"
+msgstr "Инвертировать цвет текста"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31126"
 msgid "Plotline"
-msgstr "Enredo"
+msgstr "Сюжет"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31127"
 msgid "Genre colours"
-msgstr "Cores do gênero"
+msgstr "Жанровые цвета"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31128"
 msgid "Trending"
-msgstr "Em Alta"
+msgstr "Трендовые"
 
 msgctxt "#31129"
 msgid "Up next in"
-msgstr "A seguir em"
+msgstr "Следующая серия через"
 
 msgctxt "#31130"
 msgid "seconds"
-msgstr "segundos"
+msgstr "секунд"
 
 msgctxt "#31131"
 msgid "Continue watching in"
-msgstr "Continuar assistindo em"
+msgstr "Продолжить просмотр в"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31134"
 msgid "Playing"
-msgstr "Reproduzindo"
+msgstr "Воспроизведение"
 
 #: /1080i/Includes_Views.xml
 msgctxt "#31135"
 msgid "Page"
-msgstr "Página"
+msgstr "Страница"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
 msgctxt "#31137"
 msgid "Detailed"
-msgstr "Detalhado"
+msgstr "Детальный"
 
 msgctxt "#31138"
 msgid "Aqua Classic"
-msgstr "Aqua Clássico"
+msgstr "Аква Классик"
 
 msgctxt "#31139"
 msgid "Tropical Sunset"
-msgstr "Pôr do Sol Tropical"
+msgstr "Тропический закат"
 
 msgctxt "#31140"
 msgid "Miami Vaporwave"
-msgstr "Vaporwave de Miami"
+msgstr "Майами Вейпорвейв"
 
 msgctxt "#31141"
 msgid "Plain Monochrome"
-msgstr "Monocromático Simples"
+msgstr "Простой монохромный"
 
 msgctxt "#31142"
 msgid "Total Duration"
-msgstr "Duração Total"
+msgstr "Продолжительность"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31143"
 msgid "Classic"
-msgstr "Clássico"
+msgstr "Классический"
 
 msgctxt "#31145"
 msgid "Initialising Skin"
-msgstr "Inicializando a Skin"
+msgstr "Инициализация обложки"
 
 #: /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31147"
 msgid "More"
-msgstr "Mais"
+msgstr "Больше"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31150"
 msgid "Categories"
-msgstr "Categorias"
+msgstr "Категории"
 
 msgctxt "#31154"
 msgid "Misc options"
-msgstr "Opções diversas"
+msgstr "Разное"
 
 #: /1080i/Includes_Keyboard_Mini.xml
 msgctxt "#31158"
 msgid "Layout"
-msgstr "Layout"
+msgstr "Разметка"
 
 #: /1080i/Custom_1120_VideoInfo_Details.xml
 msgctxt "#31159"
 msgid "Version"
-msgstr "Versão"
+msgstr "Версия"
 
 msgctxt "#31160"
 msgid "REC"
-msgstr "Nome"
+msgstr "Запись"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31162"
 msgid "Hide"
-msgstr "Ocultar"
+msgstr "Скрыть"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31165"
 msgid "Seekbar behaviour on delayed pause"
-msgstr "Comportamento da barra de progresso em pausa atrasada"
+msgstr "Поведение панели воспроизведения при паузе"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31166"
 msgid "Back"
-msgstr "Voltar"
+msgstr "Назад"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31167"
 msgid "Logo"
-msgstr "Logo"
+msgstr "Логотип"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31168"
 msgid "List Square"
-msgstr "Lista Quadrada"
+msgstr "Список квадратов"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31169"
 msgid "Birthday"
-msgstr "Aniversário"
+msgstr "День рождения"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts_Window.xml
 msgctxt "#31170"
 msgid "Note"
-msgstr "Observação"
+msgstr "Примечание"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31171"
 msgid "On-screen keyboard size"
-msgstr "Tamanho do teclado na tela"
+msgstr "Размер экранной клавиатуры"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31173"
 msgid "Scroll"
-msgstr "Rolar"
+msgstr "Прокрутка"
 
 msgctxt "#31174"
 msgid "Navigation"
-msgstr "Navegação"
+msgstr "Навигация"
 
 msgctxt "#31177"
 msgid "Menus"
-msgstr "Menus"
+msgstr "Меню"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31179"
 msgid "Keyword"
-msgstr "Palavra-chave"
+msgstr "Теги"
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31181"
 msgid "Scheduled"
-msgstr "Agendamento"
+msgstr "Запланировано"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31183"
 msgid "times"
-msgstr "vezes"
+msgstr "раз"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31184"
 msgid "Ends"
-msgstr "Termina"
+msgstr "Конец"
 
 msgctxt "#31185"
 msgid "Autoscroll"
-msgstr "Rolagem automática"
+msgstr "Автопрокрутка"
 
 msgctxt "#31186"
 msgid "Behaviour"
-msgstr "Comportamento"
+msgstr "Поведение"
 
 msgctxt "#31187"
 msgid "Autoscroll time interval"
-msgstr "Intervalo de tempo da rolagem automática"
+msgstr "Интервал автопрокрутки"
 
 msgctxt "#31188"
 msgid "Limit"
-msgstr "Limite"
+msgstr "Лимит"
 
 msgctxt "#31189"
 msgid "Autoclose OSD after X seconds"
-msgstr "Fechar automaticamente o OSD depois X segundos"
+msgstr "Закрыть OSD после X секунд"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31194"
 msgid "Album duration"
-msgstr "Duração do álbum"
+msgstr "Продолжительность альбома"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31195"
 msgid "Light"
-msgstr "Claro"
+msgstr "Светлый"
 
 msgctxt "#31196"
 msgid "Up Next"
-msgstr "A Seguir"
+msgstr "Далее"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31197"
 msgid "Skin theme"
-msgstr "Tema da Skin"
+msgstr "Тема скина"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31198"
 msgid "Track duration"
-msgstr "Duração da faixa"
+msgstr "Продолжительность трека"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31199"
 msgid "Date and time"
-msgstr "Data e hora"
+msgstr "Дата и время"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31200"
 msgid "Added on"
-msgstr "Adicionado em"
+msgstr "Добавлено"
 
 msgctxt "#31202"
 msgid "Ratings"
-msgstr "Avaliações"
+msgstr "Рейтинги"
 
 msgctxt "#31203"
 msgid "Customise"
-msgstr "Personalizar"
+msgstr "Настроить"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31204"
 msgid "Customise dialog background"
-msgstr "Personalizar diálogo de fundo"
+msgstr "Изменить фон диалогового окна"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31205"
 msgid "Codecs and providers"
-msgstr "Codecs e provedores"
+msgstr "Кодеки и провайдеры"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31206"
 msgid "Item count"
-msgstr "Número de itens"
+msgstr "Количество элементов"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31207"
 msgid "Codecs"
-msgstr "Codecs"
+msgstr "Кодеки"
 
-#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+#: /1080i/SkinSettings.xml
 msgctxt "#31208"
 msgid "Header"
-msgstr "Cabeçalho"
+msgstr "Шапка"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31209"
 msgid "Boxes"
-msgstr "Caixas"
+msgstr "Коробки"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31210"
 msgid "Series Premiere"
-msgstr "Estreia da Série"
+msgstr "Премьера сериала"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31211"
 msgid "Season Premiere"
-msgstr "Estreia da Temporada"
+msgstr "Премьера сезона"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31212"
 msgid "Mid-Season Premiere"
-msgstr "Estreia da Meia Temporada"
+msgstr "Премьера середины сезона"
 
 msgctxt "#31213"
 msgid "Visualisation settings"
-msgstr "Configurações de visualização"
+msgstr "Настройки визуализации"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31214"
 msgid "Series Finale"
-msgstr "Final da Série"
+msgstr "Финал"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31215"
 msgid "Season Finale"
-msgstr "Final da Temporada"
+msgstr "Финал сериала"
 
 msgctxt "#31216"
 msgid "Video decoder"
-msgstr "Decodificador de Vídeo"
+msgstr "Видео декодер"
 
 msgctxt "#31217"
 msgid "Pixel format"
-msgstr "Formato de pixel"
+msgstr "Формат пикселя"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31218"
 msgid "Mid-Season Finale"
-msgstr "Final da Meia Temporada"
+msgstr "Финал середины сезона"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31220"
 msgid "Purple"
-msgstr "Púrpura"
+msgstr "Фиолетовый"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31221"
 msgid "Slate"
-msgstr "Ardósia"
+msgstr "Сланец"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31222"
 msgid "Coal"
-msgstr "Carvão"
+msgstr "Угольный"
 
 msgctxt "#31223"
 msgid "Gridlines"
-msgstr "Linhas de grade"
+msgstr "Сетка"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31224"
 msgid "Pink"
-msgstr "Rosa"
+msgstr "Розовый"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31225"
 msgid "Chalk"
-msgstr "Giz"
+msgstr "Меловый"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31226"
 msgid "Blush"
-msgstr "Corar"
+msgstr "Румяный"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31227"
 msgid "Premiere"
-msgstr "Estreia"
+msgstr "Премьера"
 
 #: /1080i/Custom_1115_Dialog_ColourPresets.xml
 msgctxt "#31228"
 msgid "Aqua"
-msgstr "Aqua"
+msgstr "Аква"
 
 #: /1080i/Custom_1115_Dialog_ColourPresets.xml
 msgctxt "#31229"
 msgid "Vaporwave"
-msgstr "Vaporwave"
+msgstr "Вейпорвейв"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31230"
 msgid "Calendar"
-msgstr "Calendário"
+msgstr "Календарь"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31231"
 msgid "Customise highlight colours"
-msgstr "Personalizar as cores dos destaques"
+msgstr "Настроить цвета подсветки"
 
 #: /1080i/Custom_1111_Dialog_ColourPicker.xml
 msgctxt "#31232"
 msgid "Gradient"
-msgstr "Gradiente"
+msgstr "Градиент"
 
 msgctxt "#31233"
 msgid "Seek to"
-msgstr "Buscar"
+msgstr "Перейти к"
 
 msgctxt "#31234"
 msgid "Customise indicators"
-msgstr "Indicadores personalizados"
+msgstr "Редактировать индикаторы"
 
 msgctxt "#31235"
 msgid "Indicators"
-msgstr "Indicadores"
+msgstr "Индикаторы"
 
 msgctxt "#31236"
 msgid "Collection"
-msgstr "Coleção"
+msgstr "Коллекции"
 
 msgctxt "#31237"
 msgid "Progress"
-msgstr "Progresso"
+msgstr "Прогресс"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31238"
 msgid "Coral"
-msgstr "Coral"
+msgstr "Коралловый"
 
 msgctxt "#31239"
 msgid "Footer"
-msgstr "Rodapé"
+msgstr "Футер"
 
 #: /1080i/Custom_1115_Dialog_ColourPresets.xml
 msgctxt "#31240"
 msgid "Tropical"
-msgstr "Tropical"
+msgstr "Тропический"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31241"
 msgid "Colour scheme"
-msgstr "Esquema de cores"
+msgstr "Цветовая схема"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31242"
 msgid "Blue Slate"
-msgstr "Ardósia Azul"
+msgstr "Синий сланец"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31243"
 msgid "Midnight Purple"
-msgstr "Púrpura da Meia-Noite"
+msgstr "Полуночный пурпурный"
 
 msgctxt "#31244"
 msgid "Now playing"
-msgstr "Reproduzindo agora"
+msgstr "Сейчас играет"
 
 msgctxt "#31245"
 msgid "Autoscroll labels"
-msgstr "Rolar Automaticamente os rótulos"
+msgstr "Автопрокрутка меток"
 
 msgctxt "#31246"
 msgid "Autoscroll textboxes"
-msgstr "Rolar Automaticamente as caixas de texto"
+msgstr "Автопрокрутка текстовых полей"
 
 msgctxt "#31249"
 msgid "Waiting for PVR"
-msgstr "Aguardando pelo PVR"
+msgstr "Ожидание PVR"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31250"
 msgid "Highlight"
-msgstr "Destaque"
+msgstr "Подсветка"
 
 msgctxt "#31252"
 msgid "Catch-up"
-msgstr "Gravação"
+msgstr "Архив"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31254"
 msgid "Performance"
-msgstr "Desempenho"
+msgstr "Производительность"
 
 msgctxt "#31255"
 msgid "Customise startup image"
-msgstr "Personalizar imagem de inicialização"
+msgstr "Изменить стартовое изображение"
 
 msgctxt "#31256"
 msgid "Resource Usage"
-msgstr "Uso dos Recursos"
+msgstr "Использование ресурсов"
 
 msgctxt "#31257"
 msgid "Memory"
-msgstr "Memória"
+msgstr "Память"
 
 msgctxt "#31258"
 msgid "CPU"
-msgstr "CPU"
+msgstr "ЦПУ"
 
 msgctxt "#31259"
 msgid "FPS"
-msgstr "FPS"
+msgstr ""
 
 msgctxt "#31260"
 msgid "AR"
-msgstr "AR"
+msgstr ""
 
 msgctxt "#31261"
 msgid "px"
-msgstr "px"
+msgstr ""
 
 msgctxt "#31262"
 msgid "Hz"
-msgstr "Hz"
+msgstr "Гц"
 
 msgctxt "#31263"
 msgid "bits"
-msgstr "bits"
+msgstr "бит"
 
 msgctxt "#31264"
 msgid "Revenue"
-msgstr "Receita"
+msgstr "Выручка"
 
 msgctxt "#31265"
 msgid "Budget"
-msgstr "Orçamento"
+msgstr "Бюджет"
 
 msgctxt "#31270"
 msgid "Single image"
-msgstr "Imagem simples"
+msgstr "Одно изображение"
 
 msgctxt "#31271"
 msgid "Image folder"
-msgstr "Pasta da imagem"
+msgstr "Папка изображений"
 
 #: /1080i/Includes_Search_View.xml
 msgctxt "#31272"
 msgid "Searching"
-msgstr "Buscando"
+msgstr "Поиск"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31274"
 msgid "Icon"
-msgstr "Ícone"
+msgstr "Иконка"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31275"
 msgid "Customise search"
-msgstr "Personalizar pesquisa"
+msgstr "Настроить поиск"
 
 msgctxt "#31279"
 msgid "Studio icons"
-msgstr "Ícones dos Estúdios"
+msgstr "Иконки киностудии"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31281"
 msgid "Welcome"
-msgstr "Bem-vindo"
+msgstr "Добро пожаловать"
 
 #: /1080i/Includes_Shortcuts_Pallette.xml
 msgctxt "#31282"
 msgid "Widget"
-msgstr "Widget"
+msgstr "Виджет"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31283"
 msgid "Played"
-msgstr "Reproduzido"
+msgstr "Просмотрено"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31284"
 msgid "Discover movies and tvshows on TMDb."
-msgstr "Descobrir filmes e séries no TMDb."
+msgstr "Поиск фильмов и сериалов в TMDb."
 
 msgctxt "#31285"
 msgid "Classification (MPAA)"
-msgstr "Classificação (MPAA)"
+msgstr "Рейтинг (MPAA)"
 
 msgctxt "#31286"
 msgid "Won"
-msgstr "Vencedor"
+msgstr "Получил"
 
 msgctxt "#31287"
 msgid "Nominated for"
-msgstr "Indicado para"
+msgstr "Номинирован на"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31288"
 msgid "Explore now."
-msgstr "Explorar agora."
+msgstr "Исследуйте сейчас."
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31289"
 msgid "Touch mode"
-msgstr "Modo Toque"
+msgstr "Сенсорный режим"
 
 #: /1080i/script-wikipedia.xml
 msgctxt "#31290"
 msgid "Attribution"
-msgstr "Atribuição"
+msgstr "Авторство"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
-msgstr "Procurar por filmes$COMMA séries$COMMA e mais."
+msgstr "Поиск фильмов$COMMA, сериалов$COMMA и многого другого."
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31292"
 msgid "Text labels"
-msgstr "Rótulos de textos"
+msgstr "Текстовые метки"
 
 msgctxt "#31293"
 msgid "Cast and more info"
-msgstr "Elenco e mais informações"
+msgstr "Актеры и дополнительная информация"
 
 msgctxt "#31294"
 msgid "Bookmarks and chapters"
-msgstr "Marcadores e capítulos"
+msgstr "Закладки и главы"
 
 msgctxt "#31295"
 msgid "Channels"
-msgstr "Canais"
+msgstr "Каналы"
 
 msgctxt "#31296"
 msgid "Playlist"
-msgstr "Lista de reprodução"
+msgstr "Плейлист"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31297"
 msgid "Extra fanart"
-msgstr "Fanart Extra"
+msgstr "Дополнительный фан-арт"
 
 msgctxt "#31298"
 msgid "Movies and tv shows starring this actor"
-msgstr "Filmes e séries estreladas por este ator"
+msgstr "Фильмы и сериалы с участием этого актера"
 
 msgctxt "#31299"
 msgid "Information is loading"
-msgstr "Carregando informações"
+msgstr "Информация загружается"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31300"
 msgid "Customise window background"
-msgstr "Personalizar janela de fundo"
+msgstr "Настроить фон окна"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31301"
 msgid "Crew"
-msgstr "Equipe"
+msgstr "Съёмочная группа"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31303"
 msgid "Customise fallback image folder"
-msgstr "Pasta de imagem substituta personalizada"
+msgstr "Изменить папку для резервных изображений"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31304"
 msgid "lists"
-msgstr "listas"
+msgstr "списки"
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31307"
 msgid "Instrument"
-msgstr "Instrumento"
+msgstr "Инструмент"
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31308"
 msgid "Mood"
-msgstr "Humor"
+msgstr "Настроение"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31309"
 msgid "Glass"
-msgstr "Vidro"
+msgstr "Стекло"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31310"
 msgid "Expand"
-msgstr "Expandir"
+msgstr "Расширить"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31311"
 msgid "Weekly"
-msgstr "Semanalmente"
+msgstr "Еженедельный"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
 msgid "View"
-msgstr "Exibição"
+msgstr "Вид"
 
 #: /1080i/Includes_Views.xml
 msgctxt "#31320"
 msgid "Square"
-msgstr "Quadrado"
+msgstr "Квадрат"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31321"
 msgid "Select viewtypes"
-msgstr "Selecionar tipos de exibição"
+msgstr "Выбрать виды"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
 msgctxt "#31322"
 msgid "Age"
-msgstr "Idade"
+msgstr "Возраст"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31324"
 msgid "Content"
-msgstr "Conteúdo"
+msgstr "Содержание"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31328"
 msgid "Edit widgets"
-msgstr "Editar widgets"
+msgstr "Редактировать виджеты"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31329"
 msgid "Text"
-msgstr "Texto"
+msgstr "Текст"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31330"
 msgid "Crop"
-msgstr "Cortar"
+msgstr "Обрезать"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31331"
 msgid "Background style"
-msgstr "Estilo de fundo"
+msgstr "Стиль фона"
 
 msgctxt "#31334"
 msgid "Comments"
-msgstr "Comentários"
+msgstr "Комментарии"
 
 #: /1080i/GameOSD.xml
 msgctxt "#31335"
 msgid "Game menu"
-msgstr "Menu do Game"
+msgstr "Игровое меню"
 
 #: /1080i/GameOSD.xml
 msgctxt "#31336"
 msgid "Select + X"
-msgstr "Select + X"
+msgstr ""
 
 #: /1080i/GameOSD.xml
 msgctxt "#31337"
 msgid "Select + Start"
-msgstr "Select + Start"
+msgstr ""
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31338"
 msgid "Select + Right Stick"
-msgstr "Select + Right Stick"
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31340"
 msgid "Reset skin to defaults"
-msgstr "Redefinir skin para o padrão"
+msgstr "Сбросить настройки темы"
 
 msgctxt "#31346"
 msgid "More by this artist"
-msgstr "Mais deste artista"
+msgstr "Больше от этого исполнителя"
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31347"
 msgid "Photography"
-msgstr "Fotografia"
+msgstr "Фотография"
 
 msgctxt "#31348"
 msgid "Channel EPG"
-msgstr "EPG do Canal"
+msgstr "Телегид"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31349"
 msgid "Up"
-msgstr "Para Cima"
+msgstr "Вверх"
 
 msgctxt "#31350"
 msgid "Thanks"
-msgstr "Obrigado"
+msgstr "Спасибо"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31353"
 msgid "Elapsed"
-msgstr "Decorrido"
+msgstr "Прошло"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31354"
 msgid "Remaining"
-msgstr "Restante"
+msgstr "Осталось"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31355"
 msgid "Seekbar time display"
-msgstr "Exibir o tempo na barra de progresso"
+msgstr "Формат времени в панели воспроизведения"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31356"
 msgid "Use online cast"
-msgstr "Usar elenco online"
+msgstr "Получать актерский состав в онлайн"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Items.xml
 msgctxt "#31357"
 msgid "Artwork Overlay"
-msgstr "Sobreposição de Artwork"
+msgstr "Иллюстрации"
 
 msgctxt "#31358"
 msgid "Waiting for plugins"
-msgstr "Aguardando pelos plugins"
+msgstr "Загрузка плагинов"
 
 #: /shortcuts/generator/data/setup/powermenu_item.xml
 msgctxt "#31359"
 msgid "Switch user"
-msgstr "Trocar de usuário"
+msgstr "Сменить пользователя"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31362"
 msgid "Side items"
-msgstr "Itens laterais"
+msgstr "Боковые элементы"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31363"
 msgid "Menu items"
-msgstr "Itens do menu"
+msgstr "Элементы меню"
 
 #: /shortcuts/powersubmenu.DATA.xml
 msgctxt "#31364"
 msgid "Reload"
-msgstr "Recarregar"
+msgstr "Перезагрузить"
 
 #: /1080i/DialogContextMenu.xml
 msgctxt "#31365"
 msgid "Node"
-msgstr "Nó"
+msgstr "Узел"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31366"
 msgid "Uncropped"
-msgstr "Não cortado"
+msgstr "Необрезанный"
 
 #: /1080i/Includes_Search_View.xml
 msgctxt "#31368"
 msgid "Searching for"
-msgstr "Buscando por"
+msgstr "Поиск"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31369"
 msgid "Video file"
-msgstr "Arquivo de vídeo"
+msgstr "Видео файл"
 
 #: /1080i/Custom_1172_Dialog_SideMenu.xml
 msgctxt "#31370"
 msgid "Switch profile"
-msgstr "Trocar de perfil"
+msgstr "Сменить профиль"
 
 msgctxt "#31371"
 msgid "Sorted by"
-msgstr "Ordenado por"
+msgstr "Сортировать по"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31372"
 msgid "Options tray"
-msgstr "Opções da bandeja"
+msgstr "Панель параметров"
 
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31373"
 msgid "from"
-msgstr "de"
+msgstr "из"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31374"
 msgid "Reset skin settings to defaults"
-msgstr "Redefinir configurações da skin para os padrões"
+msgstr "Сбросить настройки темы"
 
 msgctxt "#31375"
 msgid "Install zip"
-msgstr "Instalar zip"
+msgstr "Установить zip"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31376"
 msgid "Reset discover search history"
-msgstr "Redefinir histórico de pesquisa do descobrir"
+msgstr "Сбросить историю поиска"
 
 #: /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31377"
 msgid "Next window"
-msgstr "Janela Seguinte"
+msgstr "Следующее окно"
 
 msgctxt "#31378"
 msgid "Foreign"
-msgstr "Estrangeiro"
+msgstr "Зарубежный"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31379"
 msgid "Edit categories"
-msgstr "Editar categorias"
+msgstr "Редактировать категории"
 
 msgctxt "#31380"
 msgid "Forecast"
-msgstr "Previsão"
+msgstr "Прогноз погоды"
 
 msgctxt "#31381"
 msgid "Returning"
-msgstr "Retornando"
+msgstr "Возвращение"
 
 msgctxt "#31382"
 msgid "All items"
-msgstr "Todos os itens"
+msgstr "Все элементы"
 
 msgctxt "#31383"
 msgid "Production"
-msgstr "Produção"
+msgstr "Продакшн"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31384"
 msgid "Tray labels"
-msgstr "Rótulos da bandeja"
+msgstr "Подписи ярлыков трея"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31385"
 msgid "Secondary"
-msgstr "Secundário"
+msgstr "Второстепенное"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31386"
 msgid "Primary"
-msgstr "Primário"
+msgstr "Основное"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31387"
 msgid "Contextual"
-msgstr "Contextual"
+msgstr "Контекстуальный"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31388"
 msgid "Seed"
-msgstr "Semente"
+msgstr "Сид"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31389"
 msgid "Parent widget"
-msgstr "Widget superior"
+msgstr "Родительский виджет"
 
 msgctxt "#31390"
 msgid "Release Year"
-msgstr "Ano de Lançamento"
+msgstr "Год выпуска"
 
 #: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
 msgctxt "#31393"
 msgid "Trailer"
-msgstr "Trailer"
+msgstr "Трейлер"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
-msgstr "Vídeo picture-in-picture"
+msgstr "Видеорежим \"Картинка в картинке\""
 
 msgctxt "#31396"
 msgid "Recent Movies"
-msgstr "Filmes Recentes"
+msgstr "Недавние фильмы"
 
 msgctxt "#31397"
 msgid "Recent Tv Shows"
-msgstr "Séries Recentes"
+msgstr "Недавние сериалы"
 
 msgctxt "#31398"
 msgid "New Movies"
-msgstr "Filmes Novos"
+msgstr "Новые фильмы"
 
 msgctxt "#31399"
 msgid "New TV Shows"
-msgstr "Séries Novas"
+msgstr "Новые сериалы"
 
 msgctxt "#31400"
 msgid "New Episodes"
-msgstr "Episódios Novos"
+msgstr "Новые серии"
 
 msgctxt "#31401"
 msgid "New Artists"
-msgstr "Artistas Novos"
+msgstr "Новые исполнители"
 
 msgctxt "#31402"
 msgid "New Albums"
-msgstr "Álbuns Novos"
+msgstr "Новые альбомы"
 
 msgctxt "#31403"
 msgid "In-Progress TV Shows"
-msgstr "Séries Em Andamento"
+msgstr "Продолжить просмотр сериалов"
 
 msgctxt "#31404"
 msgid "In-Progress Movies"
-msgstr "Filmes Em Andamento"
+msgstr "Продолжить просмотр фильмов"
 
 msgctxt "#31405"
 msgid "Top Albums"
-msgstr "Melhores Álbuns"
+msgstr "Топовые альбомы"
 
 msgctxt "#31406"
 msgid "Top Rated Movies"
-msgstr "Filmes Melhor Avaliados"
+msgstr "Фильмы с самым высоким рейтингом"
 
 msgctxt "#31407"
 msgid "Top Rated TV Shows"
-msgstr "Séries Melhor Avaliadas"
+msgstr "Сериалы с самым высоким рейтингом"
 
 msgctxt "#31408"
 msgid "Random Movies"
-msgstr "Filmes Aleatórios"
+msgstr "Случайные фильмы"
 
 msgctxt "#31409"
 msgid "Random TV Shows"
-msgstr "Séries Aleatórias"
+msgstr "Случайные сериалы"
 
 msgctxt "#31410"
 msgid "Random Episodes"
-msgstr "Episódios Aleatórios"
+msgstr "Случайные серии"
 
 msgctxt "#31411"
 msgid "Random Songs"
-msgstr "Músicas Aleatórias"
+msgstr "Случайные песни"
 
 msgctxt "#31412"
 msgid "Random Albums"
-msgstr "Álbuns Aleatórios"
+msgstr "Случайные альбомы"
 
 msgctxt "#31413"
 msgid "All Movies"
-msgstr "Todos os Filmes"
+msgstr "Все фильмы"
 
 msgctxt "#31414"
 msgid "All TV Shows"
-msgstr "Todas as Séries"
+msgstr "Все сериалы"
 
 msgctxt "#31415"
 msgid "Movies and TV Shows"
-msgstr "Filmes e Séries"
+msgstr "Фильмы и сериалы"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31416"
 msgid "Secondary button"
-msgstr "Botão secundário"
+msgstr "Вторичная кнопка"
 
 msgctxt "#31417"
 msgid "Random Artists"
-msgstr "Artistas Aleatórios"
+msgstr "Случайные исполнители"
 
 #: /1080i/Includes_Views_Row.xml
 msgctxt "#31418"
 msgid "Row Circle"
-msgstr "Linha de Círculos"
+msgstr "Ряд кругов"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31419"
 msgid "Overview"
-msgstr "Visão Geral"
+msgstr "Обзор"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31420"
 msgid "Apps"
-msgstr "Apps"
+msgstr "Приложения"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31423"
 msgid "Card"
-msgstr "Cartão"
+msgstr "Карточка"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31424"
 msgid "Board"
-msgstr "Painel"
+msgstr "Панель"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31425"
 msgid "Labels"
-msgstr "Rótulos"
+msgstr "Метки"
 
 #: /1080i/Home.xml
 msgctxt "#31427"
 msgid "Initialising"
-msgstr "Inicializando"
+msgstr "Загрузка"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31428"
 msgid "Hide widget initialisation behind splash"
-msgstr "Ocultar o widget de inicialização atrás de uma imagem"
+msgstr "Скрыть инициализацию виджета за заставкой"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31429"
 msgid "Chapters"
-msgstr "Capítulos"
+msgstr "Главы"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31430"
 msgid "Customise style"
-msgstr "Personalizar estilo"
+msgstr "Настроить стиль"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Views_Row.xml
 msgctxt "#31431"
 msgid "Circle"
-msgstr "Círculo"
+msgstr "Круг"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31432"
 msgid "Adaptive"
-msgstr "Adaptativo"
+msgstr "Адаптивный"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31434"
 msgid "Video OSD"
-msgstr "OSD no Vídeo"
+msgstr "Видео OSD"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31435"
 msgid "TMDbHelper lookups"
-msgstr "Pesquisas TMDbHelper"
+msgstr "Запросы TMDbHelper"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31438"
 msgid "Simple"
-msgstr "Simples"
+msgstr "Простой"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31439"
 msgid "Large"
-msgstr "Grande"
+msgstr "Большой"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31440"
 msgid "Extra Large"
-msgstr "Extra Grande"
+msgstr "Очень большой"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31441"
 msgid "FlixArt Size"
-msgstr "Tamanho FlixArt"
+msgstr "Размер FlixArt"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31442"
 msgid "Parent"
-msgstr "Superior"
+msgstr "Родительский элемент"
 
 #: /1080i/Settings.xml
 msgctxt "#31444"
 msgid "Customisation"
-msgstr "Personalização"
+msgstr "Персонализация"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31448"
 msgid "This category contains customisation options for"
-msgstr "Esta categoria contém opções de personalização para"
+msgstr "Эта категория содержит настройки параметров для"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31450"
 msgid "Text only"
-msgstr "Só texto"
+msgstr "Только текст"
 
 #: /1080i/Custom_1180_Wizard.xml
 msgctxt "#31451"
 msgid "Compound"
-msgstr "Composto"
+msgstr "Комплексный"
 
 #: /1080i/Custom_1180_Wizard.xml
 msgctxt "#31452"
 msgid "Composite"
-msgstr "Composto"
+msgstr "Композитный"
 
 #: /1080i/Custom_1115_Dialog_WideSettings.xml
 msgctxt "#31456"
 msgid "Prebuilt"
-msgstr "Pré-construído"
+msgstr "Готовый"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31457"
 msgid "Scrollbar"
-msgstr "Barra de rolagem"
+msgstr "Полоса прокрутки"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31458"
 msgid "Monochrome"
-msgstr "Monocromático"
+msgstr "Монохромный"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31459"
 msgid "Letter"
-msgstr "Carta"
+msgstr "Буква"
 
 #: /1080i/SkinSettings.xml /1080i/MusicOSD.xml
 msgctxt "#31460"
 msgid "Customise visualisation"
-msgstr "Personalizar visualização"
+msgstr "Настроить визуализацию"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31461"
 msgid "Choose preset"
-msgstr "Escolher definição"
+msgstr "Выбрать пресет"
 
 #: /1080i/Includes_Views_Wall.xml
 msgctxt "#31462"
 msgid "Wall Banner"
-msgstr "Parede de Banners"
+msgstr "Стена баннеров"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31465"
 msgid "Rain chance"
-msgstr "Chance de chuva"
+msgstr "Вероятность дождя"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
-msgstr "Configuração dos blocos"
+msgstr "Настройка плиток"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31468"
 msgid "Tile layout"
-msgstr "Layout do bloco"
+msgstr "Разметка плиток"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31469"
 msgid "Choose shortcut"
-msgstr "Escolher atalho"
+msgstr "Выбрать ярлык"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31470"
 msgid "Wind gusts"
-msgstr "Rajadas de vento"
+msgstr "Порывы ветра"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31471"
 msgid "Fire danger"
-msgstr "Perigo de incêndio"
+msgstr "Пожарная опасность"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31472"
 msgid "Rain since 9am"
-msgstr "Chuva desde as 9h"
+msgstr "Дождь с 9 утра"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31473"
 msgid "Radar"
-msgstr "Radar"
+msgstr "Радар"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
 msgid "This category contains acknowledgements, contributions, and thanks."
-msgstr "Esta categoria contém reconhecimentos, contribuições e agradecimentos."
+msgstr "Эта категория содержит выражения признательности, отражает вклад в работу и благодарности."
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Items.xml
 msgctxt "#31477"
 msgid "Progress percentage"
-msgstr "Percentual do progresso"
+msgstr "Процент прогресса"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31478"
 msgid "by"
-msgstr "por"
+msgstr "от"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31479"
 msgid "List Media"
-msgstr "Lista de Mídia"
+msgstr "Медиасписок"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31480"
 msgid "List Flixart"
-msgstr "Lista Flixart"
+msgstr "Flixart список"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31482"
 msgid "Trailers"
-msgstr "Trailers"
+msgstr "Трейлеры"
 
 #: /1080i/Custom_1123_Dialog_Trailer.xml
 msgctxt "#31483"
 msgid "Replay"
-msgstr "Repetir"
+msgstr "Повтор"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
-msgstr "Pausar"
+msgstr "Пауза"
 
 #: /1080i/Custom_1123_Dialog_Trailer.xml
 msgctxt "#31485"
 msgid "Stop"
-msgstr "Parar"
+msgstr "Стоп"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
 msgid "Dialog"
-msgstr "Diálogo"
+msgstr "Диалог"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31487"
 msgid "and"
-msgstr "e"
+msgstr "и"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31490"
 msgid "Cancelled"
-msgstr "Cancelado"
+msgstr "Отменено"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31491"
 msgid "Miscellaneous"
-msgstr "Diversos"
+msgstr "Разное"
 
 #: /1080i/Includes_Actions.xml
 msgctxt "#31492"
 msgid "Add-ons hub"
-msgstr "Hub de Addons"
+msgstr "Хаб дополнений"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31493"
 msgid "Ended"
-msgstr "Terminado"
+msgstr "Завршено"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31494"
 msgid "Rebuild"
-msgstr "Reconstruir"
+msgstr "Перестроить"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31495"
 msgid "Unlocked"
-msgstr "Desbloquear"
+msgstr "Разблокировано"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31496"
 msgid "Customise widgets"
-msgstr "Personalizar widgets"
+msgstr "Настроить виджеты"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31497"
 msgid "Minimise menu"
-msgstr "Minimizar menu"
+msgstr "Свернуть меню"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31498"
 msgid "Released"
-msgstr "Lançado"
+msgstr "Выпущен"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31499"
 msgid "In-Production"
-msgstr "Em Produção"
+msgstr "В производстве"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31500"
 msgid "There were no search results found"
-msgstr "Não foram encontrados resultados de pesquisa"
+msgstr "По вашему запросу ничего не найдено"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31501"
 msgid "Please try another search"
-msgstr "Por favor, tente outra pesquisa"
+msgstr "Попробуйте изменить поисковый запрос"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31502"
 msgid "More Options"
-msgstr "Mais Opções"
+msgstr "Больше опций"
 
 #: /1080i/DialogVideoVersion.xml
 msgctxt "#31503"
 msgid "Extras"
-msgstr "Extras"
+msgstr "Дополнения"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31504"
 msgid "Planned"
-msgstr "Planejado"
+msgstr "Запланировано"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31505"
 msgid "Skin user login screen on startup"
-msgstr "Tela de login do usuário skin na inicialização"
+msgstr "Меню выбора пользователя при старте темы"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31506"
 msgid "Individual skin user widget configurations"
-msgstr "Configurações individuais de widget do usuário da skin"
+msgstr "Персональные настройки виджетов пользователя темы"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31507"
 msgid "pseudo profiles"
-msgstr "perfis falsos"
+msgstr "пседо-профили"
 
 #: /1080i/Custom_1195_SkinUserLoginScreen.xml
 msgctxt "#31508"
 msgid "Loading skin user profiles"
-msgstr "Carregando perfis de usuário da skin"
+msgstr "Загрузка профилей обложки пользователя"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31509"
 msgid "Holiday"
-msgstr "Feriado"
+msgstr "Праздник"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31510"
 msgid "Holiday themes"
-msgstr "Temas de feriados"
+msgstr "Праздничные темы"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31511"
 msgid "Shortcut"
-msgstr "Atalho"
+msgstr "Ярлык"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31515"
 msgid "Main Items"
-msgstr "Itens Principais"
+msgstr "Основные элементы"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31516"
 msgid "Edit items"
-msgstr "Editar itens"
+msgstr "Редактировать элементы"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31517"
 msgid "Reverse order"
-msgstr "Ordem inversa"
+msgstr "Обратный порядок"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31519"
 msgid "Empty widget placeholder"
-msgstr "Espaço reservado para widget vazio"
+msgstr "Пустой заполнитель виджета"
 
 #: /1080i/Includes_Weather_Radar.xml
 msgctxt "#31520"
 msgid "Cloudiness"
-msgstr "Nublado"
+msgstr "Облачность"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
-msgstr "Ocultar widgets vazios pode causar problemas de posicionamento após a reprodução do vídeo."
+msgstr "Скрытие пустых виджетов может вызвать проблемы с позиционированием после воспроизведения видео."
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31523"
 msgid "It is recommended to delete any unused widgets from your configuration instead of hiding them."
-msgstr "É recomendado excluir quaisquer widgets não utilizados da sua configuração em vez de ocultá-los."
+msgstr "Рекомендуется удалять все неиспользуемые виджеты из конфигурации, а не скрывать их."
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
-msgstr "Há também um custo indireto de atualização para o desempenho associado à ocultação de widgets vazios."
+msgstr "Также существуют затраты ресурсов производительности при обновлении, связанные со скрытием пустых виджетов."
 
 #: /1080i/Includes_Weather_Radar.xml
 msgctxt "#31525"
 msgid "Visibility"
-msgstr "Visibilidade"
+msgstr "Видимость"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31526"
 msgid "Hour"
-msgstr "Hora"
+msgstr "Час"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31527"
 msgid "Later"
-msgstr "Depois"
+msgstr "Позже"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31528"
 msgid "Particulate"
-msgstr "Partículas"
+msgstr "Твёрдые частицы"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31529"
 msgid "Ozone"
-msgstr "Ozônio"
+msgstr "Озон"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31530"
 msgid "Solar radiation"
-msgstr "Radiação solar"
+msgstr "Солнечное излучение"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31531"
 msgid "Carbon monoxide"
-msgstr "Monóxido de carbono"
+msgstr "Оксид углерода"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"
 msgid "Add list"
-msgstr "Adicionar a lista"
+msgstr "Добавить список"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31535"
 msgid "Restore"
-msgstr "Restaurar"
+msgstr "Восстановить"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31536"
 msgid "Choose fallback image folder"
-msgstr "Escolher pasta de imagem substituta"
+msgstr "Выбрать резервную папку для изображений"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31537"
 msgid "Edit submenu items"
-msgstr "Editar itens do submenu"
+msgstr "Редактировать элементы подменю"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31538"
 msgid "Customise viewtypes"
-msgstr "Personalizar tipos de exibição"
+msgstr "Настроить виды"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31539"
 msgid "Use online gallery"
-msgstr "Usar galeria online"
+msgstr "Использовать онлайн-галерею"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31540"
 msgid "Use online collection"
-msgstr "Usar coleção online"
+msgstr "Использовать онлайн-коллекцию"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31541"
 msgid "Next episode"
-msgstr "Próximo episódio"
+msgstr "Следующая серия"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31542"
 msgid "Last episode"
-msgstr "Último episódio"
+msgstr "Последняя серия"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31543"
 msgid "Anticipated"
-msgstr "Antecipado"
+msgstr "Анонсировано"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31544"
 msgid "Airing"
-msgstr "Exibição"
+msgstr "Выходит"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31545"
 msgid "Premiering"
-msgstr "Estreia"
+msgstr "Премьера"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31547"
 msgid "Yesterday"
-msgstr "Ontem"
+msgstr "Вчера"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31550"
 msgid "Change the visibility level of skin settings."
-msgstr "Altere o nível de visibilidade das configurações de skin."
+msgstr "Изменение уровня видимости настроек обложки."
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31552"
 msgid "Settings level"
-msgstr "Nível de configurações"
+msgstr "Уровень настроек"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31554"
 msgid "Wall Poster"
-msgstr "Parede de Pôsteres"
+msgstr "Стена постеров"
 
 #: /1080i/Includes_Views_Wall.xml
 msgctxt "#31555"
 msgid "Wall Landscape"
-msgstr "Parede de Paisagens"
+msgstr "Стена ландшафтов"
 
 #: /1080i/Includes_Views_Wall.xml
 msgctxt "#31556"
 msgid "Wall Square"
-msgstr "Parede de Quadrados"
+msgstr "Стена квадратов"
 
 #: /1080i/Includes_Views_Wall.xml
 msgctxt "#31557"
 msgid "Wall Circle"
-msgstr "Parede de Círculos"
+msgstr "Стена кругов"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31560"
 msgid "Bright White"
-msgstr "Branco Brilhante"
+msgstr "Ярко белый"
 
 #: /1080i/Includes_Views_Row.xml
 msgctxt "#31563"
 msgid "Row Card"
-msgstr "Linha de Cartões"
+msgstr "Ряд карточек"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31564"
 msgid "General appearance and widget layout customisations."
-msgstr "Personalizações gerais de aparência e layout de widget."
+msgstr "Общие настройки внешнего вида и расположения виджетов."
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31565"
 msgid "Detailed adjustments and additional hub customisations."
-msgstr "Ajustes detalhados e personalizações adicionais do hub."
+msgstr "Детальная настройка и дополнительные настройки хаба."
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31566"
 msgid "Development tools and experimental options."
-msgstr "Ferramentas de desenvolvimento e opções experimentais."
+msgstr "Инструменты разработки и экспериментальные возможности."
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31567"
 msgid "Add a single item or a list of several items?"
-msgstr "Adicionar um único item ou uma lista de vários itens?"
+msgstr "Добавить один элемент или список из нескольких элементов?"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31568"
 msgid "Add new item(s)"
-msgstr "Adicionar novos itens"
+msgstr "Добавить новый элемент(ы)"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31569"
 msgid "Add item"
-msgstr "Adicionar item"
+msgstr "Добавить элемент"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31570"
 msgid "Delete item(s)"
-msgstr "Excluir itens"
+msgstr "Удалить элемент(ы)"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31571"
 msgid "Delete a single item or a list of several items?"
-msgstr "Excluir um único item ou uma lista de vários itens?"
+msgstr "Удалить один элемент или список из нескольких элементов?"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31572"
 msgid "Delete item"
-msgstr "Excluir item"
+msgstr "Удалить элемент"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31573"
 msgid "Delete list"
-msgstr "Excluir lista"
+msgstr "Удалить список"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31576"
 msgid "Seekbar delayed pause time"
-msgstr "Tempo de pausa atrasado da barra de progresso"
+msgstr "Время отображения панели воспроизведения при паузе"
 
 #: /1080i/Includes_ButtonMenu.xml
 msgctxt "#31579"
 msgid "Prev"
-msgstr "Anterior"
+msgstr "Предыдущий"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31580"
 msgid "Combined List"
-msgstr "Lista Combinada"
+msgstr "Комбинированный список"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31581"
 msgid "List Expanded"
-msgstr "Lista Expandida"
+msgstr "Расширенный список"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31583"
 msgid "Prevent reload"
-msgstr "Impedir recarregamento"
+msgstr "Запретить перезагрузку"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31585"
 msgid "Overlay"
-msgstr "Sobreposição"
+msgstr "Наложение"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31586"
 msgid "Customise shortcuts"
-msgstr "Personalizar atalhos"
+msgstr "Настройка ярлыков"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31594"
 msgid "Press down"
-msgstr "Pressionar para baixo"
+msgstr "Нажмите вниз"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31595"
 msgid "Press right"
-msgstr "Pressionar para direita"
+msgstr "Нажмите вправо"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31596"
 msgid "Additional icons"
-msgstr "Ícones adicionais"
+msgstr "Дополнительные значки"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31597"
 msgid "Confirmation"
-msgstr "Confirmação"
+msgstr "Подтверждение"
 
 #: /1080i/Dialogs_DialogGameControllers.xml
 msgctxt "#31598"
 msgid "Controllers"
-msgstr "Controles"
+msgstr "Контроллеры"
 
 #: /1080i/Dialogs_DialogPVRGroupManager.xml
 msgctxt "#31599"
 msgid "Ungrouped"
-msgstr "Desagrupado"
+msgstr "Не сгруппировано"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31600"
 msgid "Ends at"
-msgstr "Termina as"
+msgstr "Закончится в"
 
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31601"
 msgid "Edit tray"
-msgstr "Editar bandeja"
+msgstr "Изменить панель"
 
 #: /1080i/Dialog_DialogContextMenu.xml
 msgctxt "#31602"
 msgid "Add shortcut"
-msgstr "Adicionar atalho"
+msgstr "Добавить ярлык"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31604"
 msgid "Additional"
-msgstr "Adicional"
+msgstr "Дополнительный"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31605"
 msgid "Next aired"
-msgstr "Próxima exibição"
+msgstr "Следующая трансляция"
