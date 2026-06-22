@@ -6,6 +6,7 @@
     },
     "localize": {
         "LocalizePVR": "31249"
+        "LocalizeInitStatus": "31980"
     },
     "values": {
         "ReplaceWindowCommand": [
@@ -59,7 +60,7 @@
                 "Skin.SetString(SkinConstant.Numeric.08,$NUMBER[8])",
                 "Skin.SetString(SkinConstant.Numeric.09,$NUMBER[9])",
                 "Skin.SetString(SkinConstant.Numeric.10,$NUMBER[10])",
-                "Skin.SetString(SkinConstant.Numeric.11,$NUMBER[11])",
+                "Skin.SetString(SkinConstant.Numeric.11,$NUMBER[11])"，
                 "Skin.SetString(SkinConstant.Numeric.12,$NUMBER[12])",
                 "Skin.SetString(SkinConstant.Numeric.13,$NUMBER[13])",
                 "Skin.SetString(SkinConstant.Numeric.14,$NUMBER[14])",
@@ -148,7 +149,7 @@
                     "rules": ["Skin.HasSetting(TMDbHelper.Service)"],
                     "value": "Skin.SetBool(TMDbHelper.EnableData)"
                 }],
-                "SetProperty(InitStatus,正在初始化图形系统,1198)",
+                "SetProperty(InitStatus,{LocalizeInitStatus},1198)",
                 "RunScript(plugin.video.themoviedb.helper,blur_image={var_image_simplebackground},prefix=SimpleBackground)"
             ]
         }],
@@ -164,12 +165,12 @@
                 "System.HasPVRAddon",
                 "!PVR.HasTVChannels",
                 "!PVR.HasRadioChannels"
-            ],
+            ]，
             "value": [
                 "SetProperty(InitStatus,{LocalizePVR},1198)",
                 "route=run_executebuiltin=special://skin/shortcuts/skinvariables-startup.json&use_rules=True&var_image_simplebackground={var_image_simplebackground}"
             ]
-        },
+        }，
 
         "{ReplaceWindowCommand}",
         {
