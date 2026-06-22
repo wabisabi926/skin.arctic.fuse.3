@@ -5,7 +5,8 @@
         "VideoPath": "Skin.String(Startup.VideoPath)"
     },
     "localize": {
-        "LocalizePVR": "31249"
+        "LocalizePVR": "31249",
+        "LocalizeInitStatus": "31980"
     },
     "values": {
         "ReplaceWindowCommand": [
@@ -148,7 +149,7 @@
                     "rules": ["Skin.HasSetting(TMDbHelper.Service)"],
                     "value": "Skin.SetBool(TMDbHelper.EnableData)"
                 }],
-                "SetProperty(InitStatus,Reticulating Splines,1198)",
+                "SetProperty(InitStatus,{LocalizeInitStatus},1198)",
                 "RunScript(plugin.video.themoviedb.helper,blur_image={var_image_simplebackground},prefix=SimpleBackground)"
             ]
         }],

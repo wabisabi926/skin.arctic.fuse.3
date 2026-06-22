@@ -2319,6 +2319,10 @@ msgctxt "#31605"
 msgid "Next aired"
 msgstr ""
 
+msgctxt "#31980"
+msgid "Reticulating Splines"
+msgstr ""
+
 msgctxt "#31985"
 msgid "second"
 msgstr ""
