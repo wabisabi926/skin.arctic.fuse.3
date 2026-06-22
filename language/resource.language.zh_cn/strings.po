@@ -2312,3 +2312,7 @@ msgstr "更多"
 msgctxt "#31605"
 msgid "Next aired"
 msgstr "下次播出"
+
+msgctxt "#31980"
+msgid "Reticulating Splines"
+msgstr "正在初始化"
