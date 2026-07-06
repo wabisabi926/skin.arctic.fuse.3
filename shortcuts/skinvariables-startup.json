@@ -5,7 +5,7 @@
         "VideoPath": "Skin.String(Startup.VideoPath)"
     },
     "localize": {
-        "LocalizePVR": "31249"
+        "LocalizePVR": "31249",
         "LocalizeInitStatus": "31980"
     },
     "values": {
