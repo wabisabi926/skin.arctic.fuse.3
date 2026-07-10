@@ -1,16 +1,18 @@
 # 魔改内容
 
-1.增加豆瓣评分及显示个数（需要搭配魔改版 tmdb 助手） https://github.com/wabisabi926/plugin.video.themoviedb.helper/tree/douban ；
+1.增加：豆瓣评分及显示个数（需要搭配魔改版 tmdb 助手） https://github.com/wabisabi926/plugin.video.themoviedb.helper/tree/douban ；
 
-2.增加海报墙标题；
+2.增加：海报墙标题+优化海报墙的播放状态指示器；
 
-3.优化海报墙的播放状态指示器；
+3.修复：播放视频时 OSD 的视频小窗口的 杜比全景声，AAC，VP9，AV1等编码无显示；
 
-4.OSD 播放列表顺序优化及聚焦到当前播放剧集；
+4.美化：播放器处理窗口移植为 fuse2 风格；
 
-5.播放器处理窗口移植为 fuse2 风格；
+5.美化：音乐播放超时后由” 全屏纯歌词 “模式美化成” 专辑封面图 + 歌词并存 “模式
 
-6.完善中文翻译。
+6.增加：晶晨 CPM 提供皮肤（U3K）；
+
+7.完善中文翻译。
 
 
 # 额外推荐
