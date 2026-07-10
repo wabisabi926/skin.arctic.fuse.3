@@ -789,6 +789,7 @@
                     <param name="infolabel_videoaspect">VideoPlayer.VideoAspect</param>
                     <param name="infolabel_videocodec">VideoPlayer.VideoCodec</param>
                     <param name="infolabel_audiocodec">VideoPlayer.AudioCodec</param>
+                    <param name="infolabel_audiofeatures">VideoPlayer.AudioFeatures</param>
                     <param name="infolabel_audiochannels">VideoPlayer.AudioChannels</param>
                     <param name="itemgap">$PARAM[itemgap]</param>
                     <param name="align">$PARAM[align]</param>

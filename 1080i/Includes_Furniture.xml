@@ -156,6 +156,7 @@
         <param name="infolabel_videoaspect">ListItem.VideoAspect</param>
         <param name="infolabel_videocodec">ListItem.VideoCodec</param>
         <param name="infolabel_audiocodec">ListItem.AudioCodec</param>
+        <param name="infolabel_audiofeatures">ListItem.AudioFeatures</param>
         <param name="infolabel_audiochannels">ListItem.AudioChannels</param>
         <param name="align">right</param>
         <param name="itemgap">20</param>
@@ -182,12 +183,52 @@
                     <visible>!String.IsEmpty($PARAM[infolabel_videoaspect])</visible>
                 </control>
                 <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">flags/color/source/vp9.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>String.StartsWith($PARAM[infolabel_videocodec],vp9)</visible>
+                </control>
+                <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">flags/color/source/av1.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>String.StartsWith($PARAM[infolabel_videocodec],av1) | String.StartsWith($PARAM[infolabel_videocodec],av01)</visible>
+                </control>
+                <control type="image">
                     <texture background="true" colordiffuse="$PARAM[colordiffuse]">$INFO[$PARAM[infolabel_videocodec],flags/color/source/,.png]</texture>
                     <aspectratio>keep</aspectratio>
                     <height>48</height>
                     <width>71</width>
                     <centertop>50%</centertop>
-                    <visible>!String.IsEmpty($PARAM[infolabel_videocodec])</visible>
+                    <visible>!String.IsEmpty($PARAM[infolabel_videocodec]) + !String.StartsWith($PARAM[infolabel_videocodec],vp9) + !String.StartsWith($PARAM[infolabel_videocodec],av1) + !String.StartsWith($PARAM[infolabel_videocodec],av01)</visible>
+                </control>
+                <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">flags/color/audio/truehd.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>String.StartsWith($PARAM[infolabel_audiocodec],truehd)</visible>
+                </control>
+                <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">flags/color/audio/eac3.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>String.StartsWith($PARAM[infolabel_audiocodec],eac3)</visible>
+                </control>
+                <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">flags/color/audio/aac.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>String.StartsWith($PARAM[infolabel_audiocodec],aac)</visible>
                 </control>
                 <control type="image">
                     <texture background="true" colordiffuse="$PARAM[colordiffuse]">$INFO[$PARAM[infolabel_audiocodec],flags/color/audio/,.png]</texture>
@@ -195,7 +236,23 @@
                     <height>48</height>
                     <width>71</width>
                     <centertop>50%</centertop>
-                    <visible>!String.IsEmpty($PARAM[infolabel_audiocodec])</visible>
+                    <visible>!String.IsEmpty($PARAM[infolabel_audiocodec]) + !String.StartsWith($PARAM[infolabel_audiocodec],truehd) + !String.StartsWith($PARAM[infolabel_audiocodec],eac3) + !String.StartsWith($PARAM[infolabel_audiocodec],aac)</visible>
+                </control>
+                <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">flags/color/audio/atmos.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>String.Contains($PARAM[infolabel_audiocodec],atmos)</visible>
+                </control>
+                <control type="image">
+                    <texture background="true" colordiffuse="$PARAM[colordiffuse]">$INFO[$PARAM[infolabel_audiofeatures],flags/color/audio/,.png]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <height>48</height>
+                    <width>71</width>
+                    <centertop>50%</centertop>
+                    <visible>!String.IsEmpty($PARAM[infolabel_audiofeatures])</visible>
                 </control>
                 <control type="image">
                     <texture background="true" colordiffuse="$PARAM[colordiffuse]">$INFO[$PARAM[infolabel_audiochannels],flags/color/channels/,.png]</texture>
