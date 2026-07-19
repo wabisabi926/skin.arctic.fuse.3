@@ -2418,8 +2418,8 @@ msgstr "正常"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31625"
-msgid "High"
-msgstr "高"
+ msgid "High"
+ msgstr "高"
 
 msgctxt "#31980"
 msgid "Reticulating Splines"
