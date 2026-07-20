@@ -51,7 +51,7 @@
                 "Skin.SetString(SkinConstant.Numeric.00,$NUMBER[0])",
                 "Skin.SetString(SkinConstant.Numeric.01,$NUMBER[1])",
                 "Skin.SetString(SkinConstant.Numeric.02,$NUMBER[2])",
-                "Skin.SetString(SkinConstant.Numeric.03,$NUMBER[3])"，
+                "Skin.SetString(SkinConstant.Numeric.03,$NUMBER[3])",
                 "Skin.SetString(SkinConstant.Numeric.04,$NUMBER[4])",
                 "Skin.SetString(SkinConstant.Numeric.05,$NUMBER[5])",
                 "Skin.SetString(SkinConstant.Numeric.06,$NUMBER[6])",
@@ -64,7 +64,7 @@
                 "Skin.SetString(SkinConstant.Numeric.13,$NUMBER[13])",
                 "Skin.SetString(SkinConstant.Numeric.14,$NUMBER[14])",
                 "Skin.SetString(SkinConstant.Numeric.15,$NUMBER[15])",
-                "Skin.SetString(SkinConstant.Numeric.16,$NUMBER[16])"，
+                "Skin.SetString(SkinConstant.Numeric.16,$NUMBER[16])",
                 "Skin.SetString(SkinConstant.Numeric.17,$NUMBER[17])",
                 "Skin.SetString(SkinConstant.Numeric.18,$NUMBER[18])",
                 "Skin.SetString(SkinConstant.Numeric.19,$NUMBER[19])",
@@ -156,7 +156,7 @@
         "SetProperty(ReloadDone,1)",
         "SetProperty(ReloadDone,1,Home)",
 
-        "sleep=0.5"，
+        "sleep=0.5",
         {
             "rules": [
                 "!Skin.HasSetting(Startup.DisableWaitForLoad)",
