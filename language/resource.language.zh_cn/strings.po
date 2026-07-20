@@ -2788,3 +2788,7 @@ msgstr "已跳过"
 msgctxt "#31993"
 msgid "running"
 msgstr "运行中"
+
+msgctxt "#31994"
+msgid "Reticulating Splines"
+msgstr "正在初始化"

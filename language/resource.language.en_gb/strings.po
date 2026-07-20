@@ -2707,6 +2707,10 @@ msgctxt "#31993"
 msgid "running"
 msgstr ""
 
+msgctxt "#31994"
+msgid "Reticulating Splines"
+msgstr ""
+
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31610"
 msgid "Seasonal Themes"

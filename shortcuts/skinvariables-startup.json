@@ -5,7 +5,8 @@
         "VideoPath": "Skin.String(Startup.VideoPath)"
     },
     "localize": {
-        "LocalizePVR": "31249"
+        "LocalizePVR": "31249",
+        "LocalizeInitStatus": "31994"
     },
     "values": {
         "ReplaceWindowCommand": [
@@ -32,6 +33,9 @@
                         "Skin.SetBool(TMDbHelper.Service)",
                         "Skin.SetString(Background.DialogImage,Adaptive)",
                         "Skin.SetString(Background.Image,special://skin/extras/backgrounds/blur/purple_blur.jpg)",
+                        "Skin.SetString(HomeSwitcher.1101.Toggle,true)",
+                        "Skin.SetString(HomeSwitcher.1102.Toggle,true)",
+                        "Skin.SetString(HomeSwitcher.1103.Toggle,true)",
                         "Skin.SetString(HomeSwitcher.1107.Toggle,true)",
                         "Skin.SetString(HomeSwitcher.Home.Shortcut.Path,ActivateWindow(1181))",
                         "Skin.SetString(HomeSwitcher.Home.Spotlight.Path,special://skin/extras/playlists/RandomMovies.xsp)",
@@ -148,7 +152,7 @@
                     "rules": ["Skin.HasSetting(TMDbHelper.Service)"],
                     "value": "Skin.SetBool(TMDbHelper.EnableData)"
                 }],
-                "SetProperty(InitStatus,Reticulating Splines,1198)",
+                "SetProperty(InitStatus,{LocalizeInitStatus},1198)",
                 "RunScript(plugin.video.themoviedb.helper,blur_image={var_image_simplebackground},prefix=SimpleBackground)"
             ]
         }],
