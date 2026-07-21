@@ -104,6 +104,22 @@
                         <param name="flipx">false</param>
                         <param name="itemgap">osd_itemgap</param>
                     </include>
+
+                    <control type="button" id="6010">
+                        <include>Defs_OSD_Button</include>
+                        <onclick>Dialog.Close(all)</onclick>
+                        <onclick>ActivateWindow(musicplaylist)</onclick>
+                        <onfocus>ClearProperty(OSDArtistDetails,Home)</onfocus>
+                        <onfocus condition="String.IsEmpty(Window(Home).Property(ResetScroll))">SetProperty(ResetScroll," ",home)</onfocus>
+                        <onfocus condition="!String.IsEmpty(Window(Home).Property(ResetScroll))">ClearProperty(ResetScroll,home)</onfocus>
+                    </control>
+                    <include content="OSD_Button_Icon_Overlay">
+                        <param name="icon">special://skin/extras/icons/playlist.png</param>
+                        <param name="id">6010</param>
+                        <param name="groupid">6110</param>
+                        <param name="flipx">false</param>
+                        <param name="itemgap">osd_itemgap</param>
+                    </include>
                 </control>
 
                 <!-- Right Side Buttons -->
