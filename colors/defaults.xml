@@ -41,6 +41,7 @@
     <color name="dialog_bg_12">1f000000</color>
 
     <!-- Panels -->
+    <color name="panel_bg_100">ff000000</color>
     <color name="panel_bg_70">b3000000</color>
     <color name="panel_bg_50">80000000</color>
     <color name="panel_bg_12">1f000000</color>

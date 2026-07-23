@@ -274,7 +274,7 @@
                         <right>20</right>
 
                         <control type="button" id="22901">
-                            <texturenofocus colordiffuse="$VAR[$VAR[ColorSelected_30]]">special://skin/extras/icons/circle-arrow-up.png</texturenofocus>
+                            <texturenofocus colordiffuse="$VAR[ColorSelected_30]">special://skin/extras/icons/circle-arrow-up.png</texturenofocus>
                             <texturefocus colordiffuse="$VAR[ColorSelected]">special://skin/extras/icons/circle-arrow-up.png</texturefocus>
                             <onclick>RunPlugin($INFO[Container(22001).ListItem.Property(url),,&amp;func=do_move&amp;&amp;move::-1&amp;&amp;window_prop::url]$INFO[Container(22001).ListItem(-1).Property(item),&amp;&amp;offset::,])</onclick>
                             <onback>29999</onback>
@@ -283,7 +283,7 @@
                         </control>
 
                         <control type="button" id="22902">
-                            <texturenofocus colordiffuse="$VAR[$VAR[ColorSelected_30]]">special://skin/extras/icons/circle-arrow-down.png</texturenofocus>
+                            <texturenofocus colordiffuse="$VAR[ColorSelected_30]">special://skin/extras/icons/circle-arrow-down.png</texturenofocus>
                             <texturefocus colordiffuse="$VAR[ColorSelected]">special://skin/extras/icons/circle-arrow-down.png</texturefocus>
                             <onclick>RunPlugin($INFO[Container(22001).ListItem.Property(url),,&amp;func=do_move&amp;&amp;move::1&amp;&amp;window_prop::url]$INFO[Container(22001).ListItem(1).Property(item),&amp;&amp;offset::,])</onclick>
                             <onback>29999</onback>
@@ -292,7 +292,7 @@
                         </control>
 
                         <control type="button" id="22903">
-                            <texturenofocus colordiffuse="$VAR[$VAR[ColorSelected_30]]">special://skin/extras/icons/circle-plus.png</texturenofocus>
+                            <texturenofocus colordiffuse="$VAR[ColorSelected_30]">special://skin/extras/icons/circle-plus.png</texturenofocus>
                             <texturefocus colordiffuse="$VAR[ColorSelected]">special://skin/extras/icons/circle-plus.png</texturefocus>
 
                             <include>DialogShortcuts_Allow_SubGroups_Onclick</include>
@@ -308,7 +308,7 @@
                         </control>
 
                         <control type="button" id="22904">
-                            <texturenofocus colordiffuse="$VAR[$VAR[ColorSelected_30]]">special://skin/extras/icons/circle-xmark.png</texturenofocus>
+                            <texturenofocus colordiffuse="$VAR[ColorSelected_30]">special://skin/extras/icons/circle-xmark.png</texturenofocus>
                             <texturefocus colordiffuse="$VAR[ColorSelected]">special://skin/extras/icons/circle-xmark.png</texturefocus>
 
                             <include>DialogShortcuts_Allow_SubGroups_Onclick</include>
