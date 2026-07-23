@@ -51,6 +51,18 @@
         </definition>
     </include>
 
+    <include name="Hub_Disabled_Onload">
+        <param name="defaultcontrol">400</param>
+        <definition>
+            <include>Action_Blur_Onload</include>
+            <menucontrol>300</menucontrol>
+            <include content="Object_DefaultControl">
+                <param name="defaultcontrol">$PARAM[defaultcontrol]</param>
+                <param name="always">false</param>
+            </include>
+        </definition>
+    </include>
+
     <include name="Hub_Standard_Widget">
         <param name="include">List_Landscape_Row</param>
         <param name="dynamic">false</param>

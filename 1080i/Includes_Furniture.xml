@@ -42,6 +42,22 @@
         </control>
     </include>
 
+    <include name="View_Furniture_Scrollbar_V">
+        <param name="id">65</param>
+        <param name="height">585</param>
+        <param name="visible">true</param>
+        <definition>
+            <control type="scrollbar" id="$PARAM[id]">
+                <height>$PARAM[height]</height>
+                <width>10</width>
+                <right>0</right>
+                <top>0</top>
+                <visible>$PARAM[visible]</visible>
+                <include>Texture_Scrollbar_V</include>
+            </control>
+        </definition>
+    </include>
+
     <include name="Furniture_Header">
         <param name="label">$VAR[Label_Header_Main]</param>
         <param name="include_left">true</param>

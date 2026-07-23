@@ -20,6 +20,11 @@
         </definition>
     </include>
 
+    <include name="DialogPlotFake">
+        <definition>
+        </definition>
+    </include>
+
     <include name="DialogPlot">
         <param name="include_movement">DialogPlot_OnMove</param>
         <definition>
