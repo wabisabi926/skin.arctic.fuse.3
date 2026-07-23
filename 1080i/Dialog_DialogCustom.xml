@@ -1697,7 +1697,7 @@
             <param name="id">8001</param>
             <param name="control">radiobutton</param>
             <param name="dialog">true</param>
-            <label>Artist slideshow</label>
+            <label>$LOCALIZE[31983]</label>
             <onclick>Skin.ToggleSetting(Visualisation.HideSlideshow)</onclick>
             <selected>!Skin.HasSetting(Visualisation.HideSlideshow)</selected>
         </include>
@@ -1705,7 +1705,7 @@
             <param name="id">8002</param>
             <param name="control">radiobutton</param>
             <param name="dialog">true</param>
-            <label>Background colours</label>
+            <label>$LOCALIZE[31984]</label>
             <onclick>Skin.ToggleSetting(Visualisation.EnableColours)</onclick>
             <selected>Skin.HasSetting(Visualisation.EnableColours)</selected>
         </include>

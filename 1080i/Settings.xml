@@ -198,14 +198,14 @@
                                         <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
                                     </item>
                                     <item>
-                                        <label>TMDbHelper</label>
+                                        <label>$LOCALIZE[31982]</label>
                                         <label2>plugin.video.themoviedb.helper</label2>
                                         <icon>special://skin/extras/icons/tmdb.png</icon>
                                         <onclick>Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
                                         <visible>System.AddonIsEnabled(plugin.video.themoviedb.helper)</visible>
                                     </item>
                                     <item>
-                                        <label>Artist Slideshow</label>
+                                        <label>$LOCALIZE[31983]</label>
                                         <label2>script.artistslideshow</label2>
                                         <icon>special://skin/extras/icons/image.png</icon>
                                         <onclick>Addon.OpenSettings(script.artistslideshow)</onclick>
