@@ -4,20 +4,122 @@ KODI SKIN VALIDATION REPORT
 
 Skin:      skin.arctic.fuse.3
 Path:      D:\下载\AI\skin.arctic.fuse.3
-Generated: 2026-07-23 09:16:53
-Total:     240 errors, 98 warnings
+Generated: 2026-07-23 10:06:57
+Total:     269 errors, 98 warnings
 Excluded:  133 runtime-generated issues
 
 --------------------------------------------------------------------------------
 Category                    Errors   Warnings
 --------------------------------------------------------------------------------
+File Integrity                  32          0
 Fonts                            0         15
 IDs                             19          0
-Includes                       146          0
+Includes                       143          0
 Labels                           0         53
 Variables                       61          0
 XML Validation                  14         29
 --------------------------------------------------------------------------------
+
+
+============================================================
+ FILE INTEGRITY (32 issues)
+============================================================
+
+  1080i\Custom_1143_OSD_NextOverlay.xml
+    E L0     Windows Line Endings detected in Custom_1143_OSD_NextOverlay.xml
+
+  1080i\Custom_1195_SkinUserLoginScreen.xml
+    E L0     Windows Line Endings detected in Custom_1195_SkinUserLoginScreen.xml
+
+  1080i\DialogPlayerProcessInfo.xml
+    E L0     Windows Line Endings detected in DialogPlayerProcessInfo.xml
+
+  1080i\DialogSlider.xml
+    E L0     Windows Line Endings detected in DialogSlider.xml
+
+  1080i\Dialog_DialogColorPicker.xml
+    E L0     Windows Line Endings detected in Dialog_DialogColorPicker.xml
+
+  1080i\Dialog_DialogGameControllers.xml
+    E L0     Windows Line Endings detected in Dialog_DialogGameControllers.xml
+
+  1080i\Dialog_DialogKeyboard.xml
+    E L0     Windows Line Endings detected in Dialog_DialogKeyboard.xml
+
+  1080i\Dialog_DialogMediaSource.xml
+    E L0     Windows Line Endings detected in Dialog_DialogMediaSource.xml
+
+  1080i\Dialog_DialogNumeric.xml
+    E L0     Windows Line Endings detected in Dialog_DialogNumeric.xml
+
+  1080i\Dialog_DialogPVRGuideSearch.xml
+    E L0     Windows Line Endings detected in Dialog_DialogPVRGuideSearch.xml
+
+  1080i\Dialog_DialogPictureInfo.xml
+    E L0     Windows Line Endings detected in Dialog_DialogPictureInfo.xml
+
+  1080i\Dialog_DialogPlot.xml
+    E L0     Windows Line Endings detected in Dialog_DialogPlot.xml
+
+  1080i\Dialog_Parts.xml
+    E L0     Windows Line Endings detected in Dialog_Parts.xml
+
+  1080i\Dialog_SmartPlaylistEditor.xml
+    E L0     Windows Line Endings detected in Dialog_SmartPlaylistEditor.xml
+
+  1080i\FileManager.xml
+    E L0     Windows Line Endings detected in FileManager.xml
+
+  1080i\Includes_Buttons.xml
+    E L0     Windows Line Endings detected in Includes_Buttons.xml
+
+  1080i\Includes_Defaults.xml
+    E L0     Windows Line Endings detected in Includes_Defaults.xml
+
+  1080i\Includes_Furniture.xml
+    E L0     Windows Line Endings detected in Includes_Furniture.xml
+
+  1080i\Includes_Overlay.xml
+    E L0     Windows Line Endings detected in Includes_Overlay.xml
+
+  1080i\Includes_Search.xml
+    E L0     Windows Line Endings detected in Includes_Search.xml
+
+  1080i\Includes_Settings.xml
+    E L0     Windows Line Endings detected in Includes_Settings.xml
+
+  1080i\Includes_Views_PVR.xml
+    E L0     Windows Line Endings detected in Includes_Views_PVR.xml
+
+  1080i\Includes_Weather.xml
+    E L0     Windows Line Endings detected in Includes_Weather.xml
+
+  1080i\LoginScreen.xml
+    E L0     Windows Line Endings detected in LoginScreen.xml
+
+  1080i\MusicOSD.xml
+    E L0     Windows Line Endings detected in MusicOSD.xml
+
+  1080i\MusicVisualisation.xml
+    E L0     Windows Line Endings detected in MusicVisualisation.xml
+
+  1080i\SettingsScreenCalibration.xml
+    E L0     Windows Line Endings detected in SettingsScreenCalibration.xml
+
+  1080i\SlideShow.xml
+    E L0     Windows Line Endings detected in SlideShow.xml
+
+  1080i\VideoOSD.xml
+    E L0     Windows Line Endings detected in VideoOSD.xml
+
+  1080i\screensaver-arctic-mirage.xml
+    E L0     Windows Line Endings detected in screensaver-arctic-mirage.xml
+
+  1080i\script-cu-lrclyrics-main.xml
+    E L0     Windows Line Endings detected in script-cu-lrclyrics-main.xml
+
+  1080i\script-plex-skip_marker.xml
+    E L0     Windows Line Endings detected in script-plex-skip_marker.xml
 
 
 ============================================================
@@ -87,14 +189,8 @@ XML Validation                  14         29
 
 
 ============================================================
- INCLUDES (146 issues)
+ INCLUDES (143 issues)
 ============================================================
-
-  1080i\Custom_1109_Settings.xml
-    E L6     Include not defined: Hub_Disabled_Onload
-
-  1080i\DialogPVRChannelGuide.xml
-    E L92    Include not defined: DialogPlotFake
 
   1080i\Dialog_DialogColorPicker.xml
     E L368   Unused include: DialogColorPicker_TextureMaker_Swatches_Panel_ItemLayout
@@ -118,7 +214,7 @@ XML Validation                  14         29
     E L120   Unused include: DialogPictureInfo_Video
 
   1080i\Dialog_DialogPlot.xml
-    E L361   Unused include: DialogPlot_OnMove
+    E L366   Unused include: DialogPlot_OnMove
 
   1080i\Dialog_DialogProcessInfo.xml
     E L123   Unused include: DialogProcessInfo_Items
@@ -177,8 +273,8 @@ XML Validation                  14         29
     E L27    Unused include: Dimension_DialogNumeric
 
   1080i\Includes_Furniture.xml
-    E L294   Unused include: Furniture_Footer
-    E L305   Unused include: Furniture_MainLabel
+    E L310   Unused include: Furniture_Footer
+    E L321   Unused include: Furniture_MainLabel
 
   1080i\Includes_Home.xml
     E L828   Unused include: Home_Grouplist_Definition
@@ -311,9 +407,6 @@ XML Validation                  14         29
     E L472   Unused include: Widget_Busy_Spinner_Height__List_Corflute_Row
     E L481   Unused include: Widget_Busy_Spinner_Height__List_Overview_Row
     E L626   Unused include: Widget_NoResults
-
-  1080i\MyFavourites.xml
-    E L58    Include not defined: View_Furniture_Scrollbar_V
 
   1080i\SettingsCategory.xml
     E L229   Include not defined: defs_dialog_colorbutton
@@ -522,7 +615,7 @@ XML Validation                  14         29
     W L204   invalid tag for <default type=sliderex>: <orientation>
 
   1080i\Includes_Hubs.xml
-    W L483   invalid tag for <control type=group>: <orientation>
+    W L495   invalid tag for <control type=group>: <orientation>
 
   1080i\Includes_Info.xml
     W L29    invalid tag for <control type=label>: <texturefocus>
