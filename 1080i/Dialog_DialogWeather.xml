@@ -883,7 +883,7 @@
 
             <control type="grouplist">
                 <orientation>vertical</orientation>
-                <align>bottom</align>
+                <aligny>bottom</aligny>
                 <right>51%</right>
                 <left>30</left>
                 <bottom>20</bottom>
@@ -911,7 +911,7 @@
             </control>
             <control type="grouplist">
                 <orientation>vertical</orientation>
-                <align>bottom</align>
+                <aligny>bottom</aligny>
                 <left>51%</left>
                 <right>30</right>
                 <bottom>20</bottom>

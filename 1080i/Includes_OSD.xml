@@ -525,7 +525,7 @@
     </include>
 
     <include name="OSD_Progress_Details_Grouplist_Def">
-        <align>bottom</align>
+        <aligny>bottom</aligny>
         <left>0</left>
         <!-- <width>info_panel_w</width> -->
         <top>-40</top>
@@ -538,13 +538,13 @@
     </include>
 
     <include name="OSD_Progress_Details_Extended">
-        <param name="align">bottom</param>
+        <param name="aligny">bottom</param>
         <param name="landscape_visible">!Skin.HasSetting(OSD.DisableLandscapeOnInfo)</param>
         <param name="plot_visible">!Skin.HasSetting(OSD.DisablePlotRatingsOnInfo)</param>
         <definition>
             <control type="grouplist">
                 <bottom>40</bottom>
-                <align>$PARAM[align]</align>
+                <aligny>$PARAM[aligny]</aligny>
                 <left>40</left>
                 <include>OSD_Progress_Details_Grouplist_Def</include>
                 <control type="group">
@@ -1039,7 +1039,7 @@
     <include name="OSD_TitleDetails">
         <control type="grouplist">
             <orientation>vertical</orientation>
-            <align>bottom</align>
+            <aligny>bottom</aligny>
             <include content="Info_Title">
                 <param name="colordiffuse">panel_fg</param>
                 <param name="container" />

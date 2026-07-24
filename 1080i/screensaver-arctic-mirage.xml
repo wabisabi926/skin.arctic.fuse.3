@@ -58,7 +58,7 @@
                     <height>280</height>
                     <control type="grouplist">
                         <orientation>vertical</orientation>
-                        <align>bottom</align>
+                        <aligny>bottom</aligny>
                         <height>280</height>
                         <control type="textbox">
                             <font>font_title_midi</font>
@@ -109,7 +109,7 @@
                     <height>280</height>
                     <control type="grouplist">
                         <orientation>vertical</orientation>
-                        <align>bottom</align>
+                        <aligny>bottom</aligny>
                         <height>280</height>
                         <control type="textbox">
                             <font>font_title_midi</font>

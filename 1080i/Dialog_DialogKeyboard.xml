@@ -83,7 +83,7 @@
 
                             <!-- Keys -->
                             <control type="grouplist" id="8000">
-                                <align>bottom</align>
+                                <aligny>bottom</aligny>
                                 <orientation>vertical</orientation>
                                 <itemgap>keyboard_pad</itemgap>
                                 <include content="DialogKeyboard_Row">

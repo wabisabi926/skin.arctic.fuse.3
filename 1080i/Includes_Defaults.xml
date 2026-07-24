@@ -228,6 +228,10 @@
         <include>defs_dialog_button</include>
     </include>
 
+    <include name="defs_dialog_colorbutton">
+        <include>defs_dialog_button</include>
+    </include>
+
     <default type="grouplist">
         <scrolltime tween="quadratic">400</scrolltime>
         <usecontrolcoords>true</usecontrolcoords>

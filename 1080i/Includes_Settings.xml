@@ -69,7 +69,7 @@
             <onclick>ActivateWindow(servicesettings)</onclick>
         </item>
         <item>
-            <label>PVR</label>
+            <label>$LOCALIZE[32005]</label>
             <label2>$LOCALIZE[14301] / $LOCALIZE[19069] / $LOCALIZE[19043]</label2>
             <icon>special://skin/extras/icons/livetv.png</icon>
             <onclick>ActivateWindow(pvrsettings)</onclick>

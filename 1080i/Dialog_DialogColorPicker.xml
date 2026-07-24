@@ -126,7 +126,7 @@
             <control type="grouplist" id="8000">
                 <onleft>61</onleft>
                 <itemgap>0</itemgap>
-                <align>bottom</align>
+                <aligny>bottom</aligny>
                 <orientation>vertical</orientation>
                 <include>Size_Grouplist_Pad</include>
                 <visible allowhiddenfocus="true">ControlGroup(8000).HasFocus()</visible>
@@ -191,7 +191,7 @@
                 <onleft>61</onleft>
                 <itemgap>10</itemgap>
                 <bottom>10</bottom>
-                <align>bottom</align>
+                <aligny>bottom</aligny>
                 <orientation>vertical</orientation>
                 <include>Size_Grouplist_Pad</include>
                 <visible>!ControlGroup(8000).HasFocus()</visible>

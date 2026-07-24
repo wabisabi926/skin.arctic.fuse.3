@@ -1372,7 +1372,7 @@
 
     <include name="DialogInfo_VideoButtons_Trakt">
         <item>
-            <label>Trakt</label>
+            <label>$LOCALIZE[32004]</label>
             <icon>special://skin/extras/icons/trakt.png</icon>
             <onclick>Dialog.Close(1172,true)</onclick>
             <onclick>$VAR[Action_Sync]</onclick>

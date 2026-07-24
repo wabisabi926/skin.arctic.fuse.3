@@ -212,14 +212,14 @@
                                         <visible>System.AddonIsEnabled(script.artistslideshow)</visible>
                                     </item>
                                     <item>
-                                        <label>Up Next</label>
+                                        <label>$LOCALIZE[32001]</label>
                                         <label2>service.upnext</label2>
                                         <icon>special://skin/extras/icons/arrows-turn-right.png</icon>
                                         <onclick>Addon.OpenSettings(service.upnext)</onclick>
                                         <visible>System.AddonIsEnabled(service.upnext)</visible>
                                     </item>
                                     <item>
-                                        <label>Arctic Mirage</label>
+                                        <label>$LOCALIZE[32002]</label>
                                         <label2>screensaver.arctic.mirage</label2>
                                         <icon>special://skin/extras/icons/sun2.png</icon>
                                         <onclick>Addon.OpenSettings(screensaver.arctic.mirage)</onclick>

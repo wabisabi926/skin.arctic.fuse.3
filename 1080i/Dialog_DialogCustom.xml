@@ -1713,7 +1713,7 @@
             <param name="id">8003</param>
             <param name="control">radiobutton</param>
             <param name="dialog">true</param>
-            <label>Scrolling text</label>
+            <label>$LOCALIZE[31991]</label>
             <onclick>Skin.ToggleSetting(Visualisation.EnableScrollingText)</onclick>
             <selected>Skin.HasSetting(Visualisation.EnableScrollingText)</selected>
         </include>
