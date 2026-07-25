@@ -1286,16 +1286,6 @@ msgctxt "#31309"
 msgid "Glass"
 msgstr "زجاجي"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31310"
-msgid "Expand"
-msgstr "توسعة"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31311"
-msgid "Weekly"
-msgstr "اسبوعي"
-
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
 msgid "View"
@@ -1813,11 +1803,6 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr ""
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31465"
-msgid "Rain chance"
-msgstr "فرصة هطول مطر"
-
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31466"
 msgid "Blur background"
@@ -1837,26 +1822,6 @@ msgstr "تصميم العنوان"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "اختيار الاختصار"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31470"
-msgid "Wind gusts"
-msgstr "هبوب رياح"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31471"
-msgid "Fire danger"
-msgstr "خطر حريق"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31472"
-msgid "Rain since 9am"
-msgstr "مطر منذ التاسعة"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31473"
-msgid "Radar"
-msgstr "رادار"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -2043,11 +2008,6 @@ msgctxt "#31519"
 msgid "Empty widget placeholder"
 msgstr "اخلاء مكان الودجت الغير متاح"
 
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31520"
-msgid "Cloudiness"
-msgstr "تغيم"
-
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2062,41 +2022,6 @@ msgstr "امسح الودجتس ولا تفعل الاخفاء"
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "والاخفآء للاختصارات سيضر الاداء "
-
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31525"
-msgid "Visibility"
-msgstr "الرؤية"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31526"
-msgid "Hour"
-msgstr "ساعة"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31527"
-msgid "Later"
-msgstr "لاحقا"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31528"
-msgid "Particulate"
-msgstr "حبيبات"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31529"
-msgid "Ozone"
-msgstr "اوزون"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31530"
-msgid "Solar radiation"
-msgstr "الإشعاع الشمسي"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31531"
-msgid "Carbon monoxide"
-msgstr "أول أوكسيد الكربون"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"

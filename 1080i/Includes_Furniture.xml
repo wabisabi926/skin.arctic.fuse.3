@@ -20,9 +20,6 @@
     </include>
 
 
-    <variable name="Furniture_Header_Right_Temperature">
-        <value condition="!Skin.HasSetting(Header.DisableWeather)">$INFO[Weather.Temperature]</value>
-    </variable>
     <include name="Furniture_Header_Right">
         <control type="group">
             <right>0</right>
@@ -32,7 +29,7 @@
                 <param name="align">right</param>
             </include>
             <control type="label">
-                <label>$INFO[System.Time]$VAR[Furniture_Header_Right_Temperature, • ,]</label>
+                <label>$INFO[System.Time]</label>
                 <align>right</align>
                 <aligny>center</aligny>
                 <textcolor>$PARAM[textcolor]</textcolor>

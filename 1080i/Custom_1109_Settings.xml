@@ -8,17 +8,6 @@
     </include>
     <controls>
 
-        <control type="list" id="501">
-            <orientation>horizontal</orientation>
-            <autoscroll delay="0" time="20000" repeat="0">true</autoscroll>
-            <onclick>Weather.LocationNext</onclick>
-            <onup>601</onup>
-            <onfocus>SetFocus(601)</onfocus>
-            <itemlayout />
-            <focusedlayout />
-            <content sortby="random" target="images">resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]/</content>
-        </control>
-
         <include>Hub_Window_Background</include>
 
         <include content="Home_Control" condition="!String.IsEmpty(Skin.String(HomeSwitcher.1109.Toggle))">
@@ -40,9 +29,6 @@
                 <include content="Hub_Combined_Widgets_Grouplist">
                     <include>Hub_Settings_Widgets</include>
                 </include>
-
-                <include>Hub_Weather_Widget</include>
-
 
                 <include content="List_SettingsWidget">
                     <param name="id">503</param>

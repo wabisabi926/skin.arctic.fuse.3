@@ -349,7 +349,6 @@
     </variable>
 
     <variable name="Image_StartUp">
-        <value condition="Weather.IsFetched + !String.IsEmpty(Weather.FanartCode) + System.HasAddon(resource.images.weatherfanart.multi) + [String.IsEmpty(Skin.String(Startup.ImageFolder)) | Skin.String(Startup.ImageFolder,special://skin/extras/backgrounds/launch/)]">resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]/</value>
         <value condition="!String.IsEmpty(Skin.String(Startup.ImageFolder))">$INFO[Skin.String(Startup.ImageFolder)]</value>
         <value>special://skin/extras/backgrounds/launch/</value>
     </variable>

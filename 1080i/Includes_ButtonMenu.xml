@@ -338,29 +338,6 @@
         </include>
     </include>
 
-    <include name="ButtonMenu_Weather">
-        <include content="ButtonMenu_Special_Button">
-            <param name="id">$PARAM[id]</param>
-            <param name="toplabel">$INFO[Weather.Temperature]</param>
-            <param name="sublabel">$INFO[Weather.Conditions]</param>
-            <param name="icon">$INFO[Weather.FanartCode,resource://resource.images.weathericons.white/,.png]</param>
-            <param name="icon_bordersize">12</param>
-            <param name="icon_withtext">true</param>
-            <nested />
-            <control type="button" id="$PARAM[id]">
-                <onup>$PARAM[onup]</onup>
-                <ondown>$PARAM[ondown]</ondown>
-                <onright>$PARAM[onright]</onright>
-                <onleft>$PARAM[onleft]</onleft>
-                <oninfo>$PARAM[onback]</oninfo>
-                <onback>$PARAM[onback]</onback>
-                <onclick>Action(Back)</onclick>
-                <onclick>ActivateWindow(1161)</onclick>
-                <include>defs_dialog_button</include>
-            </control>
-        </include>
-    </include>
-
     <include name="ButtonMenu_Custom">
         <include content="ButtonMenu_Special_Button">
             <param name="id">$PARAM[id]</param>
@@ -420,19 +397,6 @@
 
     <include name="ButtonMenu_LayoutGroup">
         <include content="ButtonMenu_Custom" condition="Skin.String($PARAM[include],Custom)">
-            <param name="id">$PARAM[id]</param>
-            <param name="onup">$PARAM[onup]</param>
-            <param name="ondown">$PARAM[ondown]</param>
-            <param name="onleft">$PARAM[onleft]</param>
-            <param name="onright">$PARAM[onright]</param>
-            <param name="onclick">$PARAM[onclick]</param>
-            <param name="label">$PARAM[label]</param>
-            <param name="icon">$PARAM[icon]</param>
-            <param name="onback">$PARAM[onback]</param>
-            <nested />
-        </include>
-
-        <include content="ButtonMenu_Weather" condition="Skin.String($PARAM[include],Weather)">
             <param name="id">$PARAM[id]</param>
             <param name="onup">$PARAM[onup]</param>
             <param name="ondown">$PARAM[ondown]</param>

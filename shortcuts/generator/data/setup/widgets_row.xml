@@ -54,10 +54,6 @@
     </rules>
     <rules name="widget_path">
         <rule>
-            <condition>{item_path}==Weather</condition>
-            <value>-</value>
-        </rule>
-        <rule>
             <condition>{item_path}==Custom_Submenu</condition>
             <value>plugin://script.skinvariables/?info=get_shortcuts_node&amp;amp;guid={item_guid}&amp;amp;menu={item_menu}&amp;amp;mode=submenu&amp;amp;skin=$VAR[Path_SkinVariables_SkinFolder]$INFO[Window(Home).Property(SkinVariables.ShortcutsNode.Reload),&amp;amp;reload=,]</value>
         </rule>
@@ -172,10 +168,6 @@
     </rules>
     <value name="widget_detailed">False</value>
     <rules name="widget_custom_content">
-        <rule>
-            <condition>{item_path}==Weather</condition>
-            <value><![CDATA[<include>Weather_Details_HighLow_Items</include>]]></value>
-        </rule>
     </rules>
     <rules name="widget_custom_onclick">
         <rule>

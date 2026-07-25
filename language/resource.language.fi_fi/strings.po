@@ -1239,16 +1239,6 @@ msgctxt "#31309"
 msgid "Glass"
 msgstr "Lasi"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31310"
-msgid "Expand"
-msgstr "Laajenna"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31311"
-msgid "Weekly"
-msgstr "Viikoittainen"
-
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
 msgid "View"
@@ -1765,11 +1755,6 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "Seinä - Banneri"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31465"
-msgid "Rain chance"
-msgstr "Sateen todennäköisyys"
-
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1784,26 +1769,6 @@ msgstr "Ruutujen määrä"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "Valitse pikakuvake"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31470"
-msgid "Wind gusts"
-msgstr "Tuulenpuuskia"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31471"
-msgid "Fire danger"
-msgstr "Palovaara"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31472"
-msgid "Rain since 9am"
-msgstr "Sadetta aamu 9:stä lähtien"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31473"
-msgid "Radar"
-msgstr "Tutka"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1990,11 +1955,6 @@ msgctxt "#31519"
 msgid "Empty widget placeholder"
 msgstr "Korvaa tyhjät widgetit paikkamerkillä"
 
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31520"
-msgid "Cloudiness"
-msgstr "Pilvisyys"
-
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2009,41 +1969,6 @@ msgstr "On suositeltavaa poistaa tyhjät widgetit piilottamisen sijaan."
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "Piilotettujen widgetien uudelleenlataus aiheuttaa ylimääräistä kuormitusta järjestelmälle."
-
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31525"
-msgid "Visibility"
-msgstr "Näkyvyys"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31526"
-msgid "Hour"
-msgstr "Tunti"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31527"
-msgid "Later"
-msgstr "Myöhemmin"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31528"
-msgid "Particulate"
-msgstr "Hiukkaset"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31529"
-msgid "Ozone"
-msgstr "Otsoni"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31530"
-msgid "Solar radiation"
-msgstr "Aurinkosäteily"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31531"
-msgid "Carbon monoxide"
-msgstr "Häkä"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"

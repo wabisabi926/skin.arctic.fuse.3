@@ -1224,16 +1224,6 @@ msgctxt "#31309"
 msgid "Glass"
 msgstr "Üveg"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31310"
-msgid "Expand"
-msgstr "Kiterjesztés"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31311"
-msgid "Weekly"
-msgstr "Heti"
-
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
 msgid "View"
@@ -1750,11 +1740,6 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "Banner fal"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31465"
-msgid "Rain chance"
-msgstr "Csapadék esélye"
-
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1769,26 +1754,6 @@ msgstr "Csempe kinézet"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "Parancsikon kiválasztás"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31470"
-msgid "Wind gusts"
-msgstr "Széllökések"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31471"
-msgid "Fire danger"
-msgstr "Tűzveszély"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31472"
-msgid "Rain since 9am"
-msgstr "Eső 9 óta"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31473"
-msgid "Radar"
-msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1975,11 +1940,6 @@ msgctxt "#31519"
 msgid "Empty widget placeholder"
 msgstr "Üres widget hely"
 
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31520"
-msgid "Cloudiness"
-msgstr "Felhős"
-
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -1994,41 +1954,6 @@ msgstr "Ajánlott, hogy a nem használt widgeteket az elrejtésük helyett tör�
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "Az üres widgetek elrejtése a frissítés teljesítmények csökkenésével is jár."
-
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31525"
-msgid "Visibility"
-msgstr "Látótávolság"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31526"
-msgid "Hour"
-msgstr "Óra"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31527"
-msgid "Later"
-msgstr "Később"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31528"
-msgid "Particulate"
-msgstr "Részecske"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31529"
-msgid "Ozone"
-msgstr "Ózon"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31530"
-msgid "Solar radiation"
-msgstr "Napsugárzás"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31531"
-msgid "Carbon monoxide"
-msgstr "Szén monoxid"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"

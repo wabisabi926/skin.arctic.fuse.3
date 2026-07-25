@@ -1244,16 +1244,6 @@ msgctxt "#31309"
 msgid "Glass"
 msgstr "Verre"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31310"
-msgid "Expand"
-msgstr "Étendre"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31311"
-msgid "Weekly"
-msgstr "Hebdomadaire"
-
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
 msgid "View"
@@ -1770,11 +1760,6 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "Mur Bannière"
 
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31465"
-msgid "Rain chance"
-msgstr "Risque de pluie"
-
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1789,26 +1774,6 @@ msgstr "Disposition des tuiles"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "Choisir le raccourci"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31470"
-msgid "Wind gusts"
-msgstr "Rafales de vent"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31471"
-msgid "Fire danger"
-msgstr "Risque d'incendie"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31472"
-msgid "Rain since 9am"
-msgstr "Pluie depuis 9h"
-
-#: /1080i/Custom_1161_Dialog_Weather.xml
-msgctxt "#31473"
-msgid "Radar"
-msgstr "Radar"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1995,11 +1960,6 @@ msgctxt "#31519"
 msgid "Empty widget placeholder"
 msgstr "Emplacement widget vide"
 
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31520"
-msgid "Cloudiness"
-msgstr "Couverture nuageuse"
-
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2014,41 +1974,6 @@ msgstr "Il est recommandé de supprimer les widgets inutilisés plutôt que de l
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "Masquer les widgets vides consomme également des ressources supplémentaires."
-
-#: /1080i/Includes_Weather_Radar.xml
-msgctxt "#31525"
-msgid "Visibility"
-msgstr "Visibilité"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31526"
-msgid "Hour"
-msgstr "Heure"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31527"
-msgid "Later"
-msgstr "Plus tard"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31528"
-msgid "Particulate"
-msgstr "Particules"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31529"
-msgid "Ozone"
-msgstr "Ozone"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31530"
-msgid "Solar radiation"
-msgstr "Rayonnement solaire"
-
-#: /1080i/Includes_Weather_Forecast.xml
-msgctxt "#31531"
-msgid "Carbon monoxide"
-msgstr "Monoxyde de carbone"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"

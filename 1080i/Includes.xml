@@ -39,7 +39,6 @@
     <include file="Dialog_DialogProcessInfo.xml" />
     <include file="Dialog_DialogSelect.xml" />
     <include file="Dialog_DialogContextMenu.xml" />
-    <include file="Dialog_DialogWeather.xml" />
     <include file="Dialog_DialogSettings.xml" />
     <include file="Dialog_DialogSubtitles.xml" />
     <include file="Dialog_DialogPlot.xml" />
@@ -67,7 +66,7 @@
     <include file="Includes_OSD_CastInfo.xml" />
     <include file="Includes_Actions.xml" />
     <include file="Includes_Animations.xml" />
-    <include file="Includes_Weather.xml" />
+
     <include file="Includes_Lists.xml" />
     <include file="Includes_Layouts.xml" />
     <include file="Includes_Widgets.xml" />

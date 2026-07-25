@@ -211,9 +211,6 @@
     <constant name="upnext_image_w">356</constant>
     <constant name="upnext_image_h">200</constant>
 
-    <!-- Weather -->
-    <constant name="weather_forecast_h">260</constant>
-
     <!-- Keyboard -->
     <constant name="keyboard_pad">10</constant>
     <constant name="keyboard_spacebar_w">260</constant>

@@ -1218,20 +1218,6 @@
             "link": "true"
         },
         {
-            "name": "天气",
-            "comment": "Weather",
-            "path": "ActivateWindow(weather)",
-            "icon": "special://skin/extras/icons/sun2.png",
-            "link": "true"
-        },
-        {
-            "name": "天气",
-            "comment": "Weather",
-            "path": "ActivateWindow(1161)",
-            "icon": "special://skin/extras/icons/cloud-sun-rain.png",
-            "link": "true"
-        },
-        {
             "name": "收藏",
             "comment": "Favourites",
             "path": "ActivateWindow(1160)",

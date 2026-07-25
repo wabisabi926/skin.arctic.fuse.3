@@ -1069,7 +1069,6 @@
         <value condition="Window.IsVisible(settings)">$LOCALIZE[5]</value>
         <value condition="Window.IsVisible(videoplaylist)">$LOCALIZE[559]</value>
         <value condition="Window.IsVisible(musicplaylist)">$LOCALIZE[559]</value>
-        <value condition="Window.IsVisible(weather)">$LOCALIZE[8]</value>
         <value condition="Window.IsVisible(filemanager)">$LOCALIZE[7]</value>
         <value condition="Window.IsVisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[10503]</value>
         <value condition="Window.IsVisible(tvchannels)">$LOCALIZE[10700]</value>
