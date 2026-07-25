@@ -660,8 +660,7 @@ msgctxt "#31135"
 msgid "Page"
 msgstr "页"
 
-#: /1080i/Includes_Labels.xml
-#: For Spotlight to allow shorter labels which fit
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
 msgctxt "#31136"
 msgid "Browse"
 msgstr "浏览"
@@ -696,8 +695,7 @@ msgctxt "#31143"
 msgid "Classic"
 msgstr "经典"
 
-#: /1080i/Includes_Labels.xml
-#: For Spotlight to allow shorter labels which fit
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
 msgctxt "#31144"
 msgid "Play"
 msgstr "播放"
@@ -721,10 +719,20 @@ msgctxt "#31148"
 msgid "Black Onyx"
 msgstr "黑缟玛瑙"
 
+#: /1080i/Settings.xml /1080i/SettingsSystemInfo.xml
+msgctxt "#31149"
+msgid "Used memory"
+msgstr "已用内存"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31150"
 msgid "Categories"
 msgstr "类别"
+
+#: /1080i/Settings.xml
+msgctxt "#31151"
+msgid "Customise video info"
+msgstr "自定义视频信息"
 
 msgctxt "#31154"
 msgid "Misc options"
@@ -899,7 +907,7 @@ msgctxt "#31207"
 msgid "Codecs"
 msgstr "编解码器"
 
-#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+#: /1080i/SkinSettings.xml
 msgctxt "#31208"
 msgid "Header"
 msgstr "页眉"
@@ -1300,10 +1308,10 @@ msgctxt "#31320"
 msgid "Square"
 msgstr "方形"
 
-#: /1080i/Includes_SkinSettings.xml
+#: /1080i/Includes_SkinSettings.xml /1080i/Settings.xml
 msgctxt "#31321"
-msgid "Select viewtypes"
-msgstr "选择视图类型"
+msgid "Customise viewtypes"
+msgstr "自定义视图类型"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
 msgctxt "#31322"
@@ -1552,7 +1560,6 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "发行年份"
 
-
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1707,10 +1714,10 @@ msgctxt "#31432"
 msgid "Adaptive"
 msgstr "自适应"
 
-#: /1080i/SkinSettings.xml
+#: /1080i/Includes_SkinSettings.xml /1080i/Settings.xml
 msgctxt "#31434"
-msgid "Video OSD"
-msgstr "视频 OSD"
+msgid "Customise video OSD"
+msgstr "自定义视频 OSD"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31435"
@@ -1842,13 +1849,10 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "列表：Flixart"
 
-
-
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "暂停"
-
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
@@ -2327,8 +2331,8 @@ msgstr "正常"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31625"
- msgid "High"
- msgstr "高"
+msgid "High"
+msgstr "高"
 
 msgctxt "#31980"
 msgid "Reticulating Splines"
