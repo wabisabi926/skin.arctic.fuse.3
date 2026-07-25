@@ -185,15 +185,6 @@
             </include>
 
             <include content="Button_Dialog">
-                <param name="groupid">9226</param>
-                <param name="id">9026</param>
-                <param name="icon">special://skin/extras/icons/globe.png</param>
-                <label>Wiki</label>
-                <onclick>Close</onclick>
-                <onclick>runscript(script.wikipedia,wikipedia=$VAR[Path_Wikipedia_Title],tmdb_type=$VAR[Path_Wikipedia_Type])</onclick>
-            </include>
-
-            <include content="Button_Dialog">
                 <param name="groupid">9227</param>
                 <param name="id">9027</param>
                 <param name="icon">special://skin/extras/icons/info2.png</param>

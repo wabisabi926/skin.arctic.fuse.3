@@ -195,19 +195,6 @@
         <value>$INFO[ListItem.Set]</value>
     </variable>
 
-    <variable name="Path_Wikipedia_Title">
-        <value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.TVShowTitle]</value>
-        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
-        <value>$INFO[ListItem.Label]</value>
-    </variable>
-
-    <variable name="Path_Wikipedia_Type">
-        <value condition="String.IsEqual(ListItem.DBType,tvshow)">tv</value>
-        <value condition="String.IsEqual(ListItem.DBType,season)">tv</value>
-        <value condition="String.IsEqual(ListItem.DBType,episode)">tv</value>
-        <value condition="String.IsEqual(ListItem.DBType,movie)">movie</value>
-    </variable>
-
     <variable name="Path_InfoParams_TMDbType">
         <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type),movie)">movie</value>
         <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type),tv)">tv</value>

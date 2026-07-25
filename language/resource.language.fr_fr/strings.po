@@ -1165,11 +1165,6 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr "Mode tactile"
 
-#: /1080i/script-wikipedia.xml
-msgctxt "#31290"
-msgid "Attribution"
-msgstr "Attribution"
-
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
@@ -1506,7 +1501,6 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "Année de sortie"
 
-
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1796,13 +1790,10 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "Liste Flixart"
 
-
-
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "Pause"
-
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"

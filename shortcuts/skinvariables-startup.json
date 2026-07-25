@@ -107,11 +107,15 @@
                 }],
                 [{
                     "rules": ["String.IsEqual(Skin.String(DialogInfo.Movies.Item03),Trailer)"],
-                    "value": "Skin.SetString(DialogInfo.Movies.Item03,Wikipedia)"
+                    "value": "Skin.SetString(DialogInfo.Movies.Item03,Plot)"
+                }],
+                [{
+                    "rules": ["String.IsEqual(Skin.String(DialogInfo.Movies.Item03),Wikipedia)"],
+                    "value": "Skin.SetString(DialogInfo.Movies.Item03,Plot)"
                 }],
                 [{
                     "rules": ["String.IsEmpty(Skin.String(DialogInfo.Movies.Item03))"],
-                    "value": "Skin.SetString(DialogInfo.Movies.Item03,Wikipedia)"
+                    "value": "Skin.SetString(DialogInfo.Movies.Item03,Plot)"
                 }],
                 [{
                     "rules": ["String.IsEqual(Skin.String(DialogInfo.Others.Item01),Trailer)"],
@@ -131,11 +135,15 @@
                 }],
                 [{
                     "rules": ["String.IsEqual(Skin.String(DialogInfo.Others.Item03),Trailer)"],
-                    "value": "Skin.SetString(DialogInfo.Others.Item03,Wikipedia)"
+                    "value": "Skin.SetString(DialogInfo.Others.Item03,Plot)"
+                }],
+                [{
+                    "rules": ["String.IsEqual(Skin.String(DialogInfo.Others.Item03),Wikipedia)"],
+                    "value": "Skin.SetString(DialogInfo.Others.Item03,Plot)"
                 }],
                 [{
                     "rules": ["String.IsEmpty(Skin.String(DialogInfo.Others.Item03))"],
-                    "value": "Skin.SetString(DialogInfo.Others.Item03,Wikipedia)"
+                    "value": "Skin.SetString(DialogInfo.Others.Item03,Plot)"
                 }],
                 [{
                     "rules": ["String.IsEmpty(Skin.String(HomeSwitcher.Home.Mode))"],

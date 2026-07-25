@@ -147,19 +147,6 @@
         </definition>
     </include>
 
-    <!-- Variables -->
-    <variable name="DialogContextMenu_Wiki_Title">
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_tvshowtitle))">$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.base_tvshowtitle)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_title))">$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.base_title)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_label))">$ESCINFO[Window(Home).Property(TMDbHelper.ListItem.base_label)]</value>
-    </variable>
-
-    <variable name="DialogContextMenu_Wiki_Type">
-        <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),tvshow) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),season) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),episode)"> tv series</value>
-        <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),movie)"> film</value>
-    </variable>
-
-
     <!-- Items -->
     <include name="DialogContextMenu_Items">
         <item>
@@ -168,14 +155,6 @@
             <onclick>Close</onclick>
             <onclick>ActivateWindow(1113)</onclick>
             <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_plot))]</visible>
-            <selected>$EXP[Exp_TMDbHelper_IsData]</selected>
-        </item>
-        <item>
-            <label>Wiki</label>
-            <icon>special://skin/extras/icons/globe.png</icon>
-            <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_title))]</visible>
-            <onclick>Dialog.Close(contextmenu,true)</onclick>
-            <onclick>runscript(script.wikipedia,wikipedia=$VAR[DialogContextMenu_Wiki_Title]$VAR[DialogContextMenu_Wiki_Type])</onclick>
             <selected>$EXP[Exp_TMDbHelper_IsData]</selected>
         </item>
         <item>

@@ -1219,11 +1219,6 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr "触控模式"
 
-#: /1080i/script-wikipedia.xml
-msgctxt "#31290"
-msgid "Attribution"
-msgstr "署名"
-
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."

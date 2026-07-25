@@ -1318,15 +1318,6 @@
         </item>
     </include>
 
-    <include name="DialogInfo_VideoButtons_Wikipedia">
-        <item>
-            <label>Wikipedia</label>
-            <icon>special://skin/extras/icons/globe.png</icon>
-            <onclick>Dialog.Close(1172,true)</onclick>
-            <onclick>runscript(script.wikipedia,wikipedia=$VAR[Path_Wikipedia_Title],tmdb_type=$VAR[Path_Wikipedia_Type])</onclick>
-        </item>
-    </include>
-
     <include name="DialogInfo_VideoButtons_Plot">
         <item>
             <label>$LOCALIZE[207]</label>
@@ -1387,7 +1378,6 @@
 
     <include name="DialogInfo_VideoButtons_Position">
         <include condition="Skin.String(DialogInfo.$PARAM[type].$PARAM[item],Trakt)">DialogInfo_VideoButtons_Trakt</include>
-        <include condition="Skin.String(DialogInfo.$PARAM[type].$PARAM[item],Wikipedia)">DialogInfo_VideoButtons_Wikipedia</include>
         <include condition="Skin.String(DialogInfo.$PARAM[type].$PARAM[item],Plot)">DialogInfo_VideoButtons_Plot</include>
         <include condition="Skin.String(DialogInfo.$PARAM[type].$PARAM[item],Artwork)">DialogInfo_VideoButtons_Artwork</include>
         <include condition="Skin.String(DialogInfo.$PARAM[type].$PARAM[item],UserRating)">DialogInfo_VideoButtons_UserRating</include>
@@ -1399,7 +1389,6 @@
 
     <include name="DialogInfo_VideoButtons_Overflow">
         <include condition="!Skin.String(DialogInfo.$PARAM[type].item01,Trakt) + !Skin.String(DialogInfo.$PARAM[type].item02,Trakt) + !Skin.String(DialogInfo.$PARAM[type].item03,Trakt)">DialogInfo_VideoButtons_Trakt</include>
-        <include condition="!Skin.String(DialogInfo.$PARAM[type].item01,Wikipedia) + !Skin.String(DialogInfo.$PARAM[type].item02,Wikipedia) + !Skin.String(DialogInfo.$PARAM[type].item03,Wikipedia)">DialogInfo_VideoButtons_Wikipedia</include>
         <include condition="!Skin.String(DialogInfo.$PARAM[type].item01,Plot) + !Skin.String(DialogInfo.$PARAM[type].item02,Plot) + !Skin.String(DialogInfo.$PARAM[type].item03,Plot)">DialogInfo_VideoButtons_Plot</include>
         <include condition="!Skin.String(DialogInfo.$PARAM[type].item01,Artwork) + !Skin.String(DialogInfo.$PARAM[type].item02,Artwork) + !Skin.String(DialogInfo.$PARAM[type].item03,Artwork)">DialogInfo_VideoButtons_Artwork</include>
         <include condition="!Skin.String(DialogInfo.$PARAM[type].item01,UserRating) + !Skin.String(DialogInfo.$PARAM[type].item02,UserRating) + !Skin.String(DialogInfo.$PARAM[type].item03,UserRating)">DialogInfo_VideoButtons_UserRating</include>

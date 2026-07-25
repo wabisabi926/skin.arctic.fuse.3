@@ -1292,14 +1292,6 @@
             <param name="content">$PARAM[content]</param>
         </include>
         <include content="DialogCustom_Buttons_Items_Template">
-            <param name="id">8004</param>
-            <param name="groupid">8104</param>
-            <param name="label">Wikipedia</param>
-            <param name="type">Wikipedia</param>
-            <param name="item">$PARAM[item]</param>
-            <param name="content">$PARAM[content]</param>
-        </include>
-        <include content="DialogCustom_Buttons_Items_Template">
             <param name="id">8005</param>
             <param name="groupid">8105</param>
             <param name="label">$LOCALIZE[207]</param>
