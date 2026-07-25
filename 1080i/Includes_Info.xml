@@ -417,7 +417,7 @@
 
     <include name="Info_Title">
         <param name="left">40</param>
-        <param name="width">info_title_w</param>
+        <param name="width">info_panel_w</param>
         <param name="listitem">ListItem</param>
         <param name="service">ListItem</param>
         <param name="wrapmultiline">true</param>
@@ -510,6 +510,14 @@
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Artist)</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Title)</visible>
                     <textcolor>$PARAM[colordiffuse]_100</textcolor>
+                </control>
+                <control type="image">
+                    <right>0</right>
+                    <width>300</width>
+                    <height>info_title_logo_h</height>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture background="true">$VAR[Image_CombinedStudio]</texture>
+                    <visible>!Skin.HasSetting(Header.DisableStudio)</visible>
                 </control>
             </control>
         </definition>
