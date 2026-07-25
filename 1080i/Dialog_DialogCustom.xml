@@ -114,25 +114,6 @@
         <content>favourites://</content>
     </include>
 
-    <include name="DialogCustom_Trailers">
-        <include content="DialogCustom_Favourites">
-            <param name="header">$LOCALIZE[10025]</param>
-            <param name="include_content">DialogCustom_Trailers_Content</param>
-        </include>
-    </include>
-
-    <include name="DialogCustom_Trailers_Content">
-        <onclick>Close</onclick>
-        <onclick>Dialog.Close(1123,true)</onclick>
-        <include content="Action_PlayTrailer_OnClick">
-            <param name="trailer">Container(450).ListItem.FileNameAndPath</param>
-            <param name="trailer_fallback" />
-            <param name="title">$INFO[Container(450).ListItem.Label]</param>
-            <param name="items">$INFO[Window(Home).Property(PlayTrailerItems)]</param>
-        </include>
-        <content>$INFO[Window(Home).Property(PlayTrailerItems)]</content>
-    </include>
-
     <include name="DialogCustom_Reload_1118">
         <param name="condition_service">false</param>
         <param name="condition">true</param>
@@ -1222,15 +1203,6 @@
             <visible>$EXP[Exp_TMDbHelper_IsData]</visible>
         </include>
         <include content="Settings_Button">
-            <param name="id">8041</param>
-            <param name="control">radiobutton</param>
-            <param name="dialog">true</param>
-            <onclick>Skin.ToggleSetting(VideoInfo.Widgets.DisableVideos)</onclick>
-            <selected>!Skin.HasSetting(VideoInfo.Widgets.DisableVideos)</selected>
-            <label>$LOCALIZE[10025]</label>
-            <visible>$EXP[Exp_TMDbHelper_IsData]</visible>
-        </include>
-        <include content="Settings_Button">
             <param name="id">8042</param>
             <param name="control">radiobutton</param>
             <param name="dialog">true</param>
@@ -1311,14 +1283,6 @@
     </include>
 
     <include name="DialogCustom_Buttons_Items_Type">
-        <include content="DialogCustom_Buttons_Items_Template">
-            <param name="id">8002</param>
-            <param name="groupid">8102</param>
-            <param name="label">$LOCALIZE[31393]</param>
-            <param name="type">Trailer</param>
-            <param name="item">$PARAM[item]</param>
-            <param name="content">$PARAM[content]</param>
-        </include>
         <include content="DialogCustom_Buttons_Items_Template">
             <param name="id">8003</param>
             <param name="groupid">8103</param>

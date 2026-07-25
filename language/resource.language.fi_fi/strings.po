@@ -1501,10 +1501,6 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "Julkaisuvuosi"
 
-#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
-msgctxt "#31393"
-msgid "Trailer"
-msgstr "Traileri"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
@@ -1795,25 +1791,13 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "Lista - FlixArt"
 
-#: /1080i/SkinSettings.xml
-msgctxt "#31482"
-msgid "Trailers"
-msgstr "Trailerit"
 
-#: /1080i/Custom_1123_Dialog_Trailer.xml
-msgctxt "#31483"
-msgid "Replay"
-msgstr "Toista uudelleen"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "Tauko"
 
-#: /1080i/Custom_1123_Dialog_Trailer.xml
-msgctxt "#31485"
-msgid "Stop"
-msgstr "Pysäytä"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"

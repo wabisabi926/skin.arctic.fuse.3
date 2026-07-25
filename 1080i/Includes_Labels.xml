@@ -248,11 +248,6 @@
         <value>$INFO[Skin.String(Startup.ImageFolder)]</value>
     </variable>
 
-    <variable name="Label_Trailer_PlayPause">
-        <value condition="Player.Paused">$LOCALIZE[208]</value>
-        <value>$LOCALIZE[31484]</value>
-    </variable>
-
     <variable name="Label_OSD_PausePlay">
         <value condition="Player.Playing">$LOCALIZE[31484]</value>
         <value>$LOCALIZE[208]</value>

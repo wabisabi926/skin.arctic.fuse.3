@@ -1550,10 +1550,6 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "Rok wydania"
 
-#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
-msgctxt "#31393"
-msgid "Trailer"
-msgstr "Zwiastun"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
@@ -1844,25 +1840,13 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "Lista: Flixart"
 
-#: /1080i/SkinSettings.xml
-msgctxt "#31482"
-msgid "Trailers"
-msgstr "Zwiastuny"
 
-#: /1080i/Custom_1123_Dialog_Trailer.xml
-msgctxt "#31483"
-msgid "Replay"
-msgstr "Odtwórz ponownie"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "Pauza"
 
-#: /1080i/Custom_1123_Dialog_Trailer.xml
-msgctxt "#31485"
-msgid "Stop"
-msgstr "Stop"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"

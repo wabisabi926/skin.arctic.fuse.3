@@ -9,7 +9,6 @@
     <onunload>ClearProperty(clearlogo,1114)</onunload>
     <onunload>ClearProperty(icon,1114)</onunload>
     <onunload>ClearProperty(path,1114)</onunload>
-    <onunload>ClearProperty(trailer,1114)</onunload>
     <onunload>ClearProperty(tmdb_id,1114)</onunload>
     <onunload>ClearProperty(tmdb_type,1114)</onunload>
     <onunload>ClearProperty(season,1114)</onunload>

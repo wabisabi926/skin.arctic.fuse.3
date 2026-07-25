@@ -342,14 +342,6 @@
             "link": "true"
         },
         {
-            "name": "YouTube",
-            "comment": "Youtube",
-            "icon": "special://skin/extras/icons/youtube.png",
-            "path": "DefaultSearch-Youtube",
-            "node": "videos",
-            "link": "true"
-        },
-        {
             "name": "Netflix",
             "comment": "Netflix",
             "icon": "special://skin/extras/icons/netflix.png",

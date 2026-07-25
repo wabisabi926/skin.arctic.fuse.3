@@ -46,7 +46,7 @@
                                 </item>
                                 <item id="5" description="Behaviour">
                                     <label>$LOCALIZE[31186]</label>
-                                    <label2>$LOCALIZE[31448] [LOWERCASE]$LOCALIZE[31174], $LOCALIZE[31185], $LOCALIZE[478], $LOCALIZE[31297], $LOCALIZE[31487] $LOCALIZE[31482][/LOWERCASE].</label2>
+                                    <label2>$LOCALIZE[31448] [LOWERCASE]$LOCALIZE[31174], $LOCALIZE[31185][/LOWERCASE].</label2>
                                 </item>
                                 <item id="6" description="Other">
                                     <label>$LOCALIZE[29921]</label>

@@ -195,25 +195,6 @@
         <value>$INFO[ListItem.Set]</value>
     </variable>
 
-    <variable name="Path_Youtube_Query">
-        <value condition="[String.IsEqual(ListItem.DBType,set) | ListItem.IsCollection] + !String.IsEmpty(ListItem.Set)">$VAR[Path_Encoded_Set]</value>
-        <value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Title)">$VAR[Path_Encoded_Title]$INFO[ListItem.Year, ,] Movie</value>
-        <value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Title)">$VAR[Path_Encoded_Title]$INFO[ListItem.Year, ,]</value>
-        <value condition="String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.TVShowTitle)">$VAR[Path_Encoded_TVShowTitle]$INFO[ListItem.Season, Season ,]</value>
-        <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Title)">$VAR[Path_Encoded_TVShowTitle,, ]$VAR[Path_Encoded_Title]</value>
-        <value condition="[String.IsEqual(ListItem.DBType,actor) | String.IsEqual(ListItem.Property(tmdb_type),person)] + !String.IsEmpty(ListItem.Label)">$VAR[Path_Encoded_Label]</value>
-        <value condition="String.IsEqual(ListItem.DBType,artist) + !String.IsEmpty(ListItem.AlbumArtist)">$VAR[Path_Encoded_AlbumArtist] Music</value>
-        <value condition="String.IsEqual(ListItem.DBType,artist) + !String.IsEmpty(ListItem.Artist)">$VAR[Path_Encoded_Artist] Music</value>
-        <value condition="String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.Album)">$VAR[Path_Encoded_AlbumArtist,, ]$VAR[Path_Encoded_Album] Music</value>
-        <value condition="String.IsEqual(ListItem.DBType,song) + !String.IsEmpty(ListItem.Title) + !String.IsEmpty(ListItem.AlbumArtist)">$VAR[Path_Encoded_AlbumArtist,, ]$VAR[Path_Encoded_Title] Music</value>
-        <value condition="String.IsEqual(ListItem.DBType,song) + !String.IsEmpty(ListItem.Title)">$VAR[Path_Encoded_Artist,, ]$VAR[Path_Encoded_Title] Music</value>
-        <value condition="!String.IsEmpty(ListItem.TvShowTitle)">$VAR[Path_Encoded_TVShowTitle]</value>
-        <value condition="!String.IsEmpty(ListItem.AlbumArtist)">$VAR[Path_Encoded_AlbumArtist]</value>
-        <value condition="!String.IsEmpty(ListItem.Artist)">$VAR[Path_Encoded_Artist]</value>
-        <value condition="!String.IsEmpty(ListItem.Title)">$VAR[Path_Encoded_Title]</value>
-        <value condition="!String.IsEmpty(ListItem.Label)">$VAR[Path_Encoded_Label]</value>
-    </variable>
-
     <variable name="Path_Wikipedia_Title">
         <value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.TVShowTitle]</value>
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
@@ -268,14 +249,6 @@
         <value condition="!String.IsEmpty(Container(9801).ListItem.FolderPath)">$INFO[Container(9801).ListItem.FolderPath]</value>
         <!-- <value condition="!String.IsEmpty(Container(9801).ListItem.Album)">musicdb://songs/?xsp={"rules":{"and":[{"field":"album","operator":"is","value":["$INFO[Container(9801).ListItem.Album]"]}]},"type":"songs"}</value> -->
         <value>-</value>
-    </variable>
-
-    <variable name="Path_VideoInfo_Trailers">
-        <value condition="String.IsEqual(ListItem.DBType,musicvideo)">$VAR[Path_Youtube_Query,plugin://plugin.video.youtube/kodion/search/query/?q=,&amp;search_type=notvalid]</value>
-        <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_ID))">special://skin/extras/playlists/Null.xsp</value>
-        <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type))">special://skin/extras/playlists/Null.xsp</value>
-        <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type),movie)">plugin://plugin.video.themoviedb.helper/?info=videos&amp;nextpage=false&amp;cacheonly=true&amp;length=1&amp;tmdb_type=movie&amp;tmdb_id=$INFO[Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_ID)]</value>
-        <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type),tv)">plugin://plugin.video.themoviedb.helper/?info=videos&amp;nextpage=false&amp;cacheonly=true&amp;length=1&amp;tmdb_type=tv&amp;tmdb_id=$INFO[Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_ID)]</value>
     </variable>
 
     <variable name="Path_VideoInfo_OnlineFanart">
