@@ -223,8 +223,7 @@
                     </control>
                 </control>
             </control>
-            <include>CD_Art</include>
-            <include>VHS_Art</include>
+            <include>CD_VHS_Art</include>
         </control>
     </controls>
 </window>
