@@ -372,4 +372,7 @@
     </include>
 
 
+<include name="DialogPlotFake">
+    </include>
+
 </includes>

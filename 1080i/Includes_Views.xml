@@ -483,4 +483,29 @@
             </control>
         </definition>
     </include>
+<include name="View_Furniture_Scrollbar_V">
+        <param name="visible">true</param>
+        <definition>
+            <control type="group">
+                <centerright>40</centerright>
+                <width>scrollbar_w</width>
+                <bottom>0</bottom>
+                <height>$PARAM[height]</height>
+                <visible>$PARAM[visible]</visible>
+                <control type="image">
+                    <width>1</width>
+                    <centerleft>50%</centerleft>
+                    <texture colordiffuse="main_fg_12">common/white.png</texture>
+                </control>
+                <control type="scrollbar" id="$PARAM[id]">
+                    <orientation>vertical</orientation>
+                    <texturesliderbackground />
+                    <include>Texture_Scrollbar_V</include>
+                    <onleft>50</onleft>
+                    <onright>50</onright>
+                    <showonepage>false</showonepage>
+                </control>
+            </control>
+        </definition>
+    </include>
 </includes>

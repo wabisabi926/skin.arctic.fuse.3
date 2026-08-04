@@ -264,7 +264,7 @@
     </include>
 
     <variable name="Overlay_WidgetContainer">
-        <value condition="Window.IsVisible(10000)">$INFO[Window(10000).Property(TMDbHelper.WidgetContainer),, ](10000)</value>
+        <value condition="Window.IsVisible(home)">$INFO[Window(10000).Property(TMDbHelper.WidgetContainer),, ](10000)</value>
         <value condition="Window.IsVisible(11101)">$INFO[Window(11101).Property(TMDbHelper.WidgetContainer),, ](11101)</value>
         <value condition="Window.IsVisible(11102)">$INFO[Window(11102).Property(TMDbHelper.WidgetContainer),, ](11102)</value>
         <value condition="Window.IsVisible(11103)">$INFO[Window(11103).Property(TMDbHelper.WidgetContainer),, ](11103)</value>

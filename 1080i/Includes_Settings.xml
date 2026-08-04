@@ -460,4 +460,7 @@
         </control>
     </include>
 
+<include name="Settings_InfoText">
+    </include>
+
 </includes>

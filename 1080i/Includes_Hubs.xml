@@ -961,4 +961,10 @@
         </definition>
     </include>
 
+<include name="Hub_Disabled_Onload">
+        <definition>
+            <defaultcontrol always="true">$PARAM[defaultcontrol]</defaultcontrol>
+        </definition>
+    </include>
+
 </includes>
