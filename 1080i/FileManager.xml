@@ -36,7 +36,7 @@
                             <visible>Container(3).HasFocus(1)</visible>
 
                             <control type="group">
-                                <width>50%</width>
+                                <width>100%</width>
 
                                 <include content="List_AddonCategories">
                                     <param name="id">20</param>
@@ -47,7 +47,6 @@
                                     <pagecontrol>60</pagecontrol>
                                     <onright>60</onright>
                                     <onleft>3</onleft>
-                                    <!-- <right>0</right> -->
                                     <include content="Dimension_Padding">
                                         <param name="pad">20</param>
                                     </include>
@@ -72,7 +71,6 @@
                                         <texturesliderbar colordiffuse="main_logo" border="4">scrollbar/scrollv_line.png</texturesliderbar>
                                         <include>Texture_Scrollbar_V</include>
                                         <onleft>20</onleft>
-                                        <onright>21</onright>
                                     </control>
                                 </control>
 
@@ -100,6 +98,7 @@
                             </control>
 
                             <control type="group">
+                                <visible>false</visible>
                                 <right>0</right>
                                 <width>50%</width>
 
@@ -108,10 +107,7 @@
                                     <param name="detailed">true</param>
                                     <param name="width" />
                                     <param name="textcolor">main_fg</param>
-                                    <onleft>60</onleft>
                                     <pagecontrol>61</pagecontrol>
-                                    <onright>61</onright>
-                                    <!-- <left>0</left> -->
                                     <include content="Dimension_Padding">
                                         <param name="pad">20</param>
                                     </include>
@@ -127,10 +123,8 @@
                                         <texturesliderbar colordiffuse="main_logo" border="4">scrollbar/scrollv_line.png</texturesliderbar>
                                         <include>Texture_Scrollbar_V</include>
                                         <showonepage>false</showonepage>
-                                        <onleft>21</onleft>
                                     </control>
                                 </control>
-
 
                                 <control type="group">
                                     <left>40</left>
@@ -162,7 +156,7 @@
 
 
                             <control type="group">
-                                <width>50%</width>
+                                <width>100%</width>
 
                                 <include content="List_AddonCategories">
                                     <param name="id">8000</param>
@@ -170,7 +164,6 @@
                                     <param name="width" />
                                     <param name="textcolor">main_fg</param>
                                     <onleft>3</onleft>
-                                    <onright>8001</onright>
                                     <include content="Dimension_Padding">
                                         <param name="pad">20</param>
                                     </include>
@@ -246,6 +239,7 @@
                             </control>
 
                             <control type="group">
+                                <visible>false</visible>
                                 <right>0</right>
                                 <width>50%</width>
                                 <include content="List_AddonCategories">
@@ -253,9 +247,7 @@
                                     <param name="detailed">true</param>
                                     <param name="width" />
                                     <param name="textcolor">main_fg</param>
-                                    <onleft>8000</onleft>
                                     <pagecontrol>62</pagecontrol>
-                                    <onright>62</onright>
                                     <include content="Dimension_Padding">
                                         <param name="pad">20</param>
                                     </include>
@@ -275,7 +267,6 @@
                                         <texturesliderbar colordiffuse="main_logo" border="4">scrollbar/scrollv.png</texturesliderbar>
                                         <showonepage>false</showonepage>
                                         <include>Texture_Scrollbar_V</include>
-                                        <onleft>8001</onleft>
                                     </control>
                                 </control>
 
