@@ -1387,7 +1387,7 @@ msgstr "频道节目指南"
 #: /1080i/SkinSettings.xml
 msgctxt "#31349"
 msgid "Up"
-msgstr "上"
+msgstr "向上"
 
 msgctxt "#31350"
 msgid "Thanks"
