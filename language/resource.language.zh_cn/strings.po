@@ -648,10 +648,12 @@ msgctxt "#31131"
 msgid "Continue watching in"
 msgstr "继续观看，剩余"
 
+#: /shortcuts/skinvariables-splash.json
 msgctxt "#31132"
 msgid "Preloading Hubs"
 msgstr "正在预加载分类中心"
 
+#: /shortcuts/skinvariables-splash.json
 msgctxt "#31133"
 msgid "Loading Widgets"
 msgstr "正在加载小组件"
@@ -708,17 +710,17 @@ msgstr "播放"
 
 msgctxt "#31145"
 msgid "Initialising Skin"
-msgstr "正在初始化皮肤"
-
-#: /1080i/Includes_Shortcuts_Window.xml
-msgctxt "#31147"
-msgid "More"
-msgstr "更多"
+msgstr "正在加载皮肤"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31146"
 msgid "Onyx"
 msgstr "缟玛瑙"
+
+#: /1080i/Includes_Shortcuts_Window.xml
+msgctxt "#31147"
+msgid "More"
+msgstr "更多"
 
 #: /1080i/Dialog_DialogCustom.xml
 msgctxt "#31148"
@@ -745,9 +747,29 @@ msgctxt "#31152"
 msgid "Running add-ons"
 msgstr "正在运行的插件"
 
+#: /1080i/Includes_Search.xml
+msgctxt "#31153"
+msgid "Results for"
+msgstr "搜索结果："
+
 msgctxt "#31154"
 msgid "Misc options"
 msgstr "杂项选项"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31155"
+msgid "Decades"
+msgstr "年代"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31156"
+msgid "Row Flyer"
+msgstr "横向海报"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31157"
+msgid "Wall Flyer"
+msgstr "墙式海报"
 
 #: /1080i/Includes_Keyboard_Mini.xml
 msgctxt "#31158"
