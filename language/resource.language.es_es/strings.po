@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2026-01-12 20:00+0000\n"
-"PO-Revision-Date: 2026-01-13 14:47-0400\n"
+"PO-Revision-Date: 2026-09-24 15:50-0400\n"
 "Last-Translator: 01xKeven\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -88,7 +88,7 @@ msgstr "Lista estándar"
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31014"
 msgid "List Info"
-msgstr "Lista info"
+msgstr "Lista (Información)"
 
 msgctxt "#31015"
 msgid "Order"
@@ -101,7 +101,7 @@ msgstr "Ordenar por"
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31017"
 msgid "List Details"
-msgstr "Lista detalles"
+msgstr "Lista (Detalles)"
 
 msgctxt "#31018"
 msgid "Recommendations"
@@ -110,12 +110,12 @@ msgstr "Recomendaciones"
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31019"
 msgid "List Planner"
-msgstr "Lista agenda"
+msgstr "Lista (Agenda)"
 
 #: /1080i/Includes_Views_PVR.xml
 msgctxt "#31020"
 msgid "List Outline"
-msgstr "Lista esquema"
+msgstr "Lista (Esquema)"
 
 #: /1080i/Includes_Views_Combined.xml
 msgctxt "#31021"
@@ -151,7 +151,7 @@ msgstr "Enfocar widgets al inicio"
 
 msgctxt "#31028"
 msgid "Outline"
-msgstr "Resumen"
+msgstr "Sinopsis"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31029"
@@ -248,7 +248,7 @@ msgstr "Popularidad"
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31048"
 msgid "tiles"
-msgstr "baldosas"
+msgstr "mosaicos"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31049"
@@ -258,7 +258,7 @@ msgstr "Personalizar atajos y widgets"
 #: /1080i/Includes_Search.xml
 msgctxt "#31050"
 msgid "Crew"
-msgstr "Equipo"
+msgstr "Equipo técnico"
 
 #: /1080i/Custom_1153_Dialog_SearchDiscover_Actors.xml
 msgctxt "#31051"
@@ -303,7 +303,7 @@ msgstr "Lateral"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31060"
 msgid "Slide"
-msgstr "Deslizar"
+msgstr "Deslizamiento"
 
 #: /shortcuts/template.xml
 msgctxt "#31061"
@@ -364,7 +364,7 @@ msgstr "Departamento de arte"
 
 msgctxt "#31073"
 msgid "mins"
-msgstr "mins"
+msgstr "min"
 
 msgctxt "#31074"
 msgid "hr"
@@ -378,7 +378,7 @@ msgstr "Edición"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31076"
 msgid "Starring"
-msgstr "Protagonizada por"
+msgstr "Protagonistas"
 
 msgctxt "#31077"
 msgid "More Information"
@@ -449,7 +449,7 @@ msgstr "En progreso"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31091"
 msgid "In-Game Saves"
-msgstr "Guardados en el juego"
+msgstr "Partidas guardadas"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31092"
@@ -501,17 +501,47 @@ msgctxt "#31101"
 msgid "Wall Board"
 msgstr "Mural (Tablero)"
 
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31102"
+msgid "Extension"
+msgstr "Extensión"
+
 msgctxt "#31103"
 msgid "Widgets"
 msgstr "Widgets"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31104"
+msgid "Position"
+msgstr "Posición"
 
 msgctxt "#31105"
 msgid "Spotlight"
 msgstr "Destacado"
 
+#: /1080i/Includes_Labels.xml
+msgctxt "#31106"
+msgid "Top"
+msgstr "Superior"
+
+#: /1080i/Dialog_DialogGameControllers.xml
+msgctxt "#31107"
+msgid "Edit buttons"
+msgstr "Editar botones"
+
 msgctxt "#31108"
 msgid "Collections"
 msgstr "Colecciones"
+
+#: /1080i/Dialog_DialogPVRGroupManager.xml
+msgctxt "#31109"
+msgid "Edit group"
+msgstr "Editar grupo"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31110"
+msgid "Starts at"
+msgstr "Comienza a las"
 
 msgctxt "#31111"
 msgid "Row Poster"
@@ -553,17 +583,27 @@ msgstr "Expandido"
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31119"
 msgid "EOTF and Gamut"
-msgstr "EOTF y Gamut"
+msgstr "EOTF y gama"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31120"
 msgid "List Basic"
 msgstr "Lista básica"
 
+#: /1080i/Dialog_FileBrowser.xml
+msgctxt "#31121"
+msgid "Mirror"
+msgstr "Reflejar"
+
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31122"
 msgid "Watchlist"
 msgstr "Lista de seguimiento"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31123"
+msgid "Plot line"
+msgstr "Línea de argumento"
 
 msgctxt "#31124"
 msgid "Indicator"
@@ -572,6 +612,16 @@ msgstr "Indicador"
 msgctxt "#31125"
 msgid "Invert Text Colour"
 msgstr "Invertir color de texto"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31126"
+msgid "Plotline"
+msgstr "Argumento"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31127"
+msgid "Genre colours"
+msgstr "Colores por género"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31128"
@@ -590,6 +640,16 @@ msgctxt "#31131"
 msgid "Continue watching in"
 msgstr "Seguir viendo en"
 
+#: /shortcuts/skinvariables-splash.json
+msgctxt "#31132"
+msgid "Preloading Hubs"
+msgstr "Precargando hubs"
+
+#: /shortcuts/skinvariables-splash.json
+msgctxt "#31133"
+msgid "Loading Widgets"
+msgstr "Cargando widgets"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31134"
 msgid "Playing"
@@ -599,6 +659,11 @@ msgstr "Reproduciendo"
 msgctxt "#31135"
 msgid "Page"
 msgstr "Página"
+
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
+msgctxt "#31136"
+msgid "Browse"
+msgstr "Explorar"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
 msgctxt "#31137"
@@ -630,23 +695,63 @@ msgctxt "#31143"
 msgid "Classic"
 msgstr "Clásico"
 
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
+msgctxt "#31144"
+msgid "Play"
+msgstr "Reproducir"
+
 msgctxt "#31145"
 msgid "Initialising Skin"
 msgstr "Inicializando Skin"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31146"
+msgid "Onyx"
+msgstr "Ónix"
 
 #: /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31147"
 msgid "More"
 msgstr "Más"
 
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31148"
+msgid "Black Onyx"
+msgstr "Ónix negro"
+
+#: /1080i/Settings.xml /1080i/SettingsSystemInfo.xml
+msgctxt "#31149"
+msgid "Used memory"
+msgstr "Memoria usada"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31150"
 msgid "Categories"
 msgstr "Categorías"
 
+#: /1080i/Settings.xml
+msgctxt "#31151"
+msgid "Customise video info"
+msgstr "Personalizar información de vídeo"
+
+#: /1080i/AddonBrowser.xml
+msgctxt "#31152"
+msgid "Running add-ons"
+msgstr "Add-ons en ejecución"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31153"
+msgid "Results for"
+msgstr "Resultados para"
+
 msgctxt "#31154"
 msgid "Misc options"
 msgstr "Opciones varias"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31155"
+msgid "Decades"
+msgstr "Décadas"
 
 #: /1080i/Includes_Keyboard_Mini.xml
 msgctxt "#31158"
@@ -660,7 +765,7 @@ msgstr "Versión"
 
 msgctxt "#31160"
 msgid "REC"
-msgstr "GRAB"
+msgstr "REC"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31162"
@@ -817,7 +922,7 @@ msgctxt "#31207"
 msgid "Codecs"
 msgstr "Códecs"
 
-#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+#: /1080i/SkinSettings.xml
 msgctxt "#31208"
 msgid "Header"
 msgstr "Cabecera"
@@ -1005,7 +1110,7 @@ msgstr "Realce"
 
 msgctxt "#31252"
 msgid "Catch-up"
-msgstr "Catch-up"
+msgstr "Programas emitidos"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31254"
@@ -1069,6 +1174,10 @@ msgctxt "#31272"
 msgid "Searching"
 msgstr "Buscando"
 
+msgctxt "#31273"
+msgid "Label"
+msgstr "Etiqueta"
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31274"
 msgid "Icon"
@@ -1101,7 +1210,7 @@ msgstr "Reproducido"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31284"
 msgid "Discover movies and tvshows on TMDb."
-msgstr "Descubre películas y series en TMDb."
+msgstr "Descubrir películas y series en TMDb."
 
 msgctxt "#31285"
 msgid "Classification (MPAA)"
@@ -1142,7 +1251,7 @@ msgstr "Etiquetas de texto"
 
 msgctxt "#31293"
 msgid "Cast and more info"
-msgstr "Reparto y más info"
+msgstr "Reparto y más información"
 
 msgctxt "#31294"
 msgid "Bookmarks and chapters"
@@ -1163,7 +1272,7 @@ msgstr "Fanart extra"
 
 msgctxt "#31298"
 msgid "Movies and tv shows starring this actor"
-msgstr "Películas y series protagonizadas por este actor"
+msgstr "Películas y series de este intérprete"
 
 msgctxt "#31299"
 msgid "Information is loading"
@@ -1177,7 +1286,7 @@ msgstr "Personalizar fondo de ventana"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31301"
 msgid "Crew"
-msgstr "Equipo"
+msgstr "Equipo técnico"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31303"
@@ -1202,7 +1311,7 @@ msgstr "Estado de ánimo"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31309"
 msgid "Glass"
-msgstr "Vidrio"
+msgstr "Cristal"
 
 #: /1080i/Custom_1161_Dialog_Weather.xml
 msgctxt "#31310"
@@ -1224,10 +1333,10 @@ msgctxt "#31320"
 msgid "Square"
 msgstr "Cuadrado"
 
-#: /1080i/Includes_SkinSettings.xml
+#: /1080i/Includes_SkinSettings.xml /1080i/Settings.xml
 msgctxt "#31321"
-msgid "Select viewtypes"
-msgstr "Seleccionar tipos de vista"
+msgid "Customise viewtypes"
+msgstr "Personalizar tipos de vista"
 
 #: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
 msgctxt "#31322"
@@ -1299,7 +1408,7 @@ msgstr "Fotografía"
 
 msgctxt "#31348"
 msgid "Channel EPG"
-msgstr "Guía EPG"
+msgstr "Guía de canales"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31349"
@@ -1410,7 +1519,7 @@ msgstr "Instalar zip"
 #: /1080i/SkinSettings.xml
 msgctxt "#31376"
 msgid "Reset discover search history"
-msgstr "Restablecer historial de búsqueda de descubrir"
+msgstr "Restablecer historial de búsqueda de Discover"
 
 #: /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31377"
@@ -1432,7 +1541,7 @@ msgstr "Pronóstico"
 
 msgctxt "#31381"
 msgid "Returning"
-msgstr "Regresa"
+msgstr "En curso"
 
 msgctxt "#31382"
 msgid "All items"
@@ -1484,7 +1593,7 @@ msgstr "Tráiler"
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
-msgstr "Vídeo Imagen en Imagen"
+msgstr "Imagen en imagen"
 
 msgctxt "#31396"
 msgid "Recent Movies"
@@ -1635,10 +1744,10 @@ msgctxt "#31432"
 msgid "Adaptive"
 msgstr "Adaptable"
 
-#: /1080i/SkinSettings.xml
+#: /1080i/Includes_SkinSettings.xml /1080i/Settings.xml
 msgctxt "#31434"
-msgid "Video OSD"
-msgstr "OSD de vídeo"
+msgid "Customise video OSD"
+msgstr "Personalizar OSD de vídeo"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31435"
@@ -1738,12 +1847,12 @@ msgstr "Probabilidad de lluvia"
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
-msgstr "Configuración de baldosas"
+msgstr "Configuración de mosaicos"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31468"
 msgid "Tile layout"
-msgstr "Diseño de baldosa"
+msgstr "Diseño de mosaico"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31469"
@@ -1788,7 +1897,7 @@ msgstr "por"
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31479"
 msgid "List Media"
-msgstr "Lista medios"
+msgstr "Lista (Medios)"
 
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31480"
@@ -1813,7 +1922,7 @@ msgstr "Pausa"
 #: /1080i/Custom_1123_Dialog_Trailer.xml
 msgctxt "#31485"
 msgid "Stop"
-msgstr "Parar"
+msgstr "Detener"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
@@ -1883,7 +1992,7 @@ msgstr "No se encontraron resultados de búsqueda"
 #: /1080i/Includes_Search.xml
 msgctxt "#31501"
 msgid "Please try another search"
-msgstr "Por favor intenta otra búsqueda"
+msgstr "Por favor, realice otra búsqueda"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31502"
@@ -1988,7 +2097,7 @@ msgstr "Hora"
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31527"
 msgid "Later"
-msgstr "Después"
+msgstr "Más tarde"
 
 #: /1080i/Includes_Weather_Forecast.xml
 msgctxt "#31528"
@@ -2188,7 +2297,7 @@ msgstr "Lista expandida"
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31583"
 msgid "Prevent reload"
-msgstr "Prevenir recarga"
+msgstr "Evitar recarga"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31585"
@@ -2254,3 +2363,113 @@ msgstr "Adicional"
 msgctxt "#31605"
 msgid "Next aired"
 msgstr "Próxima emisión"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31610"
+msgid "Seasonal Themes"
+msgstr "Temas de temporada"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31611"
+msgid "Christmas Theme"
+msgstr "Tema de Navidad"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31612"
+msgid "Dec 7 - Jan 7"
+msgstr "7 dic - 7 ene"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31613"
+msgid "Winter Frost"
+msgstr "Escarcha invernal"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31614"
+msgid "Aussie Christmas"
+msgstr "Navidad australiana"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31615"
+msgid "Summer Breeze"
+msgstr "Brisa de verano"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31616"
+msgid "Jun 21 - Aug 15"
+msgstr "21 jun - 15 ago"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31617"
+msgid "Halloween Spook"
+msgstr "Terror de Halloween"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31618"
+msgid "Oct 1 - Nov 1"
+msgstr "1 oct - 1 nov"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31619"
+msgid "Background Overlay"
+msgstr "Superposición de fondo"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31620"
+msgid "Background Atmosphere"
+msgstr "Ambiente de fondo"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31621"
+msgid "Fly-by Animations"
+msgstr "Animaciones de paso"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31622"
+msgid "Falling Props Density"
+msgstr "Densidad de elementos en caída"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31623"
+msgid "Off"
+msgstr "Desactivado"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31624"
+msgid "Normal"
+msgstr "Normal"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31625"
+msgid "High"
+msgstr "Alto"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31156"
+msgid "Row Flyer"
+msgstr "Fila (Folleto)"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31157"
+msgid "Wall Flyer"
+msgstr "Mural (Folleto)"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31161"
+msgid "Flyer"
+msgstr "Folleto"
+
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31163"
+msgid "Combined Flyer"
+msgstr "Combinada (Folleto)"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31164"
+msgid "Row Placard"
+msgstr "Fila (Cartel)"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31172"
+msgid "Placard"
+msgstr "Cartel"

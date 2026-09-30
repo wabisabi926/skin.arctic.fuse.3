@@ -89,6 +89,19 @@
                 <param name="visible">[$PARAM[visible]] + !String.IsEmpty(Window(Home).Property(TMDbHelper.$PARAM[service].Letterboxd_Rating))</param>
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
             </include>
+            <include content="Info_Meta_Object" condition="Skin.String(CustomRating.$PARAM[content].$PARAM[item],Douban)">
+                <param name="icon">flags/$VAR[Color_Directory]/ratings/douban.png</param>
+                <param name="label">$INFO[Window(Home).Property(TMDbHelper.$PARAM[service].douban_rating)]</param>
+                <param name="visible">[$PARAM[visible]] + !String.IsEmpty(Window(Home).Property(TMDbHelper.$PARAM[service].douban_rating))</param>
+                <param name="colordiffuse">$PARAM[colordiffuse]</param>
+            </include>
+            <include content="Info_Meta_Object" condition="Skin.String(CustomRating.$PARAM[content].$PARAM[item],MyAnimeList)">
+                <param name="icon">flags/$VAR[Color_Directory]/ratings/mal.png</param>
+                <param name="label">$INFO[Window(Home).Property(TMDbHelper.$PARAM[service].MyAnimeList_Rating)]</param>
+                <param name="visible">[$PARAM[visible]] + !String.IsEmpty(Window(Home).Property(TMDbHelper.$PARAM[service].MyAnimeList_Rating))</param>
+                <param name="colordiffuse">$PARAM[colordiffuse]</param>
+                <param name="icon_w">52</param>
+            </include>
         </definition>
     </include>
 
@@ -183,19 +196,19 @@
                     <include content="Info_Meta_Ratings" condition="$EXP[Exp_TMDbHelper_IsData]">
                         <param name="content">TVShows</param>
                         <param name="item">Item01</param>
-                        <param name="visible">String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season)</param>
+                        <param name="visible">String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode)</param>
                         <param name="service">$PARAM[service]</param>
                     </include>
                     <include content="Info_Meta_Ratings" condition="$EXP[Exp_TMDbHelper_IsData]">
                         <param name="content">TVShows</param>
                         <param name="item">Item02</param>
-                        <param name="visible">String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season)</param>
+                        <param name="visible">String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode)</param>
                         <param name="service">$PARAM[service]</param>
                     </include>
                     <include content="Info_Meta_Ratings" condition="$EXP[Exp_TMDbHelper_IsData]">
                         <param name="content">TVShows</param>
                         <param name="item">Item03</param>
-                        <param name="visible">String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season)</param>
+                        <param name="visible">String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode)</param>
                         <param name="service">$PARAM[service]</param>
                     </include>
 
@@ -255,7 +268,7 @@
                     <include content="Info_Meta_Object" condition="$EXP[Exp_TMDbHelper_IsData]">
                         <param name="label">$VAR[Label_$PARAM[service]_Status]$VAR[Label_$PARAM[service]_StatusDate, ,]</param>
                         <param name="icon">$VAR[Image_$PARAM[service]_Status]</param>
-                        <param name="visible">[[String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | $PARAM[override_tvshow]] + !String.IsEmpty(Window(Home).Property(TMDbHelper.$PARAM[service].Status))]</param>
+                        <param name="visible">[[String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | $PARAM[override_tvshow]] + !String.IsEmpty(Window(Home).Property(TMDbHelper.$PARAM[service].Status))]</param>
                     </include>
 
                     <!-- Awards -->

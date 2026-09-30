@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
+    <variable name="Label_Setting_TopMenuUpAction">
+        <value condition="Skin.String(HomeSwitcher.OnUp,options)">$LOCALIZE[33063]</value>
+        <value condition="String.IsEmpty(Skin.String(HomeSwitcher.OnUp))">$LOCALIZE[1034]</value>
+    </variable>
+
     <variable name="Home_Icon_home">
         <value condition="!String.IsEmpty(Skin.String(HomeSwitcher.Home.Icon))">$INFO[Skin.String(HomeSwitcher.Home.Icon)]</value>
         <value>special://skin/extras/icons/home.png</value>
@@ -208,7 +213,8 @@
 
     <include name="Home_Horz_Movement">
         <onup>SetProperty(Bumper.Direction,Up,Home)</onup>
-        <onup>ActivateWindow(1181)</onup>
+        <onup condition="Skin.String(HomeSwitcher.OnUp,options)">ActivateWindow(1170)</onup>
+        <onup condition="String.IsEmpty(Skin.String(HomeSwitcher.OnUp))">ActivateWindow(1181)</onup>
         <oninfo>ActivateWindow(1181)</oninfo>
         <ondown>$VAR[Hub_Action_Down]</ondown>
     </include>
@@ -241,6 +247,7 @@
 
     <include name="Home_Control">
         <param name="onclick_condition">true</param>
+        <param name="fade_visible">!String.IsEmpty(Window(Home).Property(HomeSwitcher.IsVisible))</param>
         <definition>
             <include>Home_ControlList</include>
             <control type="button" id="300">
@@ -274,7 +281,7 @@
             </control>
             <control type="image">
                 <include>Home_Fade_Animation</include>
-                <visible>!String.IsEmpty(Window(Home).Property(HomeSwitcher.IsVisible))</visible>
+                <visible>$PARAM[fade_visible]</visible>
                 <visible>!Skin.HasSetting(HomeSwitcher.Vertical)</visible>
                 <texture colordiffuse="main_bg_70">special://skin/extras/backgrounds/overlay/combined_topmenu.png</texture>
                 <bottom>0</bottom>
@@ -484,9 +491,9 @@
     <include name="Home_Switcher_Right_Buttons">
         <control type="grouplist">
             <include content="Object_Right" condition="Skin.HasSetting(HomeSwitcher.DisableSearch)">
-                <param name="right">-40</param>
+                <param name="right">-130</param>
             </include>
-            <right>-30</right>
+            <right>-40</right>
             <align>right</align>
             <height>80</height>
             <width>400</width>

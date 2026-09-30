@@ -157,7 +157,17 @@
 
     <include name="Action_View_Movement_OnUp">
         <definition>
-            <onup>ActivateWindow(1171)</onup>
+            <onup>SetProperty(Bumper.Direction,Up,Home)</onup>
+            <onup>ActivateWindow(1180)</onup>
+            <!-- <onup>ActivateWindow(1171)</onup> -->
+        </definition>
+    </include>
+
+    <include name="Action_View_Movement_OnLeft">
+        <definition>
+            <onleft>SetProperty(Bumper.Direction,Left,Home)</onleft>
+            <onleft>ActivateWindow(1180)</onleft>
+            <!-- <onleft>ActivateWindow(1171)</onleft> -->
         </definition>
     </include>
 
@@ -339,7 +349,7 @@
 
     <variable name="Action_Shortcut_SetWidgetStyle">
         <value condition="String.IsEmpty(Container(22001).ListItem.Property(url))" />
-        <value>RunPlugin($INFO[Container(22001).ListItem.Property(url)]&amp;func=do_edit&amp;&amp;widget_style&amp;&amp;$LOCALIZE[20021]=Poster&amp;$LOCALIZE[31045]=Landscape&amp;$LOCALIZE[31320]=Square&amp;$LOCALIZE[31424]=Board&amp;$LOCALIZE[31431]=Circle&amp;$LOCALIZE[31423]=Card&amp;&amp;$LOCALIZE[736]&amp;&amp;True)</value>
+        <value>RunPlugin($INFO[Container(22001).ListItem.Property(url)]&amp;func=do_edit&amp;&amp;widget_style&amp;&amp;$LOCALIZE[20021]=Poster&amp;$LOCALIZE[31045]=Landscape&amp;$LOCALIZE[31320]=Square&amp;$LOCALIZE[31424]=Board&amp;$LOCALIZE[31161]=Flyer&amp;$LOCALIZE[31431]=Circle&amp;$LOCALIZE[31423]=Card&amp;$LOCALIZE[31172]=Placard&amp;&amp;$LOCALIZE[736]&amp;&amp;True)</value>
     </variable>
 
     <variable name="Action_FullscreenWidget_InfoButton">
@@ -357,6 +367,7 @@
         <value condition="Skin.String(CustomRating.Movies.Item01,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item01,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item01,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.Movies.Item01,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item01,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.Movies.Item02,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -368,6 +379,7 @@
         <value condition="Skin.String(CustomRating.Movies.Item02,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item02,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item02,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.Movies.Item02,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item02,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.Movies.Item03,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -379,6 +391,7 @@
         <value condition="Skin.String(CustomRating.Movies.Item03,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item03,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item03,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.Movies.Item03,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item03,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.Movies.Item04,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -390,6 +403,7 @@
         <value condition="Skin.String(CustomRating.Movies.Item04,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item04,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item04,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.Movies.Item04,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item04,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.Movies.Item05,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -401,6 +415,7 @@
         <value condition="Skin.String(CustomRating.Movies.Item05,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item05,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item05,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.Movies.Item05,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item05,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.Movies.Item06,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -412,6 +427,7 @@
         <value condition="Skin.String(CustomRating.Movies.Item06,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item06,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item06,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.Movies.Item06,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.Movies.Item06,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.TVShows.Item01,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -423,6 +439,7 @@
         <value condition="Skin.String(CustomRating.TVShows.Item01,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item01,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item01,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.TVShows.Item01,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item01,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.TVShows.Item02,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -434,6 +451,7 @@
         <value condition="Skin.String(CustomRating.TVShows.Item02,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item02,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item02,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.TVShows.Item02,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item02,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.TVShows.Item03,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -445,6 +463,7 @@
         <value condition="Skin.String(CustomRating.TVShows.Item03,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item03,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item03,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.TVShows.Item03,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item03,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.TVShows.Item04,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -456,6 +475,7 @@
         <value condition="Skin.String(CustomRating.TVShows.Item04,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item04,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item04,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.TVShows.Item04,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item04,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.TVShows.Item05,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -467,6 +487,7 @@
         <value condition="Skin.String(CustomRating.TVShows.Item05,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item05,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item05,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.TVShows.Item05,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item05,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value condition="Skin.String(CustomRating.TVShows.Item06,TMDb)">Skin.Reset(TMDbHelper.DisableRatings)</value>
@@ -478,6 +499,7 @@
         <value condition="Skin.String(CustomRating.TVShows.Item06,MDBList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item06,Letterboxd)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item06,Douban)">Skin.Reset(TMDbHelper.DisableRatings)</value>
+        <value condition="Skin.String(CustomRating.TVShows.Item06,MyAnimeList)">Skin.Reset(TMDbHelper.DisableRatings)</value>
         <value condition="Skin.String(CustomRating.TVShows.Item06,Awards)">Skin.Reset(TMDbHelper.DisableRatings)</value>
 
         <value>Skin.SetBool(TMDbHelper.DisableRatings)</value>
