@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
 
-    <fontset id="Default" unicode="true">
+    <fontset id="Default" unicode="false">
+        <include>Font_Default</include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
+            <size>32</size>
+        </font>
+    </fontset>
+
+    <fontset id="Default (Unicode)" unicode="true">
         <include content="Font_Default">
             <param name="font_bold">resource://resource.font.robotocjksc/Inter-Unicode-Bold.ttf</param>
             <param name="font_regular">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
@@ -14,9 +28,16 @@
             <param name="plot_linespacing_mini">1.20</param>
             <param name="plot_linespacing_tiny">1.11</param>
         </include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
+            <size>32</size>
+        </font>
     </fontset>
 
-    <fontset id="Default (Non-Unicode)" unicode="false">
-        <include>Font_Default</include>
-    </fontset>
 </fonts>
