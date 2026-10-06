@@ -24,15 +24,30 @@
 		<value>$LOCALIZE[351]</value>
 	</variable>
 
+	<variable name="Image_OSD_DiscArt">
+		<value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(season.discart))">$INFO[Player.Art(season.discart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(tvshow.discart))">$INFO[Player.Art(tvshow.discart)]</value>
+	</variable>
+
+	<variable name="Image_OSD_VHSArt">
+		<value condition="!String.IsEmpty(Player.Art(landscape))">$INFO[Player.Art(landscape)]</value>
+		<value condition="!String.IsEmpty(Player.Art(season.landscape))">$INFO[Player.Art(season.landscape)]</value>
+		<value condition="!String.IsEmpty(Player.Art(tvshow.landscape))">$INFO[Player.Art(tvshow.landscape)]</value>
+		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
+	</variable>
+
 	<include name="PPI_Button">
 		<!-- Button 9 -->
 		<control type="button" id="6009">
 			<include>Defs_OSD_Button</include>
 			<onclick>CancelAlarm(osd_timeout,true)</onclick>
 			<onclick>RunScript(script.tinyppi,dialog)</onclick>
+			<visible>System.AddonIsEnabled(script.tinyppi)</visible>
 		</control>
 		<include content="OSD_Button_Icon_Overlay">
 			<param name="icon">special://skin/extras/icons/ppi.png</param>
+			<param name="visible">System.AddonIsEnabled(script.tinyppi)</param>
 			<param name="id">6009</param>
 			<param name="groupid">6109</param>
 			<param name="itemgap">osd_itemgap</param>
@@ -42,9 +57,11 @@
 	<include name="CD_VHS_Art">
 		<!-- Disc -->
 		<control type="group">
-			<visible>[!Pvr.IsPlayingTv + !String.IsEmpty(Player.Art(discart)) + String.IsEqual(Skin.String(OSD.ArtworkStyle),DiscArt)]</visible>
-			<left>1455</left>
+			<visible>[!Pvr.IsPlayingTv + [!String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(season.discart)) | !String.IsEmpty(Player.Art(tvshow.discart))] + String.IsEqual(Skin.String(OSD.ArtworkStyle),DiscArt)]</visible>
+			<right>-35</right>
 			<top>400</top>
+			<width>500</width>
+			<height>425</height>
 			<!-- Disc Background -->
 			<control type="image">
 				<width>500</width>
@@ -57,7 +74,7 @@
 				<top>10</top>
 				<width>400</width>
 				<height>400</height>
-				<texture background="true">$INFO[Player.Art(discart)]</texture>
+				<texture background="true">$VAR[Image_OSD_DiscArt]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>Skin.HasSetting(OSD.DiscArtNoRotate)</visible>
 			</control>
@@ -66,7 +83,7 @@
 				<top>10</top>
 				<width>400</width>
 				<height>400</height>
-				<texture background="true">$INFO[Player.Art(discart)]</texture>
+				<texture background="true">$VAR[Image_OSD_DiscArt]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<animation effect="rotate" start="0" end="-360" loop="true" time="20000" center="auto" condition="Player.Playing | Player.Paused">Conditional</animation>
 				<visible>!Skin.HasSetting(OSD.DiscArtNoRotate)</visible>
@@ -80,12 +97,14 @@
 
 		<!-- VHS -->
 		<control type="group">
-			<visible>[!Pvr.IsPlayingTv + !String.IsEmpty(Player.Art(discart)) + String.IsEqual(Skin.String(OSD.ArtworkStyle),VHSArt)]</visible>
-			<left>1315</left>
+			<visible>[!Pvr.IsPlayingTv + [!String.IsEmpty(Player.Art(landscape)) | !String.IsEmpty(Player.Art(season.landscape)) | !String.IsEmpty(Player.Art(tvshow.landscape)) | [VideoPlayer.Content(episodes) + !String.IsEmpty(Player.Art(thumb))]] + String.IsEqual(Skin.String(OSD.ArtworkStyle),VHSArt)]</visible>
+			<right>67</right>
 			<top>510</top>
+			<width>538</width>
+			<height>300</height>
 			<!-- VHS Background -->
 			<control type="image">
-				<right>90</right>
+				<right>23</right>
 				<width>500</width>
 				<height>280</height>
 				<texture colordiffuse="shadow_hard">common/white.png</texture>
@@ -100,7 +119,7 @@
 				<top>93</top>
 				<width>239</width>
 				<height>134</height>
-				<texture background="true" diffuse="diffuse/landscape_w410_h231.png">$INFO[Player.Art(landscape)]</texture>
+				<texture background="true" diffuse="diffuse/landscape_w410_h231.png">$VAR[Image_OSD_VHSArt]</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<animation type="WindowOpen">
@@ -131,6 +150,7 @@
 			<label>$LOCALIZE[31994]</label>
 			<label2>$VAR[Label_Setting_InfoLineStyle]</label2>
 			<onclick>Skin.ToggleSetting(Info.EnablePillboxStyle)</onclick>
+			<include>DialogCustom_Reload_1118</include>
 		</include>
 		<include content="Settings_Button">
 			<param name="dialog">true</param>
@@ -139,6 +159,7 @@
 			<label>$LOCALIZE[31995]</label>
 			<onclick>Skin.ToggleSetting(InfoBar.TwoRow)</onclick>
 			<selected>Skin.HasSetting(InfoBar.TwoRow)</selected>
+			<include>DialogCustom_Reload_1118</include>
 		</include>
 		<include content="Settings_Button">
 			<param name="dialog">true</param>
@@ -147,6 +168,7 @@
 			<label>$LOCALIZE[21446]</label>
 			<onclick>Skin.ToggleSetting(InfoTags.EnableAudioCodec)</onclick>
 			<selected>Skin.HasSetting(InfoTags.EnableAudioCodec)</selected>
+			<include>DialogCustom_Reload_1118</include>
 		</include>
 		<include content="Settings_Label">
 			<param name="id">8005</param>
@@ -185,7 +207,7 @@
                 <left>$PARAM[left]</left>
                 <height>105</height>
 
-                <visible>[String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,video) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,album) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,song) | $PARAM[override]]</visible>
+                <visible>[String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,video) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,album) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,song) | !String.IsEmpty($PARAM[container]$PARAM[listitem].ChannelNumberLabel) | $PARAM[override]]</visible>
 
 
                 <control type="grouplist">
@@ -276,14 +298,28 @@
                     <include content="Info_Line_Label">
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="label">$INFO[$PARAM[container]$PARAM[listitem].Premiered]</param>
-                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].Premiered) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | $PARAM[override]]</param>
+                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].Premiered) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,video) | !String.IsEmpty($PARAM[container]$PARAM[listitem].ChannelNumberLabel) | $PARAM[override]]</param>
+                    </include>
+
+                    <!-- Channel Name -->
+                    <include content="Info_Line_Label">
+                        <param name="colordiffuse">$PARAM[colordiffuse]</param>
+                        <param name="label">$INFO[$PARAM[container]$PARAM[listitem].ChannelName]</param>
+                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].ChannelName)</param>
+                    </include>
+
+                    <!-- Channel Number -->
+                    <include content="Info_Line_Label">
+                        <param name="colordiffuse">$PARAM[colordiffuse]</param>
+                        <param name="label">$INFO[$PARAM[container]$PARAM[listitem].ChannelNumberLabel,Channel ,]</param>
+                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].ChannelNumberLabel)</param>
                     </include>
 
                     <!-- MPAA -->
                     <include content="Info_Line_Label">
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="label">$INFO[$PARAM[container]$PARAM[listitem].MPAA]</param>
-                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].MPAA) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | $PARAM[override]]</param>
+                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].MPAA) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,video) | $PARAM[override]]</param>
                     </include>
 
                     <!-- Year -->
@@ -309,12 +345,12 @@
                     <include content="Info_Line_Label">
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="label">$INFO[$PARAM[container]$PARAM[listitem].Duration(h),, $LOCALIZE[31074] ]$INFO[$PARAM[container]$PARAM[listitem].Duration(m),, $LOCALIZE[31073]]</param>
-                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].Duration) + !Integer.IsEqual($PARAM[container]$PARAM[listitem].Duration(h),0) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | $PARAM[override]]</param>
+                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].Duration) + !Integer.IsEqual($PARAM[container]$PARAM[listitem].Duration(h),0) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,video) | $PARAM[override]]</param>
                     </include>
                     <include content="Info_Line_Label">
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="label">$INFO[$PARAM[container]$PARAM[listitem].Duration(m),, $LOCALIZE[31073]]</param>
-                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].Duration) + Integer.IsEqual($PARAM[container]$PARAM[listitem].Duration(h),0) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | $PARAM[override]]</param>
+                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].Duration) + Integer.IsEqual($PARAM[container]$PARAM[listitem].Duration(h),0) + [String.IsEqual($PARAM[container]$PARAM[listitem].DBType,movie) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,tvshow) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,episode) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,season) | String.IsEqual($PARAM[container]$PARAM[listitem].DBType,video) | $PARAM[override]]</param>
                     </include>
 
                 </control>
@@ -370,7 +406,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Vision</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + !String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) + !String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital) + !String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3) + !String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3_ddp_atmos) + !String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd) + !String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd_atmos)</param>
+                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + ![Skin.HasSetting(InfoTags.EnableAudioCodec) + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3_ddp_atmos) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd_atmos)]]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -388,37 +424,37 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">SDR</param>
-                <param name="visible">$PARAM[visible] + [String.IsEmpty($PARAM[container]$PARAM[listitem].HdrType) + [[!String.IsEmpty($PARAM[container]$PARAM[listitem].VideoResolution)] | [Integer.IsEqual($PARAM[container]$PARAM[listitem].VideoResolution,720)] | [Integer.IsGreater($PARAM[container]$PARAM[listitem].VideoResolution,720)] | Integer.IsGreater($PARAM[container]$PARAM[listitem].VideoResolution,1080) | Integer.IsEqual($PARAM[container]$PARAM[listitem].VideoResolution,4K)]]</param>
+                <param name="visible">$PARAM[visible] + String.IsEmpty($PARAM[container]$PARAM[listitem].HdrType) + !String.IsEmpty($PARAM[container]$PARAM[listitem].VideoResolution)</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Vision • TrueHD</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoTags.EnableAudioCodec) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd)</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Vision • TrueHD (Atmos)</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd_atmos)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoTags.EnableAudioCodec) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd_atmos)</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Vision • Digital</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoTags.EnableAudioCodec) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Vision • Digital Plus</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoTags.EnableAudioCodec) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3)</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Vision • Digital Plus (Atmos)</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3_ddp_atmos)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoTags.EnableAudioCodec) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3_ddp_atmos)</param>
                 <param name="width">auto</param>
             </include>
         </definition>
@@ -430,31 +466,25 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">AAC</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_latm) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_lc) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,he_aac) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,he_aac_v2) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_ssr) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_ltp)</param>
+                <param name="visible">$PARAM[visible] + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_latm) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_lc) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,he_aac) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,he_aac_v2) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_ssr) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,aac_ltp)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Digital</param>
-                <param name="visible">$PARAM[visible] + !Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital)</param>
+                <param name="visible">$PARAM[visible] + !Skin.HasSetting(InfoBar.TwoRow) + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Digital</param>
-                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital) + !String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)</param>
-                <param name="width">auto</param>
-            </include>
-            <include content="Info_Line_Pill_Text">
-                <param name="colordiffuse">$PARAM[colordiffuse]</param>
-                <param name="label">AVC</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,avc)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,ac3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dolbydigital)] + ![Skin.HasSetting(InfoTags.EnableHDR) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">DTS</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dca) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dts)</param>
+                <param name="visible">$PARAM[visible] + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dca) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,dts)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -502,7 +532,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Digital Plus</param>
-                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3) + !String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3) + ![Skin.HasSetting(InfoTags.EnableHDR) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -514,7 +544,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby Digital Plus (Atmos)</param>
-                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3_ddp_atmos) + !String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,eac3_ddp_atmos) + ![Skin.HasSetting(InfoTags.EnableHDR) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -526,7 +556,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">MP3</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,mp3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,mp3float)</param>
+                <param name="visible">$PARAM[visible] + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,mp3) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,mp3float)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -544,7 +574,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">PCM</param>
-                <param name="visible">$PARAM[visible] + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm_bluray) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm_s16le) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm_s24le)</param>
+                <param name="visible">$PARAM[visible] + [String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm_bluray) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm_s16le) | String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,pcm_s24le)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -556,7 +586,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby TrueHD</param>
-                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd) + !String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd) + ![Skin.HasSetting(InfoTags.EnableHDR) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
@@ -568,7 +598,7 @@
             <include content="Info_Line_Pill_Text">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="label">Dolby TrueHD (Atmos)</param>
-                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd_atmos) + !String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)</param>
+                <param name="visible">$PARAM[visible] + Skin.HasSetting(InfoBar.TwoRow) + String.IsEqual($PARAM[container]$PARAM[listitem].AudioCodec,truehd_atmos) + ![Skin.HasSetting(InfoTags.EnableHDR) + String.IsEqual($PARAM[container]$PARAM[listitem].HdrType,dolbyvision)]</param>
                 <param name="width">auto</param>
             </include>
             <include content="Info_Line_Pill_Text">
