@@ -16,14 +16,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.6\n"
 
-msgctxt "#31994"
-msgid "Information bar"
-msgstr "信息栏"
-
-msgctxt "#31995"
-msgid "Two-line information bar"
-msgstr "显示双行信息栏"
-
 msgctxt "#31000"
 msgid "Live TV / PVR"
 msgstr "电视直播 / PVR"
@@ -2525,3 +2517,35 @@ msgstr "光碟封面"
 msgctxt "#31999"
 msgid "VHS Art"
 msgstr "录像带复古封面"
+
+msgctxt "#31219"
+msgid "Recently Watched"
+msgstr "最近观看"
+
+msgctxt "#31247"
+msgid "Networks"
+msgstr "网络"
+
+msgctxt "#31248"
+msgid "Certifications"
+msgstr "分级"
+
+msgctxt "#31253"
+msgid "Daily"
+msgstr "每日"
+
+msgctxt "#31266"
+msgid "Monthly"
+msgstr "每月"
+
+msgctxt "#21446"
+msgid "Audio codec"
+msgstr "音频编码"
+
+msgctxt "#35227"
+msgid "Rotating disc art"
+msgstr "旋转光碟封面"
+
+msgctxt "#31251"
+msgid "Statistics"
+msgstr "统计"

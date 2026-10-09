@@ -20,7 +20,7 @@
 
 	<variable name="ArtworkStyle">
 		<value condition="String.IsEqual(Skin.String(OSD.ArtworkStyle),DiscArt)">$LOCALIZE[427]</value>
-		<value condition="String.IsEqual(Skin.String(OSD.ArtworkStyle),VHSArt)">VHS</value>
+		<value condition="String.IsEqual(Skin.String(OSD.ArtworkStyle),VHSArt)">$LOCALIZE[31999]</value>
 		<value>$LOCALIZE[351]</value>
 	</variable>
 
