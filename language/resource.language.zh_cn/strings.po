@@ -2549,3 +2549,59 @@ msgstr "旋转光碟封面"
 msgctxt "#31251"
 msgid "Statistics"
 msgstr "统计"
+
+msgctxt "#31161"
+msgid "Flyer"
+msgstr "海报"
+
+msgctxt "#31163"
+msgid "Combined Flyer"
+msgstr "混合：海报"
+
+msgctxt "#31164"
+msgid "Row Placard"
+msgstr "横排：招贴"
+
+msgctxt "#31172"
+msgid "Placard"
+msgstr "招贴"
+
+msgctxt "#31175"
+msgid "Player"
+msgstr "玩家"
+
+msgctxt "#31176"
+msgid "Create a new save"
+msgstr "新建存档"
+
+msgctxt "#31178"
+msgid "Cheats available"
+msgstr "可用作弊码"
+
+msgctxt "#31180"
+msgid "Garbage"
+msgstr "很烂"
+
+msgctxt "#31182"
+msgid "Bad"
+msgstr "较差"
+
+msgctxt "#31190"
+msgid "Average"
+msgstr "一般"
+
+msgctxt "#31191"
+msgid "Good"
+msgstr "不错"
+
+msgctxt "#31192"
+msgid "Great"
+msgstr "很棒"
+
+msgctxt "#31193"
+msgid "Amazing"
+msgstr "惊艳"
+
+msgctxt "#31201"
+msgid "Excellent"
+msgstr "优秀"
