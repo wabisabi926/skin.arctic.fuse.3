@@ -411,8 +411,8 @@ msgstr "评分样式"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31083"
-msgid "Combined"
-msgstr "混合"
+msgid "Combined Row"
+msgstr "行：混合"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31084"
@@ -756,12 +756,12 @@ msgstr "年代"
 #: /1080i/Includes_Views_Row.xml
 msgctxt "#31156"
 msgid "Row Flyer"
-msgstr "横向海报"
+msgstr "行：传单"
 
 #: /1080i/Includes_Views_Wall.xml
 msgctxt "#31157"
 msgid "Wall Flyer"
-msgstr "墙式海报"
+msgstr "墙：传单"
 
 #: /1080i/Includes_Keyboard_Mini.xml
 msgctxt "#31158"
@@ -2454,6 +2454,51 @@ msgctxt "#31625"
 msgid "High"
 msgstr "高"
 
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31626"
+msgid "Combined Wall"
+msgstr "混合墙"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31627"
+msgid "Combined Wall Square"
+msgstr "混合墙：方形"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31628"
+msgid "Combined Wall Landscape"
+msgstr "混合墙：横版"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31629"
+msgid "Combined Wall Poster"
+msgstr "混合墙：海报"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31630"
+msgid "Combined Wall Circle"
+msgstr "混合墙：圆形"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31631"
+msgid "Combined Wall Board"
+msgstr "混合墙：看板"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31632"
+msgid "Combined Wall Flyer"
+msgstr "混合墙：传单"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31633"
+msgid "Fallback style"
+msgstr "备用样式"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31634"
+msgid "Stylised"
+msgstr "风格化"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
@@ -2552,19 +2597,19 @@ msgstr "统计"
 
 msgctxt "#31161"
 msgid "Flyer"
-msgstr "海报"
+msgstr "传单"
 
 msgctxt "#31163"
 msgid "Combined Flyer"
-msgstr "混合：海报"
+msgstr "混合：传单"
 
 msgctxt "#31164"
 msgid "Row Placard"
-msgstr "横排：招贴"
+msgstr "行：标牌"
 
 msgctxt "#31172"
 msgid "Placard"
-msgstr "招贴"
+msgstr "标牌"
 
 msgctxt "#31175"
 msgid "Player"
