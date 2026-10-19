@@ -2680,3 +2680,18 @@ msgstr "音频编码"
 msgctxt "#35227"
 msgid "Rotating disc art"
 msgstr "旋转光碟封面"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31635"
+msgid "List Poster"
+msgstr "列表：海报"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31636"
+msgid "List Square"
+msgstr "列表：方形"
+
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31637"
+msgid "Trailer source"
+msgstr "预告片来源"
