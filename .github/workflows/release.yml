@@ -34,10 +34,12 @@ jobs:
             echo "Could not read version from addon.xml" >&2
             exit 1
           fi
+          BRANCH="${GITHUB_REF_NAME}"
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
-          echo "tag=with-poster-title-douban-${VERSION}" >> "$GITHUB_OUTPUT"
-          echo "asset=skin.arctic.fuse.3-${VERSION}.zip" >> "$GITHUB_OUTPUT"
-          echo "Addon version: ${VERSION}"
+          echo "tag=${BRANCH}-${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "asset=skin.arctic.fuse.3-${BRANCH}-${VERSION}.zip" >> "$GITHUB_OUTPUT"
+          echo "Addon version: ${VERSION} (branch: ${BRANCH})"
 
       - name: Check whether release already exists
         id: guard
@@ -59,8 +61,9 @@ jobs:
           set -euo pipefail
           ADDON_ID="skin.arctic.fuse.3"
           VERSION="${{ steps.meta.outputs.version }}"
+          BRANCH="${{ steps.meta.outputs.branch }}"
           BUILD_DIR="${RUNNER_TEMP}/build"
-          ZIP_PATH="${RUNNER_TEMP}/${ADDON_ID}-${VERSION}.zip"
+          ZIP_PATH="${RUNNER_TEMP}/${ADDON_ID}-${BRANCH}-${VERSION}.zip"
 
           mkdir -p "${BUILD_DIR}/${ADDON_ID}"
 
@@ -76,7 +79,7 @@ jobs:
           find "${BUILD_DIR}/${ADDON_ID}/media" -mindepth 1 -type f -not -name 'Textures.xbt' -delete
           find "${BUILD_DIR}/${ADDON_ID}/media" -mindepth 1 -type d -empty -delete
 
-          # 以 skin.arctic.fuse.3/ 为 zip 根目录，命名 <addonid>-<version>.zip
+          # 以 skin.arctic.fuse.3/ 为 zip 根目录，命名 <addonid>-<branch>-<version>.zip
           ( cd "${BUILD_DIR}" && zip -rq "${ZIP_PATH}" "${ADDON_ID}" )
 
           echo "zip_path=${ZIP_PATH}" >> "$GITHUB_OUTPUT"
