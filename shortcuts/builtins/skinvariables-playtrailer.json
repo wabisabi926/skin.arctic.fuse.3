@@ -1,0 +1,78 @@
+{
+    "infolabels": {
+        "trailer": "Window(Home).Property(TMDbHelper.ListItem.Trailer)",
+        "base_title": "Window(Home).Property(TMDbHelper.ListItem.base_title)",
+        "title": "Window(Home).Property(TMDbHelper.ListItem.Title)",
+        "base_label": "Window(Home).Property(TMDbHelper.ListItem.base_label)",
+        "tmdbhelper_base_imdb_id": "Window(Home).Property(TMDbHelper.ListItem.base_imdb_id)",
+        "tmdbhelper_imdb_id": "Window(Home).Property(TMDbHelper.ListItem.imdb_id)",
+        "tmdbhelper_imdbnumber": "Window(Home).Property(TMDbHelper.ListItem.IMDBNumber)",
+        "base_trailer": "Window(Home).Property(TMDbHelper.ListItem.base_trailer)"
+    },
+    "values": {
+        "trailer_title": [
+            {
+                "rules": [
+                    "!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_title))"
+                ],
+                "value": "{base_title}"
+            },
+            {
+                "rules": [
+                    "!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Title))"
+                ],
+                "value": "{title}"
+            },
+            "{base_label}"
+        ],
+        "imdb_id": [
+            {
+                "rules": [
+                    "String.StartsWith(Window(Home).Property(TMDbHelper.ListItem.base_imdb_id),tt)"
+                ],
+                "value": "{tmdbhelper_base_imdb_id}"
+            },
+            {
+                "rules": [
+                    "String.StartsWith(Window(Home).Property(TMDbHelper.ListItem.imdb_id),tt)"
+                ],
+                "value": "{tmdbhelper_imdb_id}"
+            },
+            {
+                "rules": [
+                    "String.StartsWith(Window(Home).Property(TMDbHelper.ListItem.IMDBNumber),tt)"
+                ],
+                "value": "{tmdbhelper_imdbnumber}"
+            },
+            ""
+        ],
+        "imdb_trailer": [
+            {
+                "rules": [
+                    "System.AddonIsEnabled(plugin.video.imdb.trailers)",
+                    "[String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),movie) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),tvshow)]",
+                    "{imdb_id}!="
+                ],
+                "value": "plugin://plugin.video.imdb.trailers/?action=play_id&imdb={imdb_id}"
+            },
+            ""
+        ],
+        "default_trailer": [
+            {
+                "rules": [
+                    "!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_trailer))"
+                ],
+                "value": "{base_trailer}"
+            },
+            "{trailer}"
+        ]
+    },
+    "actions": [
+        "SetProperty(PlayTrailerTitle,\"{trailer_title}\",Home)",
+        "SetProperty(TrailerSource.Default,\"{default_trailer}\",Home)",
+        "SetProperty(TrailerSource.IMDb,\"{imdb_trailer}\",Home)",
+        "Dialog.Close(contextmenu,true)",
+        "Dialog.Close(1172,true)",
+        "ActivateWindow(1122)"
+    ]
+}

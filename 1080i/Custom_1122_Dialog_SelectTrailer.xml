@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1122">
+
+    <defaultcontrol always="true">450</defaultcontrol>
+    <onload>SetProperty(TMDbHelper.ServicePause,True)</onload>
+    <controls>
+        <include>DialogCustom_Trailers</include>
+    </controls>
+</window>
