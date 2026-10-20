@@ -1,0 +1,100 @@
+name: Build Kodi Addon Release
+
+# 版本号更新（addon.xml 变更）时自动打包并发布到 GitHub Releases
+on:
+  push:
+    branches:
+      - with-poster-title-douban
+    paths:
+      - addon.xml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kodi-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read addon version
+        id: meta
+        run: |
+          set -euo pipefail
+          VERSION="$(python3 -c "import xml.etree.ElementTree as ET; print(ET.parse('addon.xml').getroot().get('version'))")"
+          if [ -z "${VERSION}" ]; then
+            echo "Could not read version from addon.xml" >&2
+            exit 1
+          fi
+          BRANCH="${GITHUB_REF_NAME}"
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=${BRANCH}-${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "asset=skin.arctic.fuse.3-${BRANCH}-${VERSION}.zip" >> "$GITHUB_OUTPUT"
+          echo "Addon version: ${VERSION} (branch: ${BRANCH})"
+
+      - name: Check whether release already exists
+        id: guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view "${{ steps.meta.outputs.tag }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Release ${{ steps.meta.outputs.tag }} already exists - skip."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build addon zip
+        id: build
+        if: steps.guard.outputs.exists == 'false'
+        run: |
+          set -euo pipefail
+          ADDON_ID="skin.arctic.fuse.3"
+          VERSION="${{ steps.meta.outputs.version }}"
+          BRANCH="${{ steps.meta.outputs.branch }}"
+          BUILD_DIR="${RUNNER_TEMP}/build"
+          ZIP_PATH="${RUNNER_TEMP}/${ADDON_ID}-${BRANCH}-${VERSION}.zip"
+
+          mkdir -p "${BUILD_DIR}/${ADDON_ID}"
+
+          # 复制整个插件目录，排除 VCS / CI 元数据(*.gitattributes、*.gitignore)
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.gitattributes' \
+            --exclude='.gitignore' \
+            ./ "${BUILD_DIR}/${ADDON_ID}/"
+
+          # media 目录只保留打包好的 Textures.xbt，其余散图不打包
+          find "${BUILD_DIR}/${ADDON_ID}/media" -mindepth 1 -type f -not -name 'Textures.xbt' -delete
+          find "${BUILD_DIR}/${ADDON_ID}/media" -mindepth 1 -type d -empty -delete
+
+          # 以 skin.arctic.fuse.3/ 为 zip 根目录，命名 <addonid>-<branch>-<version>.zip
+          ( cd "${BUILD_DIR}" && zip -rq "${ZIP_PATH}" "${ADDON_ID}" )
+
+          echo "zip_path=${ZIP_PATH}" >> "$GITHUB_OUTPUT"
+          echo "=== package contents (head) ==="
+          unzip -l "${ZIP_PATH}" | head -n 30
+          echo "=== media entries ==="
+          unzip -l "${ZIP_PATH}" | grep -F "${ADDON_ID}/media/" || true
+
+      - name: Publish GitHub Release
+        if: steps.guard.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.tag }}
+          files: ${{ steps.build.outputs.zip_path }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false

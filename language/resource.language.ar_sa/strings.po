@@ -16,7 +16,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.1\n"
 
-
 msgctxt "#31000"
 msgid "Live TV / PVR"
 msgstr "البث المباشر / PVR"
@@ -1307,7 +1306,7 @@ msgstr "أيقونة"
 #: /1080i/SkinSettings.xml
 msgctxt "#31275"
 msgid "Customise search"
-msgstr "تخصيص البحث"
+msgstr "البحث"
 
 msgctxt "#31279"
 msgid "Studio icons"
@@ -1960,6 +1959,11 @@ msgctxt "#31465"
 msgid "Rain chance"
 msgstr "احتمال المطر"
 
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31466"
+msgid "Blur background"
+msgstr "طمس الخلفية"
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -2408,7 +2412,7 @@ msgstr "قائمة مدمجة"
 #: /1080i/Includes_Views_List.xml
 msgctxt "#31581"
 msgid "List Expanded"
-msgstr "قائمة موسّعة"
+msgstr "قائمة موسعة"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31583"

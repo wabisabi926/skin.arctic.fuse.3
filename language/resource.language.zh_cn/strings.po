@@ -1974,7 +1974,6 @@ msgctxt "#31473"
 msgid "Radar"
 msgstr "雷达"
 
-
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
 msgid "This category contains acknowledgements, contributions, and thanks."
@@ -2529,6 +2528,16 @@ msgstr "标题样式"
 msgctxt "#31634"
 msgid "Stylised"
 msgstr "风格化"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31635"
+msgid "List Poster"
+msgstr "列表：海报"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31636"
+msgid "List Square"
+msgstr "列表：方形"
 
 msgctxt "#31980"
 msgid "Reticulating Splines"
