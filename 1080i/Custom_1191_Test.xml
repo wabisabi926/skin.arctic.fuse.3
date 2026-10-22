@@ -29,15 +29,7 @@
             <param name="time">$VAR[Image_StartUp_Test_Layer_Time]</param>
         </include>
 
-        <include content="Object_StartUp_Logo">
-            <param name="weather_visible">true</param>
-            <param name="weather_icon_visible">true</param>
-            <param name="weather_label_visible">true</param>
-            <param name="weather_description_visible">true</param>
-            <param name="weather_icon">resource://resource.images.weathericons.white/$VAR[Image_StartUp_Test_WeatherCode].png</param>
-            <param name="weather_label">[B]$VAR[Label_StartUp_Test_Clock][/B]</param>
-            <param name="weather_description">$VAR[Label_StartUp_Test_Weather]</param>
-        </include>
+        <include content="Object_StartUp_Logo" />
         <include content="Object_StartUp_Selector">
             <param name="icon">$INFO[ListItem.CurrentItem,special://skin/extras/profiles/Mountains (,).jpg]</param>
             <param name="onup">52</param>
