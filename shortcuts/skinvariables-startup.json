@@ -35,7 +35,7 @@
                         "Skin.SetBool(TMDbHelper.EnableBlur)",
                         "Skin.SetBool(TMDbHelper.Service)",
                         "Skin.SetString(Background.DialogImage,Adaptive)",
-                        "Skin.SetString(Background.Image,special://skin/extras/backgrounds/blur/purple_blur.jpg)",
+                        "Skin.SetString(Background.Image,special://skin/extras/backgrounds/blur/purple_blur.png)",
                         "Skin.SetString(HomeSwitcher.1107.Toggle,true)",
                         "Skin.SetString(HomeSwitcher.Home.Shortcut.Path,ActivateWindow(1181))",
                         "Skin.SetString(HomeSwitcher.Home.Spotlight.Path,special://skin/extras/playlists/RandomMovies.xsp)",
@@ -183,6 +183,10 @@
                 [{
                     "rules": ["String.IsEmpty(Skin.String(HomeSwitcher.1108.Mode))"],
                     "value": "Skin.SetString(HomeSwitcher.1108.Mode,Wall)"
+                }],
+                [{
+                    "rules": ["String.IsEmpty(Skin.String(HomeSwitcher.1109.Mode))"],
+                    "value": "Skin.SetString(HomeSwitcher.1109.Mode,Standard)"
                 }],
                 [{
                     "rules": ["Skin.HasSetting(TMDbHelper.Service)"],

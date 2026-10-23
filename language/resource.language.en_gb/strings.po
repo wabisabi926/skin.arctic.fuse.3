@@ -2522,3 +2522,18 @@ msgstr ""
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr ""
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31638"
+msgid "Hub type"
+msgstr ""
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31639"
+msgid "Custom"
+msgstr ""
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31640"
+msgid "Calendar source"
+msgstr ""
