@@ -2534,6 +2534,26 @@ msgctxt "#31636"
 msgid "List Square"
 msgstr "列表：方形"
 
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31637"
+msgid "Trailer source"
+msgstr "预告片来源"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31638"
+msgid "Hub type"
+msgstr "分类中心类型"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31639"
+msgid "Custom"
+msgstr "自定义"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31640"
+msgid "Calendar source"
+msgstr "节目日历来源"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
