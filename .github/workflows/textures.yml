@@ -1,0 +1,43 @@
+name: Rebuild Textures.xbt
+
+# 手动触发：用官方 Linux 版 TexturePacker 把 media/ 下的散图重新打包成 Textures.xbt。
+# 发布工作流只会打包现成的 xbt，所以 media/ 增删改图之后需要跑一次这个任务。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pack:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install TexturePacker
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y kodi-tools-texturepacker
+          kodi-TexturePacker -help
+
+      - name: Rebuild
+        run: |
+          cd media
+          kodi-TexturePacker -dupecheck -input . -output Textures.xbt
+          cd ..
+          ls -la media/Textures.xbt
+
+      - name: Commit
+        run: |
+          git config user.name "wabisabi926"
+          git config user.email "wabisabi926@foxmail.com"
+          git add media/Textures.xbt
+          if git diff --cached --quiet; then
+            echo "纹理包无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m ":bento: Rebuild Textures.xbt"
+          git push
