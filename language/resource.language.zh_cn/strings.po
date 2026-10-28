@@ -2554,6 +2554,21 @@ msgctxt "#31640"
 msgid "Calendar source"
 msgstr "节目日历来源"
 
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31641"
+msgid "Focus style"
+msgstr "聚焦样式"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31642"
+msgid "Outlined"
+msgstr "描边"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31643"
+msgid "Solid"
+msgstr "实心"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
