@@ -3376,6 +3376,81 @@ msgctxt "#31826"
 msgid "Default settings with widgets from your library plus trending items from TMDb"
 msgstr "默认设置，小组件为媒体库内容加上 TMDb 热门条目"
 
+#: /1080i/Includes_Actions.xml
+msgctxt "#31827"
+msgid "Ranked"
+msgstr "排行"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31828"
+msgid "Stack"
+msgstr "堆叠"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31829"
+msgid "Disc"
+msgstr "圆盘"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31830"
+msgid "Shelf"
+msgstr "货架"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31831"
+msgid "Timeline"
+msgstr "时间线"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31832"
+msgid "Gatefold"
+msgstr "折页"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31833"
+msgid "Show or hide this item in the hubs menu."
+msgstr "在分类中心菜单中显示或隐藏此项。"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31834"
+msgid "Choose the shortcut opened by this item."
+msgstr "选择此项打开的快捷方式。"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31835"
+msgid "Enter the path or action opened by this item directly."
+msgstr "直接输入此项打开的路径或动作。"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31836"
+msgid "Set the label shown for this item."
+msgstr "设置此项显示的标签。"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31837"
+msgid "Choose the icon shown for this item."
+msgstr "选择此项显示的图标。"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31843"
+msgid "Left"
+msgstr "左侧"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31844"
+msgid "Right"
+msgstr "右侧"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31845"
+msgid "Combined"
+msgstr "混合"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31846"
+msgid "Add hub"
+msgstr "添加分类中心"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
