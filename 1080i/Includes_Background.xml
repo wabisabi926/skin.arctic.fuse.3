@@ -96,7 +96,7 @@
         <param name="colordiffuse">main_back</param>
         <definition>
             <control type="multiimage">
-                <imagepath colordiffuse="$PARAM[colordiffuse]">$VAR[Image_StartUp]</imagepath>
+                <imagepath colordiffuse="$PARAM[colordiffuse]">$INFO[Skin.String(Startup.ImageFolder)]</imagepath>
                 <randomize>true</randomize>
                 <timeperimage>5000</timeperimage>
                 <fadetime>2000</fadetime>
@@ -114,7 +114,12 @@
             <include content="Background_StartUp_Custom" condition="$EXP[Exp_StartUp_CustomImage]">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
             </include>
-            <include condition="!$EXP[Exp_StartUp_CustomImage]">Background_StartUp_SelectedScene</include>
+            <!-- 静态启动背景，替代原先依赖 resource.images.arctic.splash 的分层动态场景 -->
+            <control type="image" condition="!$EXP[Exp_StartUp_CustomImage]">
+                <fadetime>2000</fadetime>
+                <aspectratio>scale</aspectratio>
+                <texture background="true" colordiffuse="$PARAM[colordiffuse]">special://skin/extras/backgrounds/blur/purple_blur.jpg</texture>
+            </control>
         </definition>
     </include>
 
