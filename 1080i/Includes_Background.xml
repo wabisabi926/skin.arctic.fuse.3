@@ -114,11 +114,12 @@
             <include content="Background_StartUp_Custom" condition="$EXP[Exp_StartUp_CustomImage]">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
             </include>
-            <!-- 静态启动背景，替代原先依赖 resource.images.arctic.splash 的分层动态场景 -->
+            <!-- 静态启动背景，替代原先依赖 resource.images.arctic.splash 的分层动态场景。
+                 不加 colordiffuse，与 Background_Image 展示同一张图的观感保持一致。 -->
             <control type="image" condition="!$EXP[Exp_StartUp_CustomImage]">
                 <fadetime>2000</fadetime>
                 <aspectratio>scale</aspectratio>
-                <texture background="true" colordiffuse="$PARAM[colordiffuse]">special://skin/extras/backgrounds/blur/purple_blur.jpg</texture>
+                <texture background="true">special://skin/extras/backgrounds/blur/purple_blur.jpg</texture>
             </control>
         </definition>
     </include>
