@@ -1,12 +1,33 @@
 name: Rebuild Textures.xbt
 
-# 手动触发：用官方 Linux 版 TexturePacker 把 media/ 下的散图重新打包成 Textures.xbt。
-# 发布工作流只会打包现成的 xbt，所以 media/ 增删改图之后需要跑一次这个任务。
+# 用 Kodi 官方 TexturePacker 把 media/ 下的散图重新打包成 media/Textures.xbt。
+#
+# 触发时机：
+#   1. media/ 下有图片增删改（例如合并上游后新增贴图）—— 自动重建
+#   2. 手动 workflow_dispatch
+#
+# 说明：
+#   - 打包器来自 Ubuntu universe 的 kodi-tools-texturepacker（二进制名 kodi-TexturePacker）。
+#   - 发布工作流只会打包现成的 Textures.xbt（media 里的散图会被剔除），
+#     所以贴图变了就必须重建，否则线上包缺图。
+#   - 提交带 [skip ci]，且 paths 排除 Textures.xbt 本身，避免自我触发死循环。
+
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - with-poster-title-douban
+    paths:
+      - 'media/**'
+      - '!media/Textures.xbt'
+      - '.github/workflows/textures.yml'
 
 permissions:
   contents: write
+
+concurrency:
+  group: textures-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   pack:
@@ -19,25 +40,68 @@ jobs:
 
       - name: Install TexturePacker
         run: |
+          set -euo pipefail
           sudo apt-get update -qq
-          sudo apt-get install -y kodi-tools-texturepacker
-          kodi-TexturePacker -help
+          sudo apt-get install -y --no-install-recommends kodi-tools-texturepacker
+          command -v kodi-TexturePacker
+          kodi-TexturePacker -help 2>&1 | head -n 20 || true
 
-      - name: Rebuild
+      - name: Rebuild Textures.xbt
         run: |
+          set -euo pipefail
+          echo "散图数量: $(find media -type f -name '*.png' | wc -l)"
           cd media
           kodi-TexturePacker -dupecheck -input . -output Textures.xbt
           cd ..
-          ls -la media/Textures.xbt
+
+          ls -l media/Textures.xbt
+
+          # 头部必须是 XBTF（Kodi 纹理包魔数）
+          if ! head -c 4 media/Textures.xbt | grep -aq XBTF; then
+            echo "::error::生成的 Textures.xbt 头部不是 XBTF"
+            exit 1
+          fi
+
+      - name: Verify every texture is bundled
+        run: |
+          set -euo pipefail
+          # XBTF 内部按内容去重（-dupecheck），同一张图只保留一个名字。
+          # 因此不能按文件名判断，要按 md5 判断"这份内容是否已被包内某个名字代表"。
+          find media -type f -name '*.png' | sed 's|^media/||' | sort -u > /tmp/expected.txt
+          grep -a -o -F -f /tmp/expected.txt media/Textures.xbt | sort -u > /tmp/found.txt || true
+
+          # 每行格式：<32位md5><空格><路径>
+          ( cd media && find . -type f -name '*.png' -exec md5sum {} + ) \
+            | sed -E 's|^([0-9a-f]{32}) [ *]\./|\1  |' > /tmp/hashes.txt
+
+          # 已覆盖的内容 = 名字出现在包内的那些文件的 md5
+          awk 'NR==FNR{ok[$0];next} {p=substr($0,35); if(p in ok) print substr($0,1,32)}' \
+            /tmp/found.txt /tmp/hashes.txt | sort -u > /tmp/covered.txt
+
+          # 内容未被任何包内文件代表的，才是真正没打进包的
+          awk 'NR==FNR{c[$0];next} {if(!(substr($0,1,32) in c)) print substr($0,35)}' \
+            /tmp/covered.txt /tmp/hashes.txt | sort > /tmp/missing.txt
+
+          total=$(wc -l < /tmp/hashes.txt)
+          unique=$(cut -c1-32 /tmp/hashes.txt | sort -u | wc -l)
+          covered=$(wc -l < /tmp/covered.txt)
+          missing=$(wc -l < /tmp/missing.txt)
+          echo "散图 ${total} 张 / 唯一内容 ${unique} 种 / 已打包 ${covered} 种 / 未打包 ${missing} 张"
+
+          if [ "$missing" -gt 0 ]; then
+            echo "::warning::${missing} 张图未打进 Textures.xbt（运行时回退为散图加载）"
+            head -n 30 /tmp/missing.txt
+          fi
 
       - name: Commit
         run: |
-          git config user.name "wabisabi926"
-          git config user.email "wabisabi926@foxmail.com"
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add media/Textures.xbt
           if git diff --cached --quiet; then
             echo "纹理包无变化，跳过提交"
             exit 0
           fi
-          git commit -m ":bento: Rebuild Textures.xbt"
+          git commit -m ":bento: Rebuild Textures.xbt [skip ci]"
           git push
