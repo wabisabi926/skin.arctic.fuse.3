@@ -5,9 +5,6 @@
 
     <expression name="Exp_StartUp_CustomImage">!String.IsEmpty(Skin.String(Startup.ImageFolder)) + !Skin.String(Startup.ImageFolder,special://skin/extras/backgrounds/launch/)</expression>
 
-    <expression name="Exp_Trailer_HasIMDb">[System.AddonIsEnabled(plugin.video.imdb.trailers) + [String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),movie) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.base_dbtype),tvshow)] + [String.StartsWith(Window(Home).Property(TMDbHelper.ListItem.base_imdb_id),tt) | String.StartsWith(Window(Home).Property(TMDbHelper.ListItem.imdb_id),tt) | String.StartsWith(Window(Home).Property(TMDbHelper.ListItem.IMDBNumber),tt)]]</expression>
-
-    <expression name="Exp_Trailer_HasTMDbHelper">[System.AddonIsEnabled(plugin.video.themoviedb.helper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_ID)) + [String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type),movie) | String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Monitor.TMDb_Type),tv)]]</expression>
 
     <!-- ========== -->
     <!-- TMDBHelper -->

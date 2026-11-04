@@ -388,14 +388,6 @@
         </definition>
     </include>
 
-    <include name="DialogInfo_Related_Videos_Action">
-        <include content="Action_PlayTrailer_OnClick">
-            <param name="trailer">Container(5014).ListItem.FileNameAndPath</param>
-            <param name="trailer_fallback" />
-            <param name="title">$INFO[Container(5014).ListItem.Label]</param>
-        </include>
-    </include>
-
     <include name="DialogInfo_Related_Widget">
         <include content="Widget_Categories">
             <param name="id">5012</param>
@@ -425,14 +417,6 @@
             <param name="id">10</param>
             <param name="label">$LOCALIZE[572]</param>
             <param name="path">$VAR[Path_VideoInfo_OnlineStudio]</param>
-        </include>
-        <include content="DialogInfo_Related_CategoryWidget">
-            <param name="id">14</param>
-            <param name="label">$LOCALIZE[10025]</param>
-            <param name="path">$VAR[Path_VideoInfo_Trailers]</param>
-            <param name="style">List_Landscape_Row</param>
-            <param name="action">DialogInfo_Related_Videos_Action</param>
-            <param name="detailed">false</param>
         </include>
         <include content="DialogInfo_Related_CategoryWidget">
             <param name="id">16</param>
@@ -1468,14 +1452,6 @@
         </definition>
     </include>
 
-    <include name="DialogInfo_VideoButtons_Trailer">
-        <item>
-            <icon>special://skin/extras/icons/video.png</icon>
-            <label>$LOCALIZE[31393]</label>
-            <include>Action_SelectTrailerSource_OnClick</include>
-            <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.base_trailer)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer)) | $EXP[Exp_Trailer_HasIMDb] | $EXP[Exp_Trailer_HasTMDbHelper]</visible>
-        </item>
-    </include>
     <include name="DialogInfo_VideoButtons_Trakt">
         <item>
             <label>Trakt</label>
