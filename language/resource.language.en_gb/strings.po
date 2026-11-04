@@ -2646,11 +2646,6 @@ msgid "Show the studio logo of the focused item in the footer."
 msgstr ""
 
 #: /1080i/Includes_SkinSettings.xml
-msgctxt "#31678"
-msgid "Show the current weather conditions in the header."
-msgstr ""
-
-#: /1080i/Includes_SkinSettings.xml
 msgctxt "#31679"
 msgid "Show the tray of quick action buttons in the context menu."
 msgstr ""

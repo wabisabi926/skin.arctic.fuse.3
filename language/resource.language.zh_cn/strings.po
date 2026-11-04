@@ -2642,11 +2642,6 @@ msgid "Show the studio logo of the focused item in the footer."
 msgstr "在底栏显示聚焦条目的制片公司标志。"
 
 #: /1080i/Includes_SkinSettings.xml
-msgctxt "#31678"
-msgid "Show the current weather conditions in the header."
-msgstr "在顶栏显示当前天气状况。"
-
-#: /1080i/Includes_SkinSettings.xml
 msgctxt "#31679"
 msgid "Show the tray of quick action buttons in the context menu."
 msgstr "在上下文菜单中显示快捷操作按钮托盘。"
