@@ -64,6 +64,7 @@
 
     <include name="Furniture_Footer_Right">
         <param name="visible">true</param>
+        <param name="include_studio">true</param>
         <definition>
             <control type="group">
                 <include>Dimension_Bottombar</include>
