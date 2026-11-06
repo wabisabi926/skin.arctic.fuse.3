@@ -2859,7 +2859,7 @@ msgstr "在发现中包含 MDbList 列表。"
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31728"
 msgid "Select the type of hub: custom, next aired, Live TV, or add-ons."
-msgstr "选择分类中心类型：自定义、下一集、电视直播或插件。"
+msgstr "选择分类中心类型：自定义、下次播出、电视直播或插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31730"
@@ -2884,7 +2884,7 @@ msgstr "选择此分类中心中显示的小组件。"
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31734"
 msgid "Select whether the next aired calendar uses your library or Trakt."
-msgstr "选择下一集日历使用本地媒体库还是 Trakt。"
+msgstr "选择下次播出日历使用本地媒体库还是 Trakt。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31735"
