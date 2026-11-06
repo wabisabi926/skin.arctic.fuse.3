@@ -331,7 +331,7 @@ msgstr "主创"
 #: /1080i/Includes_Search.xml
 msgctxt "#31066"
 msgid "Discover"
-msgstr "探索"
+msgstr "发现"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31067"
@@ -914,7 +914,7 @@ msgstr "很好"
 #: /1080i/Dialog_DialogPlot.xml
 msgctxt "#31193"
 msgid "Amazing"
-msgstr "惊艳"
+msgstr "出色"
 
 #: /1080i/Includes_Info.xml
 msgctxt "#31194"
@@ -986,7 +986,7 @@ msgstr "编解码器"
 #: /1080i/SkinSettings.xml
 msgctxt "#31208"
 msgid "Header"
-msgstr "页眉"
+msgstr "顶栏"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31209"
@@ -996,7 +996,7 @@ msgstr "边框"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31210"
 msgid "Series Premiere"
-msgstr "系列首映"
+msgstr "剧集首播"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31211"
@@ -1126,7 +1126,7 @@ msgstr "珊瑚红色"
 
 msgctxt "#31239"
 msgid "Footer"
-msgstr "页脚"
+msgstr "底栏"
 
 #: /1080i/Custom_1115_Dialog_ColourPresets.xml
 msgctxt "#31240"
@@ -1163,7 +1163,7 @@ msgstr "文本框滚动"
 #: /1080i/Includes_Settings.xml
 msgctxt "#31247"
 msgid "Networks"
-msgstr "网络"
+msgstr "电视网"
 
 #: /1080i/Includes_Settings.xml
 msgctxt "#31248"
@@ -1323,7 +1323,7 @@ msgstr "获奖"
 
 msgctxt "#31287"
 msgid "Nominated for"
-msgstr "提名"
+msgstr "获提名"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31288"
@@ -1601,7 +1601,7 @@ msgstr "安装 zip"
 #: /1080i/SkinSettings.xml
 msgctxt "#31376"
 msgid "Reset discover search history"
-msgstr "清除探索与搜索历史记录"
+msgstr "清除发现与搜索历史记录"
 
 #: /1080i/Includes_Shortcuts_Window.xml
 msgctxt "#31377"
@@ -1641,12 +1641,12 @@ msgstr "托盘标签"
 #: /1080i/SkinSettings.xml
 msgctxt "#31385"
 msgid "Secondary"
-msgstr "辅助功能"
+msgstr "次要"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31386"
 msgid "Primary"
-msgstr "核心模块"
+msgstr "主要"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31387"
@@ -2339,7 +2339,7 @@ msgstr "圣诞节"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31613"
 msgid "Winter Frost"
-msgstr "冬日冰霜"
+msgstr "冬日寒霜风"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31614"
@@ -2474,7 +2474,7 @@ msgstr "实心"
 #: /1080i/SkinSettings.xml
 msgctxt "#31644"
 msgid "This category contains the settings for the home menu, spotlight, startup and skin users."
-msgstr "此分类包含主菜单、聚焦推荐、启动画面和皮肤用户的设置。"
+msgstr "此分类包含主菜单、精选推荐、启动画面和皮肤用户的设置。"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31645"
@@ -2489,7 +2489,7 @@ msgstr "此分类包含顶栏、底栏、上下文菜单、文本和鼠标指针
 #: /1080i/SkinSettings.xml
 msgctxt "#31647"
 msgid "This category contains the settings for viewtypes, indicators, navigation and Live TV."
-msgstr "此分类包含视图类型、状态指示、导航和电视直播的设置。"
+msgstr "此分类包含视图类型、指示器、导航和电视直播的设置。"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31648"
@@ -2534,7 +2534,7 @@ msgstr "选择顶部菜单中的条目以文字还是图标显示。"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31657"
 msgid "Select what is shown in the header above the top menu: the date, the profile, or nothing."
-msgstr "选择顶部菜单上方顶栏显示的内容：日期、用户资料或不显示。"
+msgstr "选择顶部菜单上方顶栏显示的内容：日期、配置文件或不显示。"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31658"
@@ -2544,12 +2544,12 @@ msgstr "选择在顶部菜单按上键时打开子菜单还是选项菜单。"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31659"
 msgid "When enabled, the spotlight slides down and dims while the top menu is shown."
-msgstr "启用后，显示顶部菜单时聚焦推荐区会下滑并变暗。"
+msgstr "启用后，显示顶部菜单时精选推荐区会下滑并变暗。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31660"
 msgid "Select whether the spotlight button opens the information dialog or the spotlight menu."
-msgstr "选择聚焦推荐按钮打开信息对话框还是聚焦推荐菜单。"
+msgstr "选择精选推荐按钮打开信息对话框还是精选推荐菜单。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31661"
@@ -2564,7 +2564,7 @@ msgstr "选择皮肤启动时启动画面显示的图片。"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31667"
 msgid "Select the background shown for genres, studios and people that have no artwork of their own."
-msgstr "选择类型、制片公司和人物在没有自身海报时显示的背景。"
+msgstr "选择类型、制作公司和人物在没有自身海报时显示的背景。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31669"
@@ -2584,7 +2584,7 @@ msgstr "选择列表视图显示简洁还是详细的文字标签。"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31672"
 msgid "Choose which status indicators are shown on items."
-msgstr "选择条目上显示哪些状态指示。"
+msgstr "选择条目上显示哪些指示器。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31673"
@@ -2609,7 +2609,7 @@ msgstr "在底栏显示当前播放的条目。"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31677"
 msgid "Show the studio logo of the focused item in the footer."
-msgstr "在底栏显示聚焦条目的制片公司标志。"
+msgstr "在底栏显示聚焦条目的制作公司标志。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31679"
@@ -2744,12 +2744,12 @@ msgstr "保持启动画面显示，直到主界面小组件加载完成。"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31705"
 msgid "Load hub widgets in the background during startup so that hubs open faster."
-msgstr "启动时在后台加载枢纽小组件，让枢纽打开更快。"
+msgstr "启动时在后台加载分类中心小组件，让分类中心打开更快。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31706"
 msgid "Allow each skin user to have their own shortcut and widget configuration, like a lightweight profile."
-msgstr "允许每个皮肤用户拥有自己的快捷方式和小组件配置，类似轻量级用户档案。"
+msgstr "允许每个皮肤用户拥有自己的快捷方式和小组件配置，类似轻量级配置文件。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31707"
@@ -2814,12 +2814,12 @@ msgstr "将所有皮肤设置重置为默认值。此操作无法撤销。"
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31719"
 msgid "This category contains the settings for the search hub layout, widgets and discover lists."
-msgstr "此分类包含搜索枢纽的布局、小组件和发现列表的设置。"
+msgstr "此分类包含搜索分类中心的布局、小组件和发现列表的设置。"
 
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31720"
 msgid "This category contains the settings for the shortcut, submenu and widgets of this hub."
-msgstr "此分类包含此枢纽的快捷方式、子菜单和小组件的设置。"
+msgstr "此分类包含此分类中心的快捷方式、子菜单和小组件的设置。"
 
 #: /1080i/Custom_1115_Window_Shortcuts.xml
 msgctxt "#31721"
@@ -2829,17 +2829,17 @@ msgstr "此分类包含选项菜单磁贴、电源菜单和托盘的设置。"
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31722"
 msgid "Select how the widgets in the search hub are laid out."
-msgstr "选择搜索枢纽中小组件的布局方式。"
+msgstr "选择搜索分类中心中小组件的布局方式。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31723"
 msgid "Choose the widgets shown in the search hub."
-msgstr "选择搜索枢纽中显示的小组件。"
+msgstr "选择搜索分类中心中显示的小组件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31724"
 msgid "Show the discover lists in the search hub."
-msgstr "在搜索枢纽中显示发现列表。"
+msgstr "在搜索分类中心中显示发现列表。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31725"
@@ -2859,27 +2859,27 @@ msgstr "在发现中包含 MDbList 列表。"
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31728"
 msgid "Select the type of hub: custom, next aired, Live TV, or add-ons."
-msgstr "选择枢纽类型：自定义、下一集、电视直播或插件。"
+msgstr "选择分类中心类型：自定义、下一集、电视直播或插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31730"
 msgid "Customise the submenu items shown for this hub."
-msgstr "自定义此枢纽显示的子菜单条目。"
+msgstr "自定义此分类中心显示的子菜单条目。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31731"
 msgid "Select how the widgets in this hub are laid out."
-msgstr "选择此枢纽中小组件的布局方式。"
+msgstr "选择此分类中心中小组件的布局方式。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31732"
 msgid "Configure the spotlight shown at the top of this hub."
-msgstr "配置此枢纽顶部显示的聚焦推荐。"
+msgstr "配置此分类中心顶部显示的精选推荐。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31733"
 msgid "Choose the widgets shown in this hub."
-msgstr "选择此枢纽中显示的小组件。"
+msgstr "选择此分类中心中显示的小组件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31734"
@@ -2889,52 +2889,52 @@ msgstr "选择下一集日历使用本地媒体库还是 Trakt。"
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31735"
 msgid "Select whether channels in this hub are shown as square or landscape tiles."
-msgstr "选择此枢纽中的频道以方形还是横版磁贴显示。"
+msgstr "选择此分类中心中的频道以方形还是横版磁贴显示。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31736"
 msgid "Show the search or last played section in this hub, depending on the layout."
-msgstr "在此枢纽中显示搜索或最近播放区块（取决于布局）。"
+msgstr "在此分类中心中显示搜索或最近播放区块（取决于布局）。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31737"
 msgid "Show the channels section in this hub."
-msgstr "在此枢纽中显示频道区块。"
+msgstr "在此分类中心中显示频道区块。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31738"
 msgid "Show the channel groups section in this hub."
-msgstr "在此枢纽中显示频道分组区块。"
+msgstr "在此分类中心中显示频道分组区块。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31739"
 msgid "Show the recordings section in this hub."
-msgstr "在此枢纽中显示录像区块。"
+msgstr "在此分类中心中显示录像区块。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31740"
 msgid "Show video add-ons in this hub."
-msgstr "在此枢纽中显示视频插件。"
+msgstr "在此分类中心中显示视频插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31741"
 msgid "Show music add-ons in this hub."
-msgstr "在此枢纽中显示音乐插件。"
+msgstr "在此分类中心中显示音乐插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31742"
 msgid "Show picture add-ons in this hub."
-msgstr "在此枢纽中显示图片插件。"
+msgstr "在此分类中心中显示图片插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31743"
 msgid "Show program add-ons in this hub."
-msgstr "在此枢纽中显示程序插件。"
+msgstr "在此分类中心中显示程序插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31744"
 msgid "Show game add-ons in this hub."
-msgstr "在此枢纽中显示游戏插件。"
+msgstr "在此分类中心中显示游戏插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31745"
@@ -3249,7 +3249,7 @@ msgstr "视图"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31809"
 msgid "Seasonal"
-msgstr "季节主题"
+msgstr "季节"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31810"
@@ -3259,7 +3259,7 @@ msgstr "工具"
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31811"
 msgid "Style"
-msgstr "外观"
+msgstr "样式"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31813"
