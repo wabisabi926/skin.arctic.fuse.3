@@ -187,8 +187,8 @@ msgstr "剧组成员"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31036"
-msgid "Limited widgets use Show More folder item"
-msgstr "受限展示数量的小组件显示“更多”文件夹项"
+msgid "Show more item"
+msgstr "显示更多条目"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31037"
@@ -252,8 +252,8 @@ msgstr "磁贴"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31049"
-msgid "Customise shortcuts and widgets"
-msgstr "自定义快捷方式与小组件"
+msgid "Edit menu"
+msgstr "编辑菜单"
 
 #: /1080i/Includes_Search.xml
 msgctxt "#31050"
@@ -386,8 +386,8 @@ msgstr "更多信息"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31078"
-msgid "Use fake label textboxes"
-msgstr "使用虚拟标签文本框"
+msgid "Static textboxes"
+msgstr "静态文本框"
 
 #: /1080i/Dialog_DialogCustom.xml
 msgctxt "#31080"
@@ -401,13 +401,13 @@ msgstr "其他"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31083"
-msgid "Combined"
-msgstr "混合"
+msgid "Combined Row"
+msgstr "混合：行"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31084"
-msgid "Preload hubs during startup initialisation"
-msgstr "启动初始化时预加载内容分类中心"
+msgid "Preload hubs"
+msgstr "预加载分类中心"
 
 msgctxt "#31085"
 msgid "Live TV"
@@ -448,8 +448,8 @@ msgstr "详细信息"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31094"
-msgid "Mouse pointer size"
-msgstr "鼠标指针大小"
+msgid "Pointer size"
+msgstr "指针大小"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31095"
@@ -605,8 +605,8 @@ msgstr "剧情简介"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31127"
-msgid "Genre colours"
-msgstr "类型配色"
+msgid "EPG genre colours"
+msgstr "EPG 节目类型配色"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31128"
@@ -784,13 +784,13 @@ msgstr "行：标牌"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31165"
-msgid "Seekbar behaviour on delayed pause"
-msgstr "延迟暂停时的进度条行为"
+msgid "On pause"
+msgstr "暂停时"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31166"
-msgid "Back"
-msgstr "返回"
+msgid "Back action"
+msgstr "返回动作"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31167"
@@ -885,16 +885,16 @@ msgid "Autoscroll"
 msgstr "自动滚动"
 
 msgctxt "#31187"
-msgid "Autoscroll time interval"
-msgstr "自动滚动时间间隔"
+msgid "Autoscroll interval"
+msgstr "自动滚动间隔"
 
 msgctxt "#31188"
 msgid "Limit"
 msgstr "限制"
 
 msgctxt "#31189"
-msgid "Autoclose OSD after X seconds"
-msgstr "X 秒后自动关闭 OSD"
+msgid "Timeout"
+msgstr "超时"
 
 #: /1080i/Dialog_DialogPlot.xml
 msgctxt "#31190"
@@ -1153,12 +1153,12 @@ msgid "Now playing"
 msgstr "正在播放"
 
 msgctxt "#31245"
-msgid "Autoscroll labels"
-msgstr "标签自动滚动"
+msgid "Scroll labels"
+msgstr "标签滚动"
 
 msgctxt "#31246"
-msgid "Autoscroll textboxes"
-msgstr "文本框自动滚动"
+msgid "Scroll textboxes"
+msgstr "文本框滚动"
 
 #: /1080i/Includes_Settings.xml
 msgctxt "#31247"
@@ -1199,8 +1199,8 @@ msgid "Performance"
 msgstr "性能"
 
 msgctxt "#31255"
-msgid "Customise startup image"
-msgstr "自定义启动图像"
+msgid "Startup image"
+msgstr "启动图像"
 
 msgctxt "#31256"
 msgid "Resource Usage"
@@ -1254,8 +1254,8 @@ msgstr "最近"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31268"
-msgid "Background fallback"
-msgstr "备用背景"
+msgid "Fallback"
+msgstr "备用"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31269"
@@ -1376,8 +1376,8 @@ msgstr "信息正在加载"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31300"
-msgid "Customise window background"
-msgstr "自定义窗口背景"
+msgid "Window"
+msgstr "窗口"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31301"
@@ -1498,8 +1498,8 @@ msgstr "频道节目指南"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31349"
-msgid "Up"
-msgstr "向上"
+msgid "Up action"
+msgstr "向上动作"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31353"
@@ -1513,8 +1513,8 @@ msgstr "剩余时长"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31355"
-msgid "Seekbar time display"
-msgstr "进度条时间显示"
+msgid "Time display"
+msgstr "时间显示"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31356"
@@ -1591,8 +1591,8 @@ msgstr "来自"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31374"
-msgid "Reset skin settings to defaults"
-msgstr "重置皮肤设置为默认值"
+msgid "Reset settings"
+msgstr "重置设置"
 
 msgctxt "#31375"
 msgid "Install zip"
@@ -1793,8 +1793,8 @@ msgstr "正在初始化"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31428"
-msgid "Hide widget initialisation behind splash"
-msgstr "将小组件初始化过程隐藏在启动画面后"
+msgid "Wait for widgets"
+msgstr "等待小组件"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31429"
@@ -1823,8 +1823,8 @@ msgstr "自定义视频 OSD"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31435"
-msgid "TMDbHelper lookups"
-msgstr "TMDbHelper 查询"
+msgid "PVR lookups"
+msgstr "PVR 查询"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31438"
@@ -2043,13 +2043,13 @@ msgstr "计划中"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31505"
-msgid "Skin user login screen on startup"
-msgstr "启动时显示皮肤用户登录界面"
+msgid "Login screen"
+msgstr "登录界面"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31506"
-msgid "Individual skin user widget configurations"
-msgstr "为每个皮肤用户单独保存小组件配置"
+msgid "Skin users"
+msgstr "皮肤用户"
 
 #: /1080i/Custom_1195_SkinUserLoginScreen.xml
 msgctxt "#31508"
@@ -2088,8 +2088,8 @@ msgstr "反向排序"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31519"
-msgid "Empty widget placeholder"
-msgstr "显示无内容小组件"
+msgid "Empty widgets"
+msgstr "空小组件"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
@@ -2238,8 +2238,8 @@ msgstr "删除列表"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31576"
-msgid "Seekbar delayed pause time"
-msgstr "进度条延迟暂停时间"
+msgid "Pause delay"
+msgstr "暂停延迟"
 
 #: /1080i/Includes_ButtonMenu.xml
 msgctxt "#31579"
@@ -2333,8 +2333,8 @@ msgstr "季节主题"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31611"
-msgid "Christmas Theme"
-msgstr "圣诞节主题"
+msgid "Christmas"
+msgstr "圣诞节"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31613"
@@ -2348,28 +2348,28 @@ msgstr "澳洲圣诞节"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31615"
-msgid "Summer Breeze"
-msgstr "夏日微风"
+msgid "Summer"
+msgstr "夏季"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31617"
-msgid "Halloween Spook"
-msgstr "万圣节幽灵"
+msgid "Halloween"
+msgstr "万圣节"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31620"
-msgid "Background Atmosphere"
-msgstr "背景氛围"
+msgid "Atmosphere"
+msgstr "氛围"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31621"
-msgid "Fly-by Animations"
-msgstr "掠过动画"
+msgid "Fly-bys"
+msgstr "飞掠动画"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31622"
-msgid "Falling Props Density"
-msgstr "飘落道具密度"
+msgid "Falling props"
+msgstr "飘落道具"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31623"
@@ -2460,11 +2460,6 @@ msgstr "自定义"
 msgctxt "#31640"
 msgid "Calendar source"
 msgstr "节目日历来源"
-
-#: /1080i/Includes_SkinSettings.xml
-msgctxt "#31641"
-msgid "Focus style"
-msgstr "聚焦样式"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31642"
@@ -2562,39 +2557,14 @@ msgid "Select a preset colour scheme for highlights, backgrounds and dialogs."
 msgstr "选择用于高亮、背景和对话框的预设配色方案。"
 
 #: /1080i/Includes_SkinSettings.xml
-msgctxt "#31662"
-msgid "Choose the colours used for focus highlights and selected text."
-msgstr "选择焦点高亮和选中文字所用的颜色。"
-
-#: /1080i/Includes_SkinSettings.xml
-msgctxt "#31663"
-msgid "Choose the colour and image used for the window background."
-msgstr "选择窗口背景所用的颜色和图片。"
-
-#: /1080i/Includes_SkinSettings.xml
-msgctxt "#31664"
-msgid "Choose the colour and image used for the dialog background."
-msgstr "选择对话框背景所用的颜色和图片。"
-
-#: /1080i/Includes_SkinSettings.xml
 msgctxt "#31665"
 msgid "Choose the image shown on the splash screen while the skin starts."
 msgstr "选择皮肤启动时启动画面显示的图片。"
 
 #: /1080i/Includes_SkinSettings.xml
-msgctxt "#31666"
-msgid "Configure the blurred artwork shown in the background of windows."
-msgstr "配置窗口背景中显示的模糊海报。"
-
-#: /1080i/Includes_SkinSettings.xml
 msgctxt "#31667"
 msgid "Select the background shown for genres, studios and people that have no artwork of their own."
 msgstr "选择类型、制片公司和人物在没有自身海报时显示的背景。"
-
-#: /1080i/Includes_SkinSettings.xml
-msgctxt "#31668"
-msgid "Select whether focused items are highlighted with a solid fill or an outline. The skin reloads to apply the change."
-msgstr "选择聚焦条目使用实心填充还是描边高亮。更改后皮肤将重新加载。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31669"
@@ -2892,11 +2862,6 @@ msgid "Select the type of hub: custom, next aired, Live TV, or add-ons."
 msgstr "选择枢纽类型：自定义、下一集、电视直播或插件。"
 
 #: /1080i/Dialog_DialogShortcuts.xml
-msgctxt "#31729"
-msgid "Configure the label, icon and path of the menu shortcut for this hub."
-msgstr "配置此枢纽菜单快捷方式的标签、图标和路径。"
-
-#: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31730"
 msgid "Customise the submenu items shown for this hub."
 msgstr "自定义此枢纽显示的子菜单条目。"
@@ -3068,18 +3033,18 @@ msgstr "极简"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31764"
-msgid "In progress, new and recent items from your library"
-msgstr "媒体库中的在看、新增和最近条目"
+msgid "Movies, TV and music hubs with in progress, new and recent items from your library"
+msgstr "电影、剧集和音乐分类中心，包含媒体库中的在看、新增和最近条目"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31765"
-msgid "Your library plus trending items from TMDb"
-msgstr "媒体库内容加上 TMDb 热门条目"
+msgid "Library hubs plus trending items and next aired from TMDb"
+msgstr "媒体库分类中心，加上 TMDb 热门和即将播出条目"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31766"
-msgid "Continue watching only"
-msgstr "仅继续观看"
+msgid "Continue watching on home with only the add-ons hub"
+msgstr "主界面仅保留插件分类中心的继续观看"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31767"
@@ -3223,13 +3188,13 @@ msgstr "使用推荐默认值（TMDb Helper）"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31797"
-msgid "Default settings with In progress, new and recent widgets from your library"
-msgstr "默认设置，主界面小组件为媒体库中的在看、新增和最近条目"
+msgid "Default settings with movies, TV and music hubs and widgets from your library"
+msgstr "默认设置，电影、剧集和音乐分类中心及小组件均来自媒体库"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31798"
-msgid "Default settings with trending, popular and new widgets from TMDb"
-msgstr "默认设置，主界面小组件为 TMDb 的热门、流行和新增条目"
+msgid "Default settings with movies, TV and next aired hubs and widgets from TMDb"
+msgstr "默认设置，电影、剧集和即将播出分类中心及小组件均来自 TMDb"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31799"
@@ -3243,13 +3208,13 @@ msgstr "TMDb Helper"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31801"
-msgid "Trending, popular and new from TMDb"
-msgstr "TMDb 热门、流行和新增"
+msgid "Movies, TV and next aired hubs with trending, popular and new items from TMDb"
+msgstr "电影、剧集和即将播出分类中心，包含 TMDb 的热门、流行和新增条目"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31802"
-msgid "Widget group"
-msgstr "小组件组"
+msgid "Home screen preset"
+msgstr "主界面预设"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31803"
@@ -3295,11 +3260,6 @@ msgstr "工具"
 msgctxt "#31811"
 msgid "Style"
 msgstr "外观"
-
-#: /1080i/Includes_SkinSettings.xml
-msgctxt "#31812"
-msgid "Blur"
-msgstr "模糊"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31813"
@@ -3356,11 +3316,6 @@ msgctxt "#31823"
 msgid "Install the add-on, enable it, or open its settings."
 msgstr "安装插件、启用插件或打开其设置。"
 
-#: /1080i/Includes_SkinSettings.xml
-msgctxt "#31824"
-msgid "Preset"
-msgstr "预设"
-
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31825"
 msgid "Use recommended defaults (discover)"
@@ -3368,8 +3323,8 @@ msgstr "使用推荐默认值（发现）"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31826"
-msgid "Default settings with widgets from your library plus trending items from TMDb"
-msgstr "默认设置，小组件为媒体库内容加上 TMDb 热门条目"
+msgid "Default settings with library hubs and widgets plus trending items from TMDb"
+msgstr "默认设置，媒体库分类中心和小组件，加上 TMDb 热门条目"
 
 #: /1080i/Includes_Actions.xml
 msgctxt "#31827"
@@ -3445,6 +3400,14 @@ msgstr "混合"
 msgctxt "#31846"
 msgid "Add hub"
 msgstr "添加分类中心"
+
+msgctxt "#31847"
+msgid "Window and dialog"
+msgstr "窗口与对话框"
+
+msgctxt "#31848"
+msgid "This replaces your home screen hubs, menus, widgets and spotlights with this preset. Any changes you have made to them will be lost. Continue?"
+msgstr "此预设将替换你的主界面分类中心、菜单、小组件和精选推荐。你对其所做的任何更改都将丢失。是否继续？"
 
 msgctxt "#31980"
 msgid "Reticulating Splines"
