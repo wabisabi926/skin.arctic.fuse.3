@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
+    <variable name="Image_FlixArt_MaskPath">
+        <value condition="Skin.String(Skin.FlixArt.Size,Large)">special://skin/extras/diffuse/flixart/1440x810/</value>
+        <value condition="Skin.String(Skin.FlixArt.Size,ExtraLarge)">special://skin/extras/diffuse/flixart/1600x900/</value>
+        <value>special://skin/extras/diffuse/flixart/1280x720/</value>
+    </variable>
+
+    <variable name="Image_FlixArt_Inverse">
+        <value condition="$EXP[Exp_TMDbHelper_IsBlur]">$VAR[Image_FlixArt_MaskPath,,flixart_invert.png]</value>
+        <value>$VAR[Image_FlixArt_MaskPath,,flixart_new_invert.png]</value>
+    </variable>
+
+    <variable name="Image_FlixArt_FullscreenInverse">
+        <value condition="$EXP[Exp_TMDbHelper_IsBlur]">special://skin/extras/diffuse/flixart/1920x1080/flixart_invert.png</value>
+        <value>special://skin/extras/diffuse/flixart/1920x1080/flixart_new_invert.png</value>
+    </variable>
+
+    <variable name="Image_GameAchievementType">
+        <value condition="!String.IsEmpty(ListItem.Property(achievement.win))">special://skin/extras/icons/trophy.png</value>
+        <value condition="!String.IsEmpty(ListItem.Property(achievement.progression))">special://skin/extras/icons/flag.png</value>
+    </variable>
+
     <variable name="Image_GameAchievementEarned">
         <value condition="!String.IsEmpty(ListItem.Property(achievement.earned))">special://skin/extras/icons/award.png</value>
         <value>special://skin/extras/icons/lock.png</value>
@@ -22,9 +43,53 @@
         <value>$INFO[Window(Home).Property(TMDbHelper.ListItem.Base_Poster)]</value>
     </variable>
 
+    <variable name="Image_Content_Fanart">
+        <value condition="Container.Content(genres)">special://skin/extras/backgrounds/content/fanart-arctic-genres.jpg</value>
+        <value condition="Container.Content(studios)">special://skin/extras/backgrounds/content/fanart-arctic-studios.jpg</value>
+        <value condition="Container.Content(actors)">special://skin/extras/backgrounds/content/fanart-arctic-actors.jpg</value>
+        <value condition="Container.Content(directors)">special://skin/extras/backgrounds/content/fanart-arctic-directors.jpg</value>
+        <value condition="Container.Content(years)">special://skin/extras/backgrounds/content/fanart-arctic-years.jpg</value>
+        <value condition="Container.Content(tags)">special://skin/extras/backgrounds/content/fanart-arctic-tags.jpg</value>
+        <value condition="Container.Content(countries)">special://skin/extras/backgrounds/content/fanart-arctic-countries.jpg</value>
+        <value condition="Container.Content(videoversions)">special://skin/extras/backgrounds/content/fanart-arctic-versions.jpg</value>
+        <value condition="Container.Content(movies)">special://skin/extras/backgrounds/content/fanart-arctic-movies.jpg</value>
+        <value condition="Container.Content(tvshows)">special://skin/extras/backgrounds/content/fanart-arctic-tvshows.jpg</value>
+        <value condition="Container.Content(seasons)">special://skin/extras/backgrounds/content/fanart-arctic-seasons.jpg</value>
+        <value condition="Container.Content(episodes)">special://skin/extras/backgrounds/content/fanart-arctic-episodes.jpg</value>
+        <value condition="Container.Content(sets)">special://skin/extras/backgrounds/content/fanart-arctic-sets.jpg</value>
+        <value condition="Container.Content(musicvideos)">special://skin/extras/backgrounds/content/fanart-arctic-musicvideos.jpg</value>
+        <value condition="Container.Content(artists)">special://skin/extras/backgrounds/content/fanart-arctic-artists.jpg</value>
+        <value condition="Container.Content(albums)">special://skin/extras/backgrounds/content/fanart-arctic-albums.jpg</value>
+        <value condition="Container.Content(songs)">special://skin/extras/backgrounds/content/fanart-arctic-songs.jpg</value>
+        <value condition="Container.Content(playlists)">special://skin/extras/backgrounds/content/fanart-arctic-playlists.jpg</value>
+        <value condition="Container.Content(files)">special://skin/extras/backgrounds/content/fanart-arctic-files.jpg</value>
+        <value condition="Container.Content(sources)">special://skin/extras/backgrounds/content/fanart-arctic-sources.jpg</value>
+        <value condition="Container.Content(addons)">special://skin/extras/backgrounds/content/fanart-arctic-addons.jpg</value>
+        <value condition="Container.Content(plugins)">special://skin/extras/backgrounds/content/fanart-arctic-plugins.jpg</value>
+        <value condition="Container.Content(games)">special://skin/extras/backgrounds/content/fanart-arctic-games.jpg</value>
+        <value condition="Container.Content(images)">special://skin/extras/backgrounds/content/fanart-arctic-images.jpg</value>
+        <value condition="Container.Content(mixed)">special://skin/extras/backgrounds/content/fanart-arctic-mixed.jpg</value>
+        <value condition="Container.Content(videos)">special://skin/extras/backgrounds/content/fanart-arctic-videos.jpg</value>
+        <value condition="Container.Content(recordings)">special://skin/extras/backgrounds/content/fanart-arctic-recordings.jpg</value>
+        <value condition="Container.Content(roles)">special://skin/extras/backgrounds/content/fanart-arctic-roles.jpg</value>
+        <value condition="Container.Content(videoassets)">special://skin/extras/backgrounds/content/fanart-arctic-videoassets.jpg</value>
+        <value condition="Container.Content(videoextras)">special://skin/extras/backgrounds/content/fanart-arctic-videoextras.jpg</value>
+        <value condition="Container.Content(livetv)">special://skin/extras/backgrounds/content/fanart-arctic-livetv.jpg</value>
+    </variable>
+
     <variable name="Image_Blur_Fallback">
-        <value condition="!String.IsEmpty(Skin.String(Background.Image))">$INFO[Skin.String(Background.Image)]</value>
-        <value>special://skin/extras/backgrounds/blur/purple_blur.jpg</value>
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + Window.IsVisible(MyVideoNav.xml)">special://skin/extras/backgrounds/content/fanart-arctic-videoassets.jpg</value>
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + Window.IsVisible(MyMusicNav.xml)">special://skin/extras/backgrounds/content/fanart-arctic-artists.jpg</value>
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + Window.IsVisible(MyPics.xml)">special://skin/extras/backgrounds/content/fanart-arctic-images.jpg</value>
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + Window.IsVisible(MyPrograms.xml)">special://skin/extras/backgrounds/content/fanart-arctic-plugins.jpg</value>
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + Window.IsVisible(MyGames.xml)">special://skin/extras/backgrounds/content/fanart-arctic-games.jpg</value>
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + Window.IsVisible(MyPlaylist.xml)">special://skin/extras/backgrounds/content/fanart-arctic-playlists.jpg</value>
+        <value>$VAR[Image_SimpleBackground]</value>
+    </variable>
+
+    <variable name="Image_BasicList_Landscape">
+        <value condition="Skin.HasSetting(Info.EnableStylisedBackgrounds) + String.IsEmpty(ListItem.Art(fanart)) + [Container.Content(genres) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(years) | Container.Content(tags) | Container.Content(countries) | Container.Content(videoversions) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(playlists) | Container.Content(files) | Container.Content(sources) | Container.Content(addons) | Container.Content(plugins) | Container.Content(games) | Container.Content(images) | Container.Content(mixed) | Container.Content(videos) | Container.Content(recordings) | Container.Content(roles) | Container.Content(videoassets) | Container.Content(videoextras) | Container.Content(livetv)]">$VAR[Image_Content_Fanart]</value>
+        <value>$VAR[Image_Landscape]</value>
     </variable>
 
     <variable name="Image_OSD_SkipPrev">
@@ -42,23 +107,28 @@
     </variable>
 
     <variable name="Image_1114_Poster">
-        <value condition="Control.HasFocus(7001) + String.IsEqual(Container(7001).ListITem.Property(tmdb_type),person)">$INFO[Container(7001).ListItem.Art(thumb)]</value>
-        <value condition="Control.HasFocus(7001)">$INFO[Container(7001).ListItem.Art(poster)]</value>
+        <value condition="$EXP[Exp_DialogCustomPlot_List_HasFocus] + String.IsEqual(Container.ListItem.Property(tmdb_type),person)">$INFO[Container.ListItem.Art(thumb)]</value>
+        <value condition="$EXP[Exp_DialogCustomPlot_List_HasFocus]">$INFO[Container.ListItem.Art(poster)]</value>
         <value>$INFO[Window.Property(poster)]</value>
     </variable>
 
+    <variable name="Image_1120_Poster">
+        <value condition="!String.IsEmpty(Container(7100).ListItem.Icon)">$INFO[Container(7100).ListItem.Icon]</value>
+        <value>$INFO[Window.Property(crew_poster)]</value>
+    </variable>
+
     <variable name="Image_1114_Landscape">
-        <value condition="Control.HasFocus(7001)">$INFO[Container(7001).ListItem.Art(landscape)]</value>
+        <value condition="$EXP[Exp_DialogCustomPlot_List_HasFocus]">$INFO[Container.ListItem.Art(landscape)]</value>
         <value>$INFO[Window.Property(landscape)]</value>
     </variable>
 
     <variable name="Image_1114_Icon">
-        <value condition="Control.HasFocus(7001)">$INFO[Container(7001).ListItem.Icon]</value>
+        <value condition="$EXP[Exp_DialogCustomPlot_List_HasFocus]">$INFO[Container.ListItem.Icon]</value>
         <value>$INFO[Window.Property(icon)]</value>
     </variable>
 
     <variable name="Image_1114_Clearlogo">
-        <value condition="Control.HasFocus(7001)">$INFO[Container(7001).ListItem.Art(clearlogo)]</value>
+        <value condition="$EXP[Exp_DialogCustomPlot_List_HasFocus]">$INFO[Container.ListItem.Art(clearlogo)]</value>
         <value>$INFO[Window.Property(clearlogo)]</value>
     </variable>
 
@@ -86,13 +156,6 @@
         <value condition="String.IsEqual(Control.GetLabel(20),$LOCALIZE[10036])">special://skin/extras/icons/settings-basic.png</value>
     </variable>
 
-    <variable name="Image_SkinSettings_Level">
-        <value condition="Integer.IsEqual(Skin.String(Skin.SettingsLevel),3)">special://skin/extras/icons/settings-expert.png</value>
-        <value condition="Integer.IsEqual(Skin.String(Skin.SettingsLevel),2)">special://skin/extras/icons/settings-advanced.png</value>
-        <value condition="Integer.IsEqual(Skin.String(Skin.SettingsLevel),1)">special://skin/extras/icons/settings-standard.png</value>
-        <value>special://skin/extras/icons/settings-basic.png</value>
-    </variable>
-
 
     <variable name="Image_Widget_Style">
         <value condition="String.IsEqual(ListItem.Property(widget_style),Landscape)">special://skin/extras/icons/view-landscape.png</value>
@@ -104,6 +167,12 @@
         <value condition="String.IsEqual(ListItem.Property(widget_style),Banner)">special://skin/extras/icons/window-maximize-regular.png</value>
         <value condition="String.IsEqual(ListItem.Property(widget_style),Card)">special://skin/extras/icons/window-maximize-regular.png</value>
         <value condition="String.IsEqual(ListItem.Property(widget_style),Placard)">special://skin/extras/icons/window-maximize-regular.png</value>
+        <value condition="String.IsEqual(ListItem.Property(widget_style),Ranked)">special://skin/extras/icons/view-poster.png</value>
+        <value condition="String.IsEqual(ListItem.Property(widget_style),Stack)">special://skin/extras/icons/view-poster.png</value>
+        <value condition="String.IsEqual(ListItem.Property(widget_style),Disc)">special://skin/extras/icons/view-circle.png</value>
+        <value condition="String.IsEqual(ListItem.Property(widget_style),Shelf)">special://skin/extras/icons/lines-leaning.png</value>
+        <value condition="String.IsEqual(ListItem.Property(widget_style),Timeline)">special://skin/extras/icons/timeline.png</value>
+        <value condition="String.IsEqual(ListItem.Property(widget_style),Gatefold)">special://skin/extras/icons/book-open.png</value>
         <value>special://skin/extras/icons/window-maximize-regular.png</value>
     </variable>
 
@@ -241,8 +310,9 @@
     </variable>
 
     <variable name="Image_SimpleBackground">
+        <value condition="Skin.String(Background.Image,special://skin/extras/backgrounds/pink_blur.jpg)">special://skin/extras/backgrounds/blur/pink_blur.jpg</value>
         <value condition="!String.IsEmpty(Skin.String(Background.Image))">$INFO[Skin.String(Background.Image)]</value>
-        <value>special://skin/extras/backgrounds/blur/purle_blur.jpg</value>
+        <value>special://skin/extras/backgrounds/blur/purple_blur.jpg</value>
     </variable>
 
     <variable name="Image_OSD_Poster">
@@ -322,6 +392,12 @@
         <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),548)">$INFO[Container(548).ListItem.Art(fanart)]</value>
         <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),549)">$INFO[Container(549).ListItem.Art(fanart)]</value>
         <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),550)">$INFO[Container(550).ListItem.Art(fanart)]</value>
+        <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),560)">$INFO[Container(560).ListItem.Art(fanart)]</value>
+        <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),561)">$INFO[Container(561).ListItem.Art(fanart)]</value>
+        <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),562)">$INFO[Container(562).ListItem.Art(fanart)]</value>
+        <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),563)">$INFO[Container(563).ListItem.Art(fanart)]</value>
+        <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),564)">$INFO[Container(564).ListItem.Art(fanart)]</value>
+        <value condition="Integer.IsEqual(Window.Property(TMDbHelper.WidgetContainer),566)">$INFO[Container(566).ListItem.Art(fanart)]</value>
     </variable>
 
     <variable name="Image_Foreground">
@@ -334,6 +410,13 @@
     <variable name="Image_OtherIcon">
         <value condition="$EXP[Exp_IsStudio]">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
         <value condition="$EXP[Exp_IsCountry]">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</value>
+    </variable>
+
+    <variable name="Image_DialogInfo_Fanart">
+        <value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
+        <value>special://skin/media/fallback/no-results-landscape.png</value>
     </variable>
 
     <variable name="Image_FanartFallback">
@@ -356,9 +439,45 @@
     </variable>
 
     <variable name="Image_StartUp">
-        <value condition="Weather.IsFetched + !String.IsEmpty(Weather.FanartCode) + System.HasAddon(resource.images.weatherfanart.multi) + [String.IsEmpty(Skin.String(Startup.ImageFolder)) | Skin.String(Startup.ImageFolder,special://skin/extras/backgrounds/launch/)]">resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]/</value>
-        <value condition="!String.IsEmpty(Skin.String(Startup.ImageFolder))">$INFO[Skin.String(Startup.ImageFolder)]</value>
-        <value>special://skin/extras/backgrounds/launch/</value>
+        <value condition="$EXP[Exp_StartUp_CustomImage]">$INFO[Skin.String(Startup.ImageFolder)]</value>
+        <!-- The built-in splash is composited by Background_StartUp_Layered. -->
+        <value>$VAR[Image_StartUp_Layer_Sky]</value>
+    </variable>
+
+    <!-- Calendar-month seasons; the selected Kodi region determines the hemisphere. -->
+    <variable name="Image_StartUp_Season">
+        <value condition="$EXP[Exp_StartUp_Season_spring]">spring</value>
+        <value condition="$EXP[Exp_StartUp_Season_summer]">summer</value>
+        <value condition="$EXP[Exp_StartUp_Season_autumn]">autumn</value>
+        <value>winter</value>
+    </variable>
+
+    <!-- System.Time conditions use local 24-hour time regardless of the clock display format. -->
+    <variable name="Image_StartUp_Hour">
+        <value condition="System.Time(00:00,01:00)">0000</value>
+        <value condition="System.Time(01:00,02:00)">0100</value>
+        <value condition="System.Time(02:00,03:00)">0200</value>
+        <value condition="System.Time(03:00,04:00)">0300</value>
+        <value condition="System.Time(04:00,05:00)">0400</value>
+        <value condition="System.Time(05:00,06:00)">0500</value>
+        <value condition="System.Time(06:00,07:00)">0600</value>
+        <value condition="System.Time(07:00,08:00)">0700</value>
+        <value condition="System.Time(08:00,09:00)">0800</value>
+        <value condition="System.Time(09:00,10:00)">0900</value>
+        <value condition="System.Time(10:00,11:00)">1000</value>
+        <value condition="System.Time(11:00,12:00)">1100</value>
+        <value condition="System.Time(12:00,13:00)">1200</value>
+        <value condition="System.Time(13:00,14:00)">1300</value>
+        <value condition="System.Time(14:00,15:00)">1400</value>
+        <value condition="System.Time(15:00,16:00)">1500</value>
+        <value condition="System.Time(16:00,17:00)">1600</value>
+        <value condition="System.Time(17:00,18:00)">1700</value>
+        <value condition="System.Time(18:00,19:00)">1800</value>
+        <value condition="System.Time(19:00,20:00)">1900</value>
+        <value condition="System.Time(20:00,21:00)">2000</value>
+        <value condition="System.Time(21:00,22:00)">2100</value>
+        <value condition="System.Time(22:00,23:00)">2200</value>
+        <value>2300</value>
     </variable>
 
     <variable name="Image_PVRPoster">
@@ -466,6 +585,15 @@
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.7.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.7.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.7.job),Screenplay)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.7.Thumb)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.8.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.8.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.8.job),Screenplay)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.8.Thumb)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.9.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.9.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.9.job),Screenplay)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.9.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.1.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.1.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.1.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.1.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.2.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.2.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.2.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.2.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.3.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.3.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.3.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.3.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.4.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.4.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.4.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.4.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.5.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.5.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.5.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.5.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.6.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.6.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.6.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.6.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.7.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.7.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.7.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.7.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.8.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.8.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.8.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.8.Thumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.9.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Writer.9.job)) + String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Writer.9.job),Writer)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Writer.9.Thumb)]</value>
     </variable>
 
     <variable name="Image_FromDirector">
@@ -554,6 +682,16 @@
         <value condition="!String.IsEmpty(ListItem.Art(fanart2)) + !String.IsEqual(ListItem.Art(fanart2),ListItem.Art(fanart))">$INFO[ListItem.Art(fanart2)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart2)) + !String.IsEqual(ListItem.Art(tvshow.fanart2),ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart2)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(artist.fanart2)) + !String.IsEqual(ListItem.Art(artist.fanart2),ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart2)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
+        <value>$VAR[Image_Landscape]</value>
+    </variable>
+
+    <!-- Shelf spine: spine art has the title embedded; keyart and fanart get the title overlay (Layout_Shelf) -->
+    <variable name="Image_Shelf_Spine">
+        <value condition="!String.IsEmpty(ListItem.Art(spine))">$INFO[ListItem.Art(spine)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(keyart))">$INFO[ListItem.Art(keyart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
@@ -735,4 +873,11 @@
         <value condition="String.IsEqual(Control.GetLabel(12),$LOCALIZE[31032])">special://skin/extras/icons/circle-plus.png</value>
         <value>special://skin/extras/icons/circle-dot.png</value>
     </variable>
+
+    <variable name="Image_GameManuals_Finder_State">
+        <value condition="String.IsEqual(Window.Property(state),noproviders)">special://skin/extras/icons/puzzle-piece.png</value>
+        <value condition="String.IsEqual(Window.Property(state),failed)">special://skin/extras/icons/triangle-exclamation.png</value>
+        <value>special://skin/extras/icons/magnifying-glass.png</value>
+    </variable>
+
 </includes>

@@ -25,6 +25,55 @@
         </definition>
     </include>
 
+    <!-- Image tile with its name over a dark strip; the image can be an icon instead (property isicon). include_overlay draws over the image, above the strip. diffuse rounds the image and should match the tile's image size. -->
+    <include name="List_Layout_Dialog_Tile">
+        <param name="selected">false</param>
+        <param name="include_overlay">Object_Null</param>
+        <param name="diffuse">diffuse/landscape_w185_h120.png</param>
+        <definition>
+            <control type="group">
+                <right>20</right>
+                <bottom>20</bottom>
+                <control type="image">
+                    <texture border="20" colordiffuse="dialog_bg_50">common/dialog.png</texture>
+                </control>
+                <control type="image">
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true" diffuse="$PARAM[diffuse]">$INFO[ListItem.Icon]</texture>
+                    <visible>String.IsEmpty(ListItem.Property(isicon))</visible>
+                </control>
+                <control type="image">
+                    <top>12</top>
+                    <bottom>48</bottom>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="dialog_fg_70">$INFO[ListItem.Icon]</texture>
+                    <visible>!String.IsEmpty(ListItem.Property(isicon))</visible>
+                </control>
+                <control type="group">
+                    <bottom>44</bottom>
+                    <include>$PARAM[include_overlay]</include>
+                </control>
+                <control type="image">
+                    <height>44</height>
+                    <bottom>0</bottom>
+                    <texture border="20,0,20,20" colordiffuse="dialog_bg_70">common/dialog_overlay_v.png</texture>
+                </control>
+                <control type="label">
+                    <height>44</height>
+                    <bottom>0</bottom>
+                    <align>center</align>
+                    <font>font_tiny</font>
+                    <textcolor>dialog_fg_90</textcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <include>Part_List_Current_Check</include>
+                <include content="Object_SelectBox" condition="$PARAM[selected]">
+                    <param name="shadow">false</param>
+                </include>
+            </control>
+        </definition>
+    </include>
+
     <include name="List_Layout_Dialog_SimpleCheckmark">
         <param name="selected">false</param>
         <definition>
@@ -208,6 +257,42 @@
         </definition>
     </include>
 
+    <include name="List_Layout_Dialog_WatchedOn">
+        <param name="selected">false</param>
+        <param name="detailed">false</param>
+        <definition>
+            <include content="List_Layout_Dialog_DetailedCheckmark">
+                <param name="detailed">$PARAM[detailed]</param>
+                <param name="selected">$PARAM[selected]</param>
+                <param name="misc">$PARAM[misc]</param>
+                <param name="item_h">$PARAM[item_h]</param>
+                <param name="icon">$INFO[ListItem.Icon]</param>
+                <param name="label">$INFO[ListItem.Label]</param>
+                <param name="label2">$VAR[Label_WatchedOn_Sub]</param>
+                <param name="label2_visible">true</param>
+            </include>
+        </definition>
+    </include>
+
+    <include name="List_Layout_Dialog_GameDiscs">
+        <param name="selected">false</param>
+        <param name="detailed">false</param>
+        <definition>
+            <include content="List_Layout_Dialog_DetailedCheckmark">
+                <param name="detailed">$PARAM[detailed]</param>
+                <param name="selected">$PARAM[selected]</param>
+                <param name="misc">$PARAM[misc]</param>
+                <param name="item_h">$PARAM[item_h]</param>
+                <param name="fallback">special://skin/extras/icons/floppy-disk.png</param>
+                <param name="icon">$INFO[ListItem.Icon]</param>
+                <param name="is_defaulticon">[String.IsEmpty(ListItem.Icon) | String.StartsWith(ListItem.Icon,Default)]</param>
+                <param name="label">$INFO[ListItem.Label]</param>
+                <param name="label2">$INFO[ListItem.Label2]</param>
+                <param name="label2_visible">!String.IsEmpty(ListItem.Label2)</param>
+            </include>
+        </definition>
+    </include>
+
     <include name="List_Layout_Dialog_GameSaves">
         <param name="selected">false</param>
         <param name="detailed">false</param>
@@ -222,6 +307,25 @@
                 <param name="is_defaulticon">[String.IsEmpty(ListItem.Art(screenshot)) + [String.StartsWith(ListItem.Icon,Default) | String.StartsWith(ListItem.Icon,special://skin/extras/icons/)]]</param>
                 <param name="label">$VAR[Label_GameSave_Top]</param>
                 <param name="label2">$VAR[Label_GameSave_Sub]</param>
+                <param name="label2_visible">true</param>
+            </include>
+        </definition>
+    </include>
+
+    <include name="List_Layout_Dialog_GameManuals">
+        <param name="selected">false</param>
+        <param name="detailed">false</param>
+        <definition>
+            <include content="List_Layout_Dialog_DetailedCheckmark">
+                <param name="detailed">$PARAM[detailed]</param>
+                <param name="selected">$PARAM[selected]</param>
+                <param name="misc">$PARAM[misc]</param>
+                <param name="item_h">$PARAM[item_h]</param>
+                <param name="fallback">special://skin/extras/icons/book-open.png</param>
+                <param name="icon">$INFO[ListItem.Art(poster)]</param>
+                <param name="is_defaulticon">String.IsEmpty(ListItem.Art(poster))</param>
+                <param name="label">$INFO[ListItem.Label]</param>
+                <param name="label2">$VAR[Label_GameManual_Sub]</param>
                 <param name="label2_visible">true</param>
             </include>
         </definition>
@@ -304,7 +408,7 @@
                         <param name="item_h">200</param>
                         <param name="selected">$PARAM[selected]</param>
                         <param name="label4">$INFO[ListItem.Property(TotalEntries)]</param>
-                        <param name="label3">$INFO[ListItem.Property(TopUsername)]$INFO[ListItem.Property(PlayerStanding), (,)]$INFO[ListItem.Property(PlayerScore), - ,]</param>
+                        <param name="label3">$INFO[ListItem.Property(PlayerStanding)]$INFO[ListItem.Property(PlayerScore), · ,]</param>
                     </include>
                 </control>
             </control>
@@ -359,19 +463,29 @@
         </definition>
     </include>
 
+    <variable name="GameAchievement_Attempting_Label">
+        <value condition="!String.IsEmpty(ListItem.Property(achievement.attempting))">$LOCALIZE[35718]</value>
+    </variable>
+
+    <variable name="GameAchievement_Missable_Label">
+        <value condition="!String.IsEmpty(ListItem.Property(achievement.missable))">$LOCALIZE[35710]</value>
+    </variable>
+
     <include name="List_Layout_GameAchievements">
         <param name="selected">false</param>
         <param name="detailed">false</param>
         <definition>
             <control type="group">
-                <animation effect="fade" start="100" end="70" condition="String.IsEmpty(ListItem.Property(achievement.earned))">Conditional</animation>
                 <include condition="$PARAM[selected]">Part_List_Highlight</include>
             </control>
             <control type="progress">
                 <description>Progressbar</description>
                 <info>ListItem.Property(achievement.measuredpercent)</info>
                 <texturebg colordiffuse="00ffffff" border="40,0,40,0">common/menu.png</texturebg>
-                <midtexture colordiffuse="$VAR[ColorHighlight]" border="40,40,40,40">common/menu.png</midtexture>
+                <include content="Texture_FocusStyle">
+                    <param name="include">Object_TextureProgressMid</param>
+                    <param name="border">40,40,40,40</param>
+                </include>
                 <visible>Integer.IsGreater(ListItem.Property(achievement.measuredpercent),1)</visible>
                 <visible>!String.IsEmpty(ListItem.Property(achievement.measured))</visible>
                 <visible>$PARAM[selected]</visible>
@@ -379,6 +493,7 @@
             <control type="group">
                 <left>40</left>
                 <right>40</right>
+                <animation effect="fade" start="100" end="40" time="0" condition="String.IsEmpty(Window.Property(Achievements.SetEnabled))">Conditional</animation>
                 <control type="group">
                     <height>60</height>
                     <width>60</width>
@@ -413,16 +528,55 @@
                 </control>
                 <control type="group">
                     <left>60</left>
+                    <control type="group">
+                        <description>RetroAchievements frames a badge earned in hardcore in gold</description>
+                        <width>$PARAM[item_h]</width>
+                        <visible>!String.IsEmpty(ListItem.Property(achievement.hardcore))</visible>
+                        <control type="group">
+                            <include>Part_List_Icon_Padding</include>
+                            <control type="image">
+                                <bordersize>-3</bordersize>
+                                <aspectratio>keep</aspectratio>
+                                <texture colordiffuse="gold" border="20">common/box.png</texture>
+                            </control>
+                        </control>
+                    </control>
                     <include content="Part_List_Icon">
                         <param name="item_h">$PARAM[item_h]</param>
                         <param name="selected">$PARAM[selected]</param>
                         <param name="fallback">DefaultPicture.png</param>
                     </include>
+                    <control type="group">
+                        <description>Marks what beating the game takes</description>
+                        <width>$PARAM[item_h]</width>
+                        <visible>!String.IsEmpty(ListItem.Property(achievement.progression)) | !String.IsEmpty(ListItem.Property(achievement.win))</visible>
+                        <control type="group">
+                            <include>Part_List_Icon_Padding</include>
+                            <control type="group">
+                                <right>-20</right>
+                                <bottom>-20</bottom>
+                                <width>64</width>
+                                <height>64</height>
+                                <include content="Object_Control" condition="$PARAM[selected]">
+                                    <param name="control">image</param>
+                                    <include content="Dimension_Padding"><param name="pad">4</param></include>
+                                    <include>Texture_Indicator_Highlight</include>
+                                </include>
+                                <control type="image">
+                                    <texture colordiffuse="ff333333">indicator/circle-colordiffuse.png</texture>
+                                </control>
+                                <control type="image">
+                                    <bordersize>20</bordersize>
+                                    <texture>$VAR[Image_GameAchievementType]</texture>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
                     <include content="List_Layout_Dialog_FourLabels">
                         <param name="item_h">$PARAM[item_h]</param>
                         <param name="selected">$PARAM[selected]</param>
                         <param name="label">$INFO[ListItem.Label]$INFO[ListItem.Property(achievement.measuredprogress), (,)]</param>
-                        <param name="label4">$INFO[ListItem.Property(achievement.unlockeddate),, - ]$INFO[ListItem.Property(achievement.raritycategory)]</param>
+                        <param name="label4">$VAR[GameAchievement_Attempting_Label,, - ]$INFO[ListItem.Property(achievement.unlockeddate),, - ]$INFO[ListItem.Property(achievement.raritycategory)]$VAR[GameAchievement_Missable_Label, - ,]</param>
                         <param name="label3">$INFO[ListItem.Property(achievement.points)]</param>
                     </include>
                 </control>

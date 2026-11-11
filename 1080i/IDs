@@ -16,13 +16,17 @@ VIEWS: 	ADVANCED
 52X		Combined Control List
 53X		Combined Content List
 54X		Combined Control Button
+55X		Combined Wall Control List
+56X		Combined Wall Content List
+57X		Combined Wall Control Button
 
 58X		LISTS
 580		Basic
-581		Media
+581		Poster
 582		Expanded
 583		Flixart
 584		Flixart 2
+585		Square
 
 
 

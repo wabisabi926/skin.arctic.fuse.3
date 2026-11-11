@@ -67,6 +67,7 @@
 
     <include name="Furniture_Footer_Right">
         <param name="visible">true</param>
+        <param name="include_studio">true</param>
         <definition>
             <control type="group">
                 <include>Dimension_Bottombar</include>
@@ -79,7 +80,7 @@
                         <control type="group">
                             <height>80</height>
                             <top>-5</top>
-                            <include condition="!Skin.HasSetting(Footer.DisableStudio)">Furniture_Studio</include>
+                            <include condition="!Skin.HasSetting(Footer.DisableStudio) + $PARAM[include_studio]">Furniture_Studio</include>
                             <include condition="!Skin.HasSetting(Footer.DisableNowPlaying)">Furniture_Player</include>
                             <include condition="Skin.HasSetting(Footer.EnableCodecs)">Furniture_Codecs</include>
                         </control>
@@ -122,7 +123,7 @@
                     <height>100</height>
                     <control type="image">
                         <bordersize>-4</bordersize>
-                        <texture colordiffuse="$VAR[ColorHighlight]">$INFO[Player.Progress,progress/circle/p,.png]</texture>
+                        <include>Texture_Progress_Circle</include>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                     </control>
                 </control>
@@ -316,7 +317,11 @@
                             <description>Busy animation</description>
                             <control type="image">
                                 <bordersize>-4</bordersize>
-                                <texture colordiffuse="$VAR[ColorHighlight]" flipx="$PARAM[flipspinner]" flipy="$PARAM[flipspinner]">$INFO[$PARAM[progress],progress/circle/p,.png]</texture>
+                                <include content="Texture_Progress_Circle">
+                                    <param name="progress">$PARAM[progress]</param>
+                                    <param name="flipx">$PARAM[flipspinner]</param>
+                                    <param name="flipy">$PARAM[flipspinner]</param>
+                                </include>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                             </control>
                         </include>

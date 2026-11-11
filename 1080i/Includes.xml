@@ -16,9 +16,18 @@
 
     <include file="Includes_Home.xml" />
     <include file="Includes_Settings.xml" />
-    <include file="Includes_SkinSettings.xml" />
     <include file="Includes_Hubs.xml" />
     <include file="Includes_Background.xml" />
+    <include file="Includes_StartUp.xml" />
+    <include file="Includes_StartUp_Weather.xml" />
+    <include file="Includes_StartUp_Clouds.xml" />
+    <include file="Includes_StartUp_Foliage.xml" />
+    <include file="Includes_StartUp_Test.xml" />
+    <include file="Includes_StartUp_Test_Layers.xml" />
+    <include file="Includes_StartUp_Scenes.xml" />
+    <include file="Includes_StartUp_Scene_Layers.xml" />
+    <include file="Includes_StartUp_Test_Tokyo.xml" />
+    <include file="Includes_StartUp_Test_Countryside.xml" />
     <include file="Includes_Expressions.xml" />
     <include file="Includes_Colors.xml" />
     <include file="Includes_Defaults.xml" />
@@ -54,6 +63,7 @@
     <include file="Dialog_DialogShortcuts.xml" />
     <include file="Dialog_DialogTrailer.xml" />
     <include file="Dialog_DialogCustom.xml" />
+    <include file="Dialog_DialogSetupWizard.xml" />
     <include file="Dialog_DialogView.xml" />
     <include file="Dialog_SmartPlaylistEditor.xml" />
     <include file="Dialog_FileBrowser.xml" />
@@ -68,6 +78,7 @@
     <include file="Includes_Actions.xml" />
     <include file="Includes_Animations.xml" />
     <include file="Includes_Weather.xml" />
+    <include file="Includes_Weather_Test.xml" />
     <include file="Includes_Lists.xml" />
     <include file="Includes_Layouts.xml" />
     <include file="Includes_Widgets.xml" />
@@ -82,6 +93,7 @@
     <include file="Includes_Views_Row.xml" />
     <include file="Includes_Views_Wall.xml" />
     <include file="Includes_Views_Combined.xml" />
+    <include file="Includes_Views_Combined_Wall.xml" />
     <include file="Includes_Views_PVR.xml" />
 
     <include file="Includes_Search.xml" />

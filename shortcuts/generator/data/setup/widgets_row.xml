@@ -129,7 +129,16 @@
         </rule>
     </rules>
     <value name="widget_sortby">{item_widget_sortby}</value>
-    <value name="widget_limit">{item_widget_limit}</value>
+    <rules name="widget_limit">
+        <rule>
+            <condition>{item_widget_style}==Ranked</condition>
+            <value>9</value>
+        </rule>
+        <rule>
+            <condition>True</condition>
+            <value>{item_widget_limit}</value>
+        </rule>
+    </rules>
     <rules name="widget_sortorder">
         <rule>
             <condition>{item_widget_sortorder}==True</condition>
@@ -180,10 +189,7 @@
     <rules name="widget_custom_onclick">
         <rule>
             <condition>{item_path}==Custom_Submenu</condition>
-            <value><![CDATA[
-                <onclick condition="String.IsEmpty(ListItem.Property(target))">$INFO[ListItem.FolderPath]</onclick>
-                <onclick condition="!String.IsEmpty(ListItem.Property(target))">ActivateWindow($INFO[ListItem.Property(target)],$INFO[ListItem.FolderPath],return)</onclick>
-            ]]></value>
+            <value><![CDATA[<include>Widget_Submenu_OnClick</include>]]></value>
         </rule>
     </rules>
     <rules name="widget_usewidgetlabel">
@@ -217,6 +223,14 @@
         </rule>
         <rule>
             <condition>{item_path}&lt;&lt;plugin://plugin.video.themoviedb.helper/?info=trakt_becausemostwatched</condition>
+            <value>True</value>
+        </rule>
+        <rule>
+            <condition>{item_path}&lt;&lt;plugin://plugin.video.themoviedb.helper/?info=sync_becauseyouwatched</condition>
+            <value>True</value>
+        </rule>
+        <rule>
+            <condition>{item_path}&lt;&lt;plugin://plugin.video.themoviedb.helper/?info=sync_becausemostwatched</condition>
             <value>True</value>
         </rule>
         <rule>
