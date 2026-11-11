@@ -4,7 +4,7 @@ name: Build Kodi Addon Release
 on:
   push:
     branches:
-      - with-poster-title-douban
+      - douban-piers
     paths:
       - addon.xml
   workflow_dispatch:
