@@ -312,7 +312,7 @@
         <param name="sourceimage">Art(fanart)</param>
         <definition>
             <onload>SetProperty(TMDbHelper.Blur.SourceImage,$PARAM[sourceimage],Home)</onload>
-            <onload>SetProperty(TMDbHelper.Blur.Fallback,$SKINVAR[Image_Blur_Fallback],Home)</onload>
+            <onload>SetProperty(TMDbHelper.Blur.Fallback,$VAR[Image_Blur_Fallback],Home)</onload>
         </definition>
     </include>
 
