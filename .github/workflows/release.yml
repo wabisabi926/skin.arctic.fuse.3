@@ -41,6 +41,35 @@ jobs:
           echo "asset=skin.arctic.fuse.3-${BRANCH}-${VERSION}.zip" >> "$GITHUB_OUTPUT"
           echo "Addon version: ${VERSION} (branch: ${BRANCH})"
 
+      - name: Build release notes
+        id: notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.meta.outputs.version }}"
+          TAG="${{ steps.meta.outputs.tag }}"
+          BODY="$RUNNER_TEMP/release-body.md"
+
+          # CHANGELOG.md is the single source of truth; fail early if the
+          # version section is missing so an empty release never ships.
+          python3 .github/scripts/extract_changelog.py "$VERSION" > "$BODY"
+
+          printf '\n\n---\n\n<details>\n<summary>完整提交与 PR 列表</summary>\n\n' >> "$BODY"
+          if gh api "repos/${GITHUB_REPOSITORY}/releases/generate-notes" \
+              -f tag_name="$TAG" \
+              -f target_commitish="$GITHUB_SHA" \
+              --jq '.body' >> "$BODY" 2>/dev/null; then
+            printf '\n' >> "$BODY"
+          else
+            printf '自动生成明细失败，请查看 Actions 运行记录。\n' >> "$BODY"
+          fi
+          printf '</details>\n' >> "$BODY"
+
+          echo "body_path=$BODY" >> "$GITHUB_OUTPUT"
+          echo "=== release body preview ==="
+          head -n 30 "$BODY"
+
       - name: Check whether release already exists
         id: guard
         env:
@@ -94,7 +123,7 @@ jobs:
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.tag }}
+          body_path: ${{ steps.notes.outputs.body_path }}
           files: ${{ steps.build.outputs.zip_path }}
-          generate_release_notes: true
           draft: false
           prerelease: false
