@@ -66,11 +66,9 @@ jobs:
 
           ls -l media/Textures.xbt
 
-          # 头部必须是 XBTF3（Kodi 22 / XBT v3）
-          if [ "$(head -c 5 media/Textures.xbt)" != "XBTF3" ]; then
-            echo "::error::生成的 Textures.xbt 头部不是 XBTF3"
-            exit 1
-          fi
+          # 头部 9 字节 = XBTF + 版本 "3" + U32 索引条目数；条目数须等于散图数
+          python3 -c 'import struct,sys; h=open(sys.argv[1],"rb").read(9); assert h[:5]==b"XBTF3", "头部非 XBTF3"; n=struct.unpack("<I",h[5:9])[0]; e=int(sys.argv[2]); assert n==e, f"条目数 {n} != 散图 {e}"; print(f"XBT v3 索引条目 {n} / 散图 {e}")' \
+            media/Textures.xbt "${{ steps.check.outputs.loose }}"
 
       - name: Verify every texture is bundled
         if: steps.check.outputs.loose != '0'
@@ -78,12 +76,16 @@ jobs:
           set -euo pipefail
           # XBTF 内部按内容去重（-dupecheck），同一张图只保留一个名字。
           # 因此不能按文件名判断，要按 md5 判断"这份内容是否已被包内某个名字代表"。
-          find media -type f -name '*.png' | sed 's|^media/||' | sort -u > /tmp/expected.txt
+          # XBTF 里的路径统一小写（DefaultActor.png -> defaultactor.png），
+          # 两侧都必须归一化大小写，否则大写文件名会全部误报为缺失。
+          find media -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) \
+            | sed 's|^media/||' | tr '[:upper:]' '[:lower:]' | sort -u > /tmp/expected.txt
           grep -a -o -F -f /tmp/expected.txt media/Textures.xbt | sort -u > /tmp/found.txt || true
 
-          # 每行格式：<32位md5><空格><路径>
-          ( cd media && find . -type f -name '*.png' -exec md5sum {} + ) \
-            | sed -E 's|^([0-9a-f]{32}) [ *]\./|\1  |' > /tmp/hashes.txt
+          # 每行格式：<32位md5><空格><小写路径>
+          ( cd media && find . -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) -exec md5sum {} + ) \
+            | sed -E 's|^([0-9a-f]{32}) [ *]\./|\1  |' \
+            | tr '[:upper:]' '[:lower:]' > /tmp/hashes.txt
 
           # 已覆盖的内容 = 名字出现在包内的那些文件的 md5
           awk 'NR==FNR{ok[$0];next} {p=substr($0,35); if(p in ok) print substr($0,1,32)}' \
@@ -100,7 +102,7 @@ jobs:
           echo "散图 ${total} 张 / 唯一内容 ${unique} 种 / 已打包 ${covered} 种 / 未打包 ${missing} 张"
 
           if [ "$missing" -gt 0 ]; then
-            echo "::warning::${missing} 张图未打进 Textures.xbt（运行时回退为散图加载）"
+            echo "::warning::${missing} 张图未打进 Textures.xbt（发布包不含散图，请先修复再发版）"
             head -n 30 /tmp/missing.txt
           fi
 

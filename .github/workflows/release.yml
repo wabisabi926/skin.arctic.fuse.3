@@ -141,11 +141,21 @@ jobs:
             ( cd "${MEDIA}" && find . -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) \
                 -exec cp --parents '{}' "${INPUT}" \; )
             kodi-TexturePacker-v3 -dupecheck -input "${INPUT}/" -output "${MEDIA}/Textures.xbt"
-            if [ "$(head -c 5 "${MEDIA}/Textures.xbt")" != "XBTF3" ]; then
-              echo "::error::Textures.xbt 头部不是 XBTF3（非 XBT v3）"
-              exit 1
-            fi
-            echo "TexturePacker V3 已打包 $(find "${INPUT}" -type f | wc -l) 张散图"
+            # 头部：XBTF + 版本字节 "3" + U32 条目数。条目数须等于散图数，
+            # 因为 -dupecheck 只共享像素数据，所有文件名仍会写进索引。
+            python3 - "${MEDIA}/Textures.xbt" "${LOOSE}" <<'PY'
+          import struct, sys
+          path, expected = sys.argv[1], int(sys.argv[2])
+          with open(path, "rb") as fh:
+              header = fh.read(9)
+          if header[:5] != b"XBTF3":
+              sys.exit("::error::Textures.xbt 不是 XBT v3（头部应为 XBTF3）")
+          count = struct.unpack("<I", header[5:9])[0]
+          print(f"XBT v3 索引条目 {count} / 散图 {expected}")
+          if count != expected:
+              sys.exit(f"::error::纹理条目数不匹配：{count} != {expected}")
+          PY
+            echo "TexturePacker V3 已打包 ${LOOSE} 张散图"
           else
             # media/ 本身只有 Textures.xbt：直接复用，不重新打包
             if [ ! -f "${MEDIA}/Textures.xbt" ]; then
