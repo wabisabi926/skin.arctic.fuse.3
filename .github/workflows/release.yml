@@ -1,6 +1,8 @@
 name: Build Kodi Addon Release
 
-# 版本号更新（addon.xml 变更）时自动打包并发布到 GitHub Releases
+# 版本号更新（addon.xml 变更）时自动打包并发布到 GitHub Releases。
+# media/ 有散图时用 Kodi 22 TexturePacker V3 现场打包；只有 Textures.xbt 时直接复用。
+# 发布包内 media/ 仅保留 Textures.xbt。
 on:
   push:
     branches:
@@ -8,6 +10,11 @@ on:
     paths:
       - addon.xml
   workflow_dispatch:
+    inputs:
+      validate:
+        description: '仅构建并校验 V3 纹理打包，不发布 Release'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -76,12 +83,32 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          if gh release view "${{ steps.meta.outputs.tag }}" >/dev/null 2>&1; then
+          if [ "${{ inputs.validate || 'false' }}" = "true" ]; then
+            # 校验模式：强制构建 zip 以验证 V3 打包，但不发布
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "Validate mode - build only, no publish."
+          elif gh release view "${{ steps.meta.outputs.tag }}" >/dev/null 2>&1; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
             echo "Release ${{ steps.meta.outputs.tag }} already exists - skip."
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Inspect media textures
+        id: textures
+        if: steps.guard.outputs.exists == 'false'
+        run: |
+          set -euo pipefail
+          COUNT="$(find media -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) | wc -l)"
+          echo "loose=${COUNT}" >> "$GITHUB_OUTPUT"
+          echo "media/ 散图: ${COUNT} 张"
+
+      - name: Install TexturePacker V3 (Kodi 22)
+        if: steps.guard.outputs.exists == 'false' && steps.textures.outputs.loose != '0'
+        run: bash .github/scripts/install-texturepacker-v3.sh
 
       - name: Build addon zip
         id: build
@@ -104,9 +131,33 @@ jobs:
             --exclude='.gitignore' \
             ./ "${BUILD_DIR}/${ADDON_ID}/"
 
-          # media 目录只保留打包好的 Textures.xbt，其余散图不打包
-          find "${BUILD_DIR}/${ADDON_ID}/media" -mindepth 1 -type f -not -name 'Textures.xbt' -delete
-          find "${BUILD_DIR}/${ADDON_ID}/media" -mindepth 1 -type d -empty -delete
+          MEDIA="${BUILD_DIR}/${ADDON_ID}/media"
+          LOOSE="${{ steps.textures.outputs.loose || '0' }}"
+
+          if [ "${LOOSE}" -gt 0 ]; then
+            # 有散图：只用 Kodi 22 的 TexturePacker V3 现场打包，产物仅 Textures.xbt
+            INPUT="${RUNNER_TEMP}/tp-input"
+            rm -rf "${INPUT}" && mkdir -p "${INPUT}"
+            ( cd "${MEDIA}" && find . -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) \
+                -exec cp --parents '{}' "${INPUT}" \; )
+            kodi-TexturePacker-v3 -dupecheck -input "${INPUT}/" -output "${MEDIA}/Textures.xbt"
+            if [ "$(head -c 5 "${MEDIA}/Textures.xbt")" != "XBTF3" ]; then
+              echo "::error::Textures.xbt 头部不是 XBTF3（非 XBT v3）"
+              exit 1
+            fi
+            echo "TexturePacker V3 已打包 $(find "${INPUT}" -type f | wc -l) 张散图"
+          else
+            # media/ 本身只有 Textures.xbt：直接复用，不重新打包
+            if [ ! -f "${MEDIA}/Textures.xbt" ]; then
+              echo "::error::media/ 既无散图也无 Textures.xbt"
+              exit 1
+            fi
+            echo "media/ 无散图，复用现成 Textures.xbt，跳过纹理打包"
+          fi
+
+          # 散图不进发布包
+          find "${MEDIA}" -mindepth 1 -type f -not -name 'Textures.xbt' -delete
+          find "${MEDIA}" -mindepth 1 -type d -empty -delete
 
           # 以 skin.arctic.fuse.3/ 为 zip 根目录，命名 <addonid>-<branch>-<version>.zip
           ( cd "${BUILD_DIR}" && zip -rq "${ZIP_PATH}" "${ADDON_ID}" )
@@ -118,7 +169,7 @@ jobs:
           unzip -l "${ZIP_PATH}" | grep -F "${ADDON_ID}/media/" || true
 
       - name: Publish GitHub Release
-        if: steps.guard.outputs.exists == 'false'
+        if: steps.guard.outputs.publish == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.meta.outputs.tag }}

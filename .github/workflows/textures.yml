@@ -1,15 +1,16 @@
 name: Rebuild Textures.xbt
 
-# 用 Kodi 官方 TexturePacker 把 media/ 下的散图重新打包成 media/Textures.xbt。
+# 用 Kodi 22 (Piers) 的 TexturePacker V3 把 media/ 下的散图重建为 media/Textures.xbt。
 #
 # 触发时机：
 #   1. media/ 下有图片增删改（例如合并上游后新增贴图）—— 自动重建
 #   2. 手动 workflow_dispatch
 #
 # 说明：
-#   - 打包器来自 Ubuntu universe 的 kodi-tools-texturepacker（二进制名 kodi-TexturePacker）。
-#   - 发布工作流只会打包现成的 Textures.xbt（media 里的散图会被剔除），
-#     所以贴图变了就必须重建，否则线上包缺图。
+#   - 打包器由 .github/scripts/install-texturepacker-v3.sh 从固定 Kodi 提交源码编译，
+#     产出 XBTF3（v3）。Ubuntu 自带的 kodi-tools-texturepacker 是 Kodi 20.5 / XBT v2，不用。
+#   - media/ 只有 Textures.xbt、没有散图时直接跳过，不重新打包。
+#   - 发布包由 release.yml 现场打包；本流程只负责让仓库里的 Textures.xbt 保持同步。
 #   - 提交带 [skip ci]，且 paths 排除 Textures.xbt 本身，避免自我触发死循环。
 
 on:
@@ -21,6 +22,7 @@ on:
       - 'media/**'
       - '!media/Textures.xbt'
       - '.github/workflows/textures.yml'
+      - '.github/scripts/install-texturepacker-v3.sh'
 
 permissions:
   contents: write
@@ -38,31 +40,40 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install TexturePacker
+      - name: Check loose textures
+        id: check
         run: |
           set -euo pipefail
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends kodi-tools-texturepacker
-          command -v kodi-TexturePacker
-          kodi-TexturePacker -help 2>&1 | head -n 20 || true
+          COUNT="$(find media -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) | wc -l)"
+          echo "loose=${COUNT}" >> "$GITHUB_OUTPUT"
+          echo "media/ 散图: ${COUNT} 张"
+          if [ "${COUNT}" -eq 0 ]; then
+            echo "media/ 仅含 Textures.xbt，无需重建"
+          fi
+
+      - name: Install TexturePacker V3 (Kodi 22)
+        if: steps.check.outputs.loose != '0'
+        run: bash .github/scripts/install-texturepacker-v3.sh
 
       - name: Rebuild Textures.xbt
+        if: steps.check.outputs.loose != '0'
         run: |
           set -euo pipefail
-          echo "散图数量: $(find media -type f -name '*.png' | wc -l)"
+          echo "散图数量: $(find media -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) | wc -l)"
           cd media
-          kodi-TexturePacker -dupecheck -input . -output Textures.xbt
+          kodi-TexturePacker-v3 -dupecheck -input . -output Textures.xbt
           cd ..
 
           ls -l media/Textures.xbt
 
-          # 头部必须是 XBTF（Kodi 纹理包魔数）
-          if ! head -c 4 media/Textures.xbt | grep -aq XBTF; then
-            echo "::error::生成的 Textures.xbt 头部不是 XBTF"
+          # 头部必须是 XBTF3（Kodi 22 / XBT v3）
+          if [ "$(head -c 5 media/Textures.xbt)" != "XBTF3" ]; then
+            echo "::error::生成的 Textures.xbt 头部不是 XBTF3"
             exit 1
           fi
 
       - name: Verify every texture is bundled
+        if: steps.check.outputs.loose != '0'
         run: |
           set -euo pipefail
           # XBTF 内部按内容去重（-dupecheck），同一张图只保留一个名字。
@@ -94,6 +105,7 @@ jobs:
           fi
 
       - name: Commit
+        if: steps.check.outputs.loose != '0'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -103,5 +115,5 @@ jobs:
             echo "纹理包无变化，跳过提交"
             exit 0
           fi
-          git commit -m ":bento: Rebuild Textures.xbt [skip ci]"
+          git commit -m ":bento: Rebuild Textures.xbt (XBT v3) [skip ci]"
           git push
