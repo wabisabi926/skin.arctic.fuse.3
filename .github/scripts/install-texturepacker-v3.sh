@@ -28,9 +28,12 @@ git -C "${KODI_SRC}" sparse-checkout set xbmc tools/depends/native/TexturePacker
 git -C "${KODI_SRC}" checkout -q FETCH_HEAD
 
 TP_SRC="${KODI_SRC}/tools/depends/native/TexturePacker/src"
+# Kodi 的构建系统会注入 ARCH_DEFINES；独立编译时必须显式给 TARGET_POSIX，
+# 否则 cmdlineargs.h 会走 Windows 分支去 include <windows.h>。
 cmake -S "${TP_SRC}" -B "${TP_BUILD}" \
   -DKODI_SOURCE_DIR="${KODI_SRC}" \
-  -DCMAKE_BUILD_TYPE=Release
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_CXX_FLAGS="-DTARGET_POSIX"
 cmake --build "${TP_BUILD}" --parallel 2
 sudo install -m 0755 "${TP_BUILD}/TexturePacker" "${TP_BIN}"
 
