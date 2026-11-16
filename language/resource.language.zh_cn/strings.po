@@ -3626,6 +3626,10 @@ msgctxt "#31875"
 msgid "Show the splash screen with the current position. Press any button, click or move the mouse to close the preview."
 msgstr "按当前位置预览启动画面。按任意键、点击或移动鼠标即可关闭预览。"
 
+msgctxt "#31876"
+msgid "Filter the skin settings by tag."
+msgstr "按标签筛选皮肤设置。"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
