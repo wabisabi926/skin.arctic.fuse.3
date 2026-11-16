@@ -3620,6 +3620,10 @@ msgctxt "#31875"
 msgid "Show the splash screen with the current position. Press any button, click or move the mouse to close the preview."
 msgstr ""
 
+msgctxt "#31876"
+msgid "Filter the skin settings by tag."
+msgstr ""
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr ""
