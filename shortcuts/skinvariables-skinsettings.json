@@ -601,21 +601,6 @@
                 "$LOCALIZE[31818]"
             ]
         },
-        "interface_weather": {
-            "label": "$LOCALIZE[12600]",
-            "control": "radiobutton",
-            "group": "interface_header",
-            "description": "$LOCALIZE[31678]",
-            "selected": "!Skin.HasSetting(Header.DisableWeather)",
-            "onclick": [
-                {
-                    "action": "Skin.ToggleSetting(Header.DisableWeather)"
-                }
-            ],
-            "tags": [
-                "$LOCALIZE[19033]"
-            ]
-        },
         "interface_now_playing": {
             "label": "$LOCALIZE[31244]",
             "control": "radiobutton",
