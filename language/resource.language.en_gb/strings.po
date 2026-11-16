@@ -1330,6 +1330,11 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr ""
 
+#: /1080i/script-wikipedia.xml
+msgctxt "#31290"
+msgid "Attribution"
+msgstr ""
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
@@ -1402,6 +1407,16 @@ msgstr ""
 #: /1080i/Includes_Labels.xml
 msgctxt "#31309"
 msgid "Glass"
+msgstr ""
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31310"
+msgid "Expand"
+msgstr ""
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31311"
+msgid "Weekly"
 msgstr ""
 
 #: /1080i/Includes_MediaFilter.xml
@@ -1662,6 +1677,11 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr ""
 
+#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
+msgctxt "#31393"
+msgid "Trailer"
+msgstr ""
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1906,6 +1926,11 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr ""
 
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31465"
+msgid "Rain chance"
+msgstr ""
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1919,6 +1944,26 @@ msgstr ""
 #: /1080i/Includes_Items.xml
 msgctxt "#31469"
 msgid "Choose shortcut"
+msgstr ""
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31470"
+msgid "Wind gusts"
+msgstr ""
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31471"
+msgid "Fire danger"
+msgstr ""
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31472"
+msgid "Rain since 9am"
+msgstr ""
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31473"
+msgid "Radar"
 msgstr ""
 
 #: /1080i/SkinSettings.xml
@@ -1946,9 +1991,24 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr ""
 
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Trailers"
+msgstr ""
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31483"
+msgid "Replay"
+msgstr ""
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
+msgstr ""
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31485"
+msgid "Stop"
 msgstr ""
 
 #: /1080i/Includes_Labels.xml
@@ -2086,6 +2146,11 @@ msgctxt "#31519"
 msgid "Empty widgets"
 msgstr ""
 
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31520"
+msgid "Cloudiness"
+msgstr ""
+
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2099,6 +2164,41 @@ msgstr ""
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
+msgstr ""
+
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31525"
+msgid "Visibility"
+msgstr ""
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31526"
+msgid "Hour"
+msgstr ""
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31527"
+msgid "Later"
+msgstr ""
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31528"
+msgid "Particulate"
+msgstr ""
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31529"
+msgid "Ozone"
+msgstr ""
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31530"
+msgid "Solar radiation"
+msgstr ""
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31531"
+msgid "Carbon monoxide"
 msgstr ""
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
@@ -2441,10 +2541,6 @@ msgctxt "#31637"
 msgid "Trailer source"
 msgstr ""
 
-msgctxt "#31980"
-msgid "Reticulating Splines"
-msgstr ""
-
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31638"
 msgid "Hub type"
@@ -2608,6 +2704,11 @@ msgstr ""
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31677"
 msgid "Show the studio logo of the focused item in the footer."
+msgstr ""
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31678"
+msgid "Show the current weather conditions in the header."
 msgstr ""
 
 #: /1080i/Includes_SkinSettings.xml
@@ -3206,13 +3307,13 @@ msgid "Movies, TV and next aired hubs with trending, popular and new items from 
 msgstr ""
 
 #: /1080i/Dialog_DialogSetupWizard.xml
-msgctxt "#31803"
-msgid "Review"
+msgctxt "#31802"
+msgid "Home screen preset"
 msgstr ""
 
 #: /1080i/Dialog_DialogSetupWizard.xml
-msgctxt "#31802"
-msgid "Home screen preset"
+msgctxt "#31803"
+msgid "Review"
 msgstr ""
 
 #: /1080i/Dialog_DialogSetupWizard.xml
@@ -3375,7 +3476,6 @@ msgctxt "#31837"
 msgid "Choose the icon shown for this item."
 msgstr ""
 
-
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31843"
 msgid "Left"
@@ -3409,4 +3509,117 @@ msgstr ""
 #: /shortcuts/skinvariables-skinsettings.json
 msgctxt "#31849"
 msgid "Search all skin settings by name, section or description."
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31850"
+msgid "Results"
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31851"
+msgid "Sources"
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31852"
+msgid "Decade"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31853"
+msgid "Bauhaus"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31854"
+msgid "Golden Age"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31855"
+msgid "Expressionist"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31856"
+msgid "Faceted"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31857"
+msgid "Mosaic"
+msgstr ""
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31858"
+msgid "Also search TMDb discover results for movies and tvshows alongside the search widgets."
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31859"
+msgid "Japanese Watercolour"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31860"
+msgid "Surrealist"
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31861"
+msgid "No results"
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31863"
+msgid "Search for"
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31864"
+msgid "movies, TV shows, people and more"
+msgstr ""
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31865"
+msgid "Enter a search term to begin."
+msgstr ""
+
+msgctxt "#31866"
+msgid "Selector"
+msgstr ""
+
+msgctxt "#31867"
+msgid "Standard shows the results of each content type in its own row. Combined shows a single results row with a selector to choose all results or a content type or source."
+msgstr ""
+
+msgctxt "#31868"
+msgid "Choose whether the combined selector lists each content type or each source alongside all results."
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31869"
+msgid "Couture"
+msgstr ""
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31870"
+msgid "Masquerade"
+msgstr ""
+
+msgctxt "#31872"
+msgid "Logo position"
+msgstr ""
+
+msgctxt "#31873"
+msgid "Move the logo, text and profile selector on the splash and login screens upwards."
+msgstr ""
+
+msgctxt "#31875"
+msgid "Show the splash screen with the current position. Press any button, click or move the mouse to close the preview."
+msgstr ""
+
+msgctxt "#31980"
+msgid "Reticulating Splines"
 msgstr ""

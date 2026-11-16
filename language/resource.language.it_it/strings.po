@@ -1320,6 +1320,11 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr "Modalità touchscreen"
 
+#: /1080i/script-wikipedia.xml
+msgctxt "#31290"
+msgid "Attribution"
+msgstr "Attribuzioni"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
@@ -1393,6 +1398,16 @@ msgstr "Umore"
 msgctxt "#31309"
 msgid "Glass"
 msgstr "Vetro"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31310"
+msgid "Expand"
+msgstr "Espandi"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31311"
+msgid "Weekly"
+msgstr "Settimanale"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
@@ -1652,6 +1667,11 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "Anno di uscita"
 
+#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
+msgctxt "#31393"
+msgid "Trailer"
+msgstr "Trailer"
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1896,6 +1916,11 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "Muro Riquadri orizzontali lunghi"
 
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31465"
+msgid "Rain chance"
+msgstr "Probabilità di precipitazioni"
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1910,6 +1935,26 @@ msgstr "Disposizione riquadri"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "Scegli scorciatoia"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31470"
+msgid "Wind gusts"
+msgstr "Raffiche di vento"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31471"
+msgid "Fire danger"
+msgstr "Pericolo di incendi"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31472"
+msgid "Rain since 9am"
+msgstr "Pioggia dalle 9:00"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31473"
+msgid "Radar"
+msgstr "Radar"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1936,10 +1981,25 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "Elenco FlixArt"
 
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Trailers"
+msgstr "Trailer"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31483"
+msgid "Replay"
+msgstr "Replay"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "Pausa"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31485"
+msgid "Stop"
+msgstr "Stop"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
@@ -2076,6 +2136,11 @@ msgctxt "#31519"
 msgid "Empty widget placeholder"
 msgstr "Modello di widget vuoto"
 
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31520"
+msgid "Cloudiness"
+msgstr "Prevalenza di nuvole"
+
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2090,6 +2155,41 @@ msgstr "È raccomandato cancellare ogni widget inutilizzato dalla propria config
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "Nascondere widget vuoti potrebbe anche rendere meno efficiente e più lenta l'interfaccia."
+
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31525"
+msgid "Visibility"
+msgstr "Visibilità"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31526"
+msgid "Hour"
+msgstr "Orario"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31527"
+msgid "Later"
+msgstr "Più tardi"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31528"
+msgid "Particulate"
+msgstr "Particolato"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31529"
+msgid "Ozone"
+msgstr "Ozono"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31530"
+msgid "Solar radiation"
+msgstr "Radiazione solare"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31531"
+msgid "Carbon monoxide"
+msgstr "Monossido di carbonio"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"

@@ -965,7 +965,7 @@
         {
             "name": "最近添加的电视剧",
             "comment": "New Tv Shows",
-            "icon": "DefaultRecentlyAddedMovies.png",
+            "icon": "DefaultRecentlyAddedEpisodes.png",
             "node": "videos",
             "path": "special://skin/extras/playlists/NewShows.xsp",
             "link": "false"
@@ -973,7 +973,7 @@
         {
             "name": "最近观看的电视剧",
             "comment": "Recent Tv Shows",
-            "icon": "DefaultMusicRecentlyPlayed.png",
+            "icon": "special://skin/extras/icons/recent.png",
             "node": "videos",
             "path": "special://skin/extras/playlists/RecentTvShows.xsp",
             "link": "false"
@@ -997,7 +997,7 @@
         {
             "name": "高分电视剧",
             "comment": "Top Rated Tv Shows",
-            "icon": "DefaultMusicTop100Albums.png",
+            "icon": "special://skin/extras/icons/top100.png",
             "node": "videos",
             "path": "special://skin/extras/playlists/TopRatedTvShows.xsp",
             "link": "false"
@@ -1031,7 +1031,7 @@
         {
             "name": "最近添加的剧集",
             "comment": "New Episodes",
-            "icon": "DefaultRecentlyAddedMovies.png",
+            "icon": "DefaultRecentlyAddedEpisodes.png",
             "node": "videos",
             "path": "special://skin/extras/playlists/NewEpisodes.xsp",
             "link": "false"
@@ -1039,7 +1039,7 @@
         {
             "name": "最近观看的剧集",
             "comment": "Recent Episodes",
-            "icon": "DefaultMusicRecentlyPlayed.png",
+            "icon": "special://skin/extras/icons/recent.png",
             "node": "videos",
             "path": "special://skin/extras/playlists/RecentEpisodes.xsp",
             "link": "false"
@@ -1071,7 +1071,7 @@
         {
             "name": "高分剧集",
             "comment": "Top Rated Episodes",
-            "icon": "DefaultMusicTop100Albums.png",
+            "icon": "special://skin/extras/icons/top100.png",
             "node": "videos",
             "path": "special://skin/extras/playlists/TopRatedEpisodes.xsp",
             "link": "false"

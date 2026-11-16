@@ -1330,6 +1330,11 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr "Tryb dotykowy"
 
+#: /1080i/script-wikipedia.xml
+msgctxt "#31290"
+msgid "Attribution"
+msgstr "Przypisanie autorstwa"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
@@ -1403,6 +1408,16 @@ msgstr "Nastrój"
 msgctxt "#31309"
 msgid "Glass"
 msgstr "Szkło"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31310"
+msgid "Expand"
+msgstr "Rozwiń"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31311"
+msgid "Weekly"
+msgstr "Tygodniowy"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
@@ -1662,6 +1677,11 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "Rok wydania"
 
+#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
+msgctxt "#31393"
+msgid "Trailer"
+msgstr "Zwiastun"
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1906,6 +1926,11 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "Siatka: Banery"
 
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31465"
+msgid "Rain chance"
+msgstr "Szansa na opady"
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1920,6 +1945,26 @@ msgstr "Układ kafelków"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "Skrót"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31470"
+msgid "Wind gusts"
+msgstr "Porywy wiatru"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31471"
+msgid "Fire danger"
+msgstr "Zagrożenie pożarowe"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31472"
+msgid "Rain since 9am"
+msgstr "Opady od 9:00"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31473"
+msgid "Radar"
+msgstr "Radar"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1946,10 +1991,25 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "Lista: Flixart"
 
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Trailers"
+msgstr "Zwiastuny"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31483"
+msgid "Replay"
+msgstr "Odtwórz ponownie"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "Pauza"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31485"
+msgid "Stop"
+msgstr "Stop"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
@@ -2086,6 +2146,11 @@ msgctxt "#31519"
 msgid "Empty widgets"
 msgstr "Puste widżety"
 
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31520"
+msgid "Cloudiness"
+msgstr "Zachmurzenie"
+
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2100,6 +2165,41 @@ msgstr "Nieużywane widżety lepiej usunąć niż ukrywać."
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "Zwiększa też obciążenie systemu przy każdym odświeżaniu."
+
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31525"
+msgid "Visibility"
+msgstr "Widoczność"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31526"
+msgid "Hour"
+msgstr "Godzina"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31527"
+msgid "Later"
+msgstr "Później"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31528"
+msgid "Particulate"
+msgstr "Cząstki stałe"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31529"
+msgid "Ozone"
+msgstr "Ozon"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31530"
+msgid "Solar radiation"
+msgstr "Promieniowanie słoneczne"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31531"
+msgid "Carbon monoxide"
+msgstr "Tlenek węgla"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"
@@ -3237,14 +3337,14 @@ msgid "Trending, popular and new from TMDb"
 msgstr "Trendy, popularne i nowości z TMDb"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
-msgctxt "#31803"
-msgid "Review"
-msgstr "Podsumowanie"
-
-#: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31802"
 msgid "Widget group"
 msgstr "Grupa widżetów"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31803"
+msgid "Review"
+msgstr "Podsumowanie"
 
 #: /1080i/Dialog_DialogSetupWizard.xml
 msgctxt "#31804"

@@ -733,6 +733,16 @@ msgctxt "#31155"
 msgid "Decades"
 msgstr "Décadas"
 
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31156"
+msgid "Row Flyer"
+msgstr "Fila (Folleto)"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31157"
+msgid "Wall Flyer"
+msgstr "Mural (Folleto)"
+
 #: /1080i/Includes_Keyboard_Mini.xml
 msgctxt "#31158"
 msgid "Layout"
@@ -747,10 +757,25 @@ msgctxt "#31160"
 msgid "REC"
 msgstr "REC"
 
+#: /1080i/Includes_Actions.xml
+msgctxt "#31161"
+msgid "Flyer"
+msgstr "Folleto"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31162"
 msgid "Hide"
 msgstr "Ocultar"
+
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31163"
+msgid "Combined Flyer"
+msgstr "Combinada (Folleto)"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31164"
+msgid "Row Placard"
+msgstr "Fila (Cartel)"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31165"
@@ -786,6 +811,11 @@ msgstr "Nota"
 msgctxt "#31171"
 msgid "On-screen keyboard size"
 msgstr "Tamaño del teclado en pantalla"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31172"
+msgid "Placard"
+msgstr "Cartel"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31173"
@@ -1205,6 +1235,11 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr "Modo táctil"
 
+#: /1080i/script-wikipedia.xml
+msgctxt "#31290"
+msgid "Attribution"
+msgstr "Atribución"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
@@ -1278,6 +1313,16 @@ msgstr "Estado de ánimo"
 msgctxt "#31309"
 msgid "Glass"
 msgstr "Cristal"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31310"
+msgid "Expand"
+msgstr "Expandir"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31311"
+msgid "Weekly"
+msgstr "Semanal"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
@@ -1537,6 +1582,11 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "Año de lanzamiento"
 
+#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
+msgctxt "#31393"
+msgid "Trailer"
+msgstr "Tráiler"
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1781,6 +1831,11 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "Mural (Banner)"
 
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31465"
+msgid "Rain chance"
+msgstr "Probabilidad de lluvia"
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1795,6 +1850,26 @@ msgstr "Diseño de mosaico"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "Elegir atajo"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31470"
+msgid "Wind gusts"
+msgstr "Ráfagas de viento"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31471"
+msgid "Fire danger"
+msgstr "Peligro de incendio"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31472"
+msgid "Rain since 9am"
+msgstr "Lluvia desde 9am"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31473"
+msgid "Radar"
+msgstr "Radar"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1821,6 +1896,16 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "Lista Flixart"
 
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Trailers"
+msgstr "Tráileres"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31483"
+msgid "Replay"
+msgstr "Repetir"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
@@ -1830,7 +1915,6 @@ msgstr "Pausa"
 msgctxt "#31485"
 msgid "Stop"
 msgstr "Detener"
-
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
@@ -1967,6 +2051,11 @@ msgctxt "#31519"
 msgid "Empty widget placeholder"
 msgstr "Marcador de posición de widget vacío"
 
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31520"
+msgid "Cloudiness"
+msgstr "Nubosidad"
+
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2016,7 +2105,6 @@ msgstr "Radiación solar"
 msgctxt "#31531"
 msgid "Carbon monoxide"
 msgstr "Monóxido de carbono"
-
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"
@@ -2297,33 +2385,3 @@ msgstr "Normal"
 msgctxt "#31625"
 msgid "High"
 msgstr "Alto"
-
-#: /1080i/Includes_Views_Row.xml
-msgctxt "#31156"
-msgid "Row Flyer"
-msgstr "Fila (Folleto)"
-
-#: /1080i/Includes_Views_Wall.xml
-msgctxt "#31157"
-msgid "Wall Flyer"
-msgstr "Mural (Folleto)"
-
-#: /1080i/Includes_Actions.xml
-msgctxt "#31161"
-msgid "Flyer"
-msgstr "Folleto"
-
-#: /shortcuts/skinviewtypes.json
-msgctxt "#31163"
-msgid "Combined Flyer"
-msgstr "Combinada (Folleto)"
-
-#: /1080i/Includes_Views_Row.xml
-msgctxt "#31164"
-msgid "Row Placard"
-msgstr "Fila (Cartel)"
-
-#: /1080i/Includes_Actions.xml
-msgctxt "#31172"
-msgid "Placard"
-msgstr "Cartel"

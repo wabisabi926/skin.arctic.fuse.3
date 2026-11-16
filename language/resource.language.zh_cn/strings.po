@@ -1330,6 +1330,11 @@ msgctxt "#31289"
 msgid "Touch mode"
 msgstr "触控模式"
 
+#: /1080i/script-wikipedia.xml
+msgctxt "#31290"
+msgid "Attribution"
+msgstr "署名"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31291"
 msgid "Search for movies$COMMA tvshows$COMMA and more."
@@ -1403,6 +1408,16 @@ msgstr "氛围"
 msgctxt "#31309"
 msgid "Glass"
 msgstr "玻璃"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31310"
+msgid "Expand"
+msgstr "展开"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31311"
+msgid "Weekly"
+msgstr "每周"
 
 #: /1080i/Includes_MediaFilter.xml
 msgctxt "#31319"
@@ -1662,6 +1677,11 @@ msgctxt "#31390"
 msgid "Release Year"
 msgstr "发行年份"
 
+#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
+msgctxt "#31393"
+msgid "Trailer"
+msgstr "预告片"
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Picture-in-picture video"
@@ -1906,6 +1926,11 @@ msgctxt "#31462"
 msgid "Wall Banner"
 msgstr "墙：横幅"
 
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31465"
+msgid "Rain chance"
+msgstr "降雨概率"
+
 #: /1080i/Includes_Items.xml
 msgctxt "#31467"
 msgid "Tiles configuration"
@@ -1920,6 +1945,26 @@ msgstr "磁贴布局"
 msgctxt "#31469"
 msgid "Choose shortcut"
 msgstr "选择快捷方式"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31470"
+msgid "Wind gusts"
+msgstr "阵风"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31471"
+msgid "Fire danger"
+msgstr "火险等级"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31472"
+msgid "Rain since 9am"
+msgstr "自上午 9 点起的降雨量"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31473"
+msgid "Radar"
+msgstr "雷达"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31476"
@@ -1946,10 +1991,25 @@ msgctxt "#31480"
 msgid "List Flixart"
 msgstr "列表：Flixart"
 
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Trailers"
+msgstr "预告片"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31483"
+msgid "Replay"
+msgstr "重播"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31484"
 msgid "Pause"
 msgstr "暂停"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31485"
+msgid "Stop"
+msgstr "停止"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31486"
@@ -2086,6 +2146,11 @@ msgctxt "#31519"
 msgid "Empty widgets"
 msgstr "空小组件"
 
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31520"
+msgid "Cloudiness"
+msgstr "云量"
+
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31522"
 msgid "Hiding empty widgets may cause positioning issues after video playback."
@@ -2100,6 +2165,41 @@ msgstr "建议从配置中删除未使用的小组件，而非隐藏它们。"
 msgctxt "#31524"
 msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
 msgstr "隐藏空小组件还会带来额外的刷新开销，影响性能。"
+
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31525"
+msgid "Visibility"
+msgstr "能见度"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31526"
+msgid "Hour"
+msgstr "小时"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31527"
+msgid "Later"
+msgstr "稍后"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31528"
+msgid "Particulate"
+msgstr "颗粒物"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31529"
+msgid "Ozone"
+msgstr "臭氧"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31530"
+msgid "Solar radiation"
+msgstr "太阳辐射"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31531"
+msgid "Carbon monoxide"
+msgstr "一氧化碳"
 
 #: /1080i/Custom_1115_Dialog_Shortcuts.xml
 msgctxt "#31533"
@@ -2605,6 +2705,11 @@ msgstr "在页脚显示当前正在播放的项目。"
 msgctxt "#31677"
 msgid "Show the studio logo of the focused item in the footer."
 msgstr "在页脚显示聚焦项目的制作公司图标。"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31678"
+msgid "Show the current weather conditions in the header."
+msgstr "在页眉显示当前天气状况。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31679"
@@ -3298,8 +3403,8 @@ msgstr "聚焦小组件"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31822"
-msgid "This category contains the seasonal themes and their effects, the add-ons the skin depends on, the debugging tools and the option to reset skin settings."
-msgstr "此分类包含季节主题及其效果、皮肤所依赖的插件、调试工具以及重置皮肤设置的选项。"
+msgid "This category contains the add-ons the skin depends on, the debugging tools and the option to reset skin settings."
+msgstr "此分类包含皮肤所依赖的插件、调试工具以及重置皮肤设置的选项。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31823"
@@ -3391,10 +3496,12 @@ msgctxt "#31846"
 msgid "Add hub"
 msgstr "添加分类中心"
 
+#: /1080i/Includes_SkinSettings.xml
 msgctxt "#31847"
 msgid "Window and dialog"
 msgstr "窗口与对话框"
 
+#: /1080i/Includes_Actions.xml
 msgctxt "#31848"
 msgid "This replaces your home screen hubs, menus, widgets and spotlights with this preset. Any changes you have made to them will be lost. Continue?"
 msgstr "此预设将替换你的主界面分类中心、菜单、小组件和精选推荐。你对其所做的任何更改都将丢失。是否继续？"
