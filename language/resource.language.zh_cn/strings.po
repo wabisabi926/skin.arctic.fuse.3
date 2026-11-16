@@ -1666,7 +1666,7 @@ msgstr "上下文"
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31388"
 msgid "Seed"
-msgstr "随机推荐偏好库"
+msgstr "种子"
 
 #: /1080i/Custom_1116_Dialog_Shortcuts.xml
 msgctxt "#31389"
@@ -1770,7 +1770,7 @@ msgstr "电影与电视剧"
 #: /1080i/SkinSettings.xml
 msgctxt "#31416"
 msgid "Secondary button"
-msgstr "辅助功能按钮"
+msgstr "次要按钮"
 
 msgctxt "#31417"
 msgid "Random Artists"
@@ -2739,7 +2739,7 @@ msgstr "选择无项目的小组件是显示占位符还是隐藏。隐藏空小
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31684"
 msgid "Cycle through the extra fanart of the focused item in the background."
-msgstr "在背景中循环显示聚焦项目的额外剧照。"
+msgstr "在背景中循环显示聚焦项目的额外背景图。"
 
 #: /1080i/Includes_SkinSettings.xml
 msgctxt "#31685"
@@ -3614,12 +3614,12 @@ msgstr "假面舞会"
 #: /1080i/Dialog_DialogSelect.xml
 msgctxt "#31872"
 msgid "Logo position"
-msgstr "标志位置"
+msgstr "徽标位置"
 
 #: /1080i/Dialog_DialogSelect.xml
 msgctxt "#31873"
 msgid "Move the logo, text and profile selector on the splash and login screens upwards."
-msgstr "将启动画面和登录界面上的标志、文字与用户选择器整体上移。"
+msgstr "将启动画面和登录界面上的徽标、文字与用户选择器整体上移。"
 
 #: /1080i/Dialog_DialogSelect.xml
 msgctxt "#31875"
