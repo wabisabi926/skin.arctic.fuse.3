@@ -3630,6 +3630,10 @@ msgctxt "#31876"
 msgid "Filter the skin settings by tag."
 msgstr "按标签筛选皮肤设置。"
 
+msgctxt "#31877"
+msgid "Choose the style of the search results of each content type. Content types set to Default and results without a content type use the Default style."
+msgstr "选择每种内容类型搜索结果的样式。设为「默认」的内容类型以及没有内容类型的结果，均使用默认样式。"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
