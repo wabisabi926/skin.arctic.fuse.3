@@ -1,4 +1,5 @@
 <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3" provider-name="jurialmunkey" version="3.5.4">
+    <!-- 3.5.4: 重新触发 Release 打包（CHANGELOG 已补齐） -->
     <requires>
         <import addon="xbmc.gui" version="5.18.0" />
 
