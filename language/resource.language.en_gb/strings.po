@@ -3624,6 +3624,10 @@ msgctxt "#31876"
 msgid "Filter the skin settings by tag."
 msgstr ""
 
+msgctxt "#31877"
+msgid "Choose the style of the search results of each content type. Content types set to Default and results without a content type use the Default style."
+msgstr ""
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr ""
