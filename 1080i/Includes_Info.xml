@@ -1224,7 +1224,6 @@
         <param name="visible_line">true</param>
         <param name="visible_plot">true</param>
         <param name="visible_meta">true</param>
-        <param name="listitem">ListItem</param>
         <definition>
 
             <control type="grouplist">
@@ -1243,7 +1242,6 @@
                 <include content="Info_Title" condition="$PARAM[include_title]">
                     <param name="colordiffuse">$PARAM[colordiffuse]</param>
                     <param name="container">$PARAM[container]</param>
-                    <param name="listitem">$PARAM[listitem]</param>
                     <param name="service">$PARAM[service]</param>
                     <param name="croplogo">$PARAM[croplogo]</param>
                 </include>
@@ -1256,7 +1254,6 @@
                 <include content="Info_Line" condition="$PARAM[include_details]">
                     <param name="colordiffuse">$PARAM[colordiffuse]</param>
                     <param name="container">$PARAM[container]</param>
-                    <param name="listitem">$PARAM[listitem]</param>
                     <param name="visible">$PARAM[visible_line]</param>
                 </include>
 
@@ -1264,7 +1261,6 @@
                 <include content="Info_Plot" condition="$PARAM[include_details]">
                     <param name="colordiffuse">$PARAM[colordiffuse]</param>
                     <param name="container">$PARAM[container]</param>
-                    <param name="listitem">$PARAM[listitem]</param>
                     <param name="width">$PARAM[plotwidth]</param>
                     <param name="height">$PARAM[plotheight]</param>
                     <param name="visible">$PARAM[visible_plot]</param>
@@ -1273,7 +1269,6 @@
                 <!-- Meta -->
                 <include content="Info_Meta" condition="$PARAM[include_details]">
                     <param name="colordiffuse">$PARAM[colordiffuse]</param>
-                    <param name="listitem">$PARAM[listitem]</param>
                     <param name="container">$PARAM[container]</param>
                     <param name="visible">$PARAM[visible_meta]</param>
                 </include>
