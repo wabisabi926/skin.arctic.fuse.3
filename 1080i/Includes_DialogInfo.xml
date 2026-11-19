@@ -1930,7 +1930,7 @@
                     <include content="Object_InfoCircle_Detail">
                         <param name="id">24</param>
                         <param name="icon">special://skin/extras/icons/trophy.png</param>
-                        <param name="role">$LOCALIZE[31064]</param>
+                        <param name="role">$LOCALIZE[31546]</param>
                         <param name="name">$INFO[Window(Home).Property(TMDbHelper.ListItem.Awards)]</param>
                         <!-- <onclick>SetFocus(5000)</onclick>
                         <onclick>AlarmClock(resetfocus,SetFocus(5015),00:00,silent)</onclick> -->

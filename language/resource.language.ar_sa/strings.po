@@ -2183,6 +2183,11 @@ msgctxt "#31545"
 msgid "Premiering"
 msgstr "يُعرض لأول مرة"
 
+#: /1080i/Includes_DialogPlot.xml
+msgctxt "#31546"
+msgid "Awards"
+msgstr "الجوائز"
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31554"
 msgid "Wall Poster"

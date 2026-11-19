@@ -2038,6 +2038,11 @@ msgctxt "#31545"
 msgid "Premiering"
 msgstr "Esilinastub"
 
+#: /1080i/Includes_DialogPlot.xml
+msgctxt "#31546"
+msgid "Awards"
+msgstr "Auhinnad"
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31547"
 msgid "Yesterday"

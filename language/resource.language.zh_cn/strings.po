@@ -276,15 +276,15 @@ msgstr "配置文件"
 
 msgctxt "#31054"
 msgid "Liked by"
-msgstr "喜欢："
+msgstr "好评"
 
 msgctxt "#31055"
 msgid "out of"
-msgstr "共"
+msgstr "/"
 
 msgctxt "#31056"
 msgid "critics"
-msgstr "影评人"
+msgstr "位影评人"
 
 msgctxt "#31057"
 msgid "Years Old"
@@ -322,7 +322,7 @@ msgstr "已观看剧集"
 
 msgctxt "#31064"
 msgid "Awards"
-msgstr "奖项"
+msgstr "项"
 
 msgctxt "#31065"
 msgid "Creator"
@@ -2260,6 +2260,11 @@ msgstr "播出中"
 msgctxt "#31545"
 msgid "Premiering"
 msgstr "首映中"
+
+#: /1080i/Includes_DialogPlot.xml
+msgctxt "#31546"
+msgid "Awards"
+msgstr "奖项"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31547"

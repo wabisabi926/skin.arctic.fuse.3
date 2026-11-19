@@ -652,7 +652,7 @@
                 <param name="source_prefix">$PARAM[source_prefix]</param>
             </include>
             <include content="DialogPlot_Plotbox_Quick_Object">
-                <param name="head">$LOCALIZE[31064]</param>
+                <param name="head">$LOCALIZE[31546]</param>
                 <param name="text">$PARAM[source]($PARAM[source_prefix]Awards)</param>
             </include>
             <include content="DialogPlot_Plotbox_Object">
