@@ -13,8 +13,6 @@
             <include>OSD_HideControls</include>
 
             <control type="group">
-                <visible>!Window.IsActive(DialogPlayerProcessInfo.xml)</visible>
-                <visible>!Window.IsVisible(DialogSlider.xml)</visible>
 
                 <control type="group">
                     <!-- Left Side Buttons -->
@@ -194,6 +192,7 @@
                         <midtexture />
                         <info>Player.Progress</info>
                         <visible>Control.HasFocus(8200)</visible>
+                        <visible>!$EXP[Exp_OSD_SliderVisible]</visible>
                         <visible>!Pvr.IsPlayingTv</visible>
                     </control>
                     <control type="progress">
@@ -203,6 +202,7 @@
                         <midtexture />
                         <info>PVR.EpgEventProgress</info>
                         <visible>Control.HasFocus(8200)</visible>
+                        <visible>!$EXP[Exp_OSD_SliderVisible]</visible>
                         <visible>Pvr.IsPlayingTv</visible>
                     </control>
                     <control type="slider" id="8200">
@@ -211,6 +211,7 @@
                         <texturesliderbar />
                         <textureslidernib />
                         <textureslidernibfocus />
+                        <onup>ActivateWindow(1149)</onup>
                         <ondown>6091</ondown>
                     </control>
                 </control>

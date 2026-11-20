@@ -3639,6 +3639,26 @@ msgctxt "#31877"
 msgid "Choose the style of the search results of each content type. Content types set to Default and results without a content type use the Default style."
 msgstr "选择每种内容类型搜索结果的样式。设为「默认」的内容类型以及没有内容类型的结果，均使用默认样式。"
 
+msgctxt "#31878"
+msgid "Decoder"
+msgstr "解码器"
+
+msgctxt "#31879"
+msgid "Output"
+msgstr "输出"
+
+msgctxt "#31880"
+msgid "Adjust"
+msgstr "调整"
+
+msgctxt "#31881"
+msgid "Select whether the item details are shown as plain text or as pills."
+msgstr "选择项目详情以纯文本还是胶囊标签显示。"
+
+msgctxt "#31882"
+msgid "Pill"
+msgstr "胶囊标签"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"

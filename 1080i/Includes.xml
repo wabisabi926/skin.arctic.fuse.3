@@ -39,6 +39,7 @@
     <include file="Dialog_DialogSelect.xml" />
     <include file="Dialog_DialogContextMenu.xml" />
     <include file="Dialog_DialogSettings.xml" />
+    <include file="Dialog_DialogSlider.xml" />
     <include file="Dialog_DialogSubtitles.xml" />
     <include file="Dialog_DialogPlot.xml" />
     <include file="Dialog_DialogGameControllers.xml" />
