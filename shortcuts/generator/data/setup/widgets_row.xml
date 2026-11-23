@@ -147,8 +147,22 @@
     </rules>
     <rules name="widget_visible">
         <rule>
+            <condition>{item_path}==Weather</condition>
+            <value>Weather.IsFetched</value>
+        </rule>
+        <rule>
             <condition>{item_path}&lt;&lt;Stacked_</condition>
             <value>Control.IsVisible({widget_prev_id})</value>
+        </rule>
+        <rule>
+            <condition>True</condition>
+            <value>True</value>
+        </rule>
+    </rules>
+    <rules name="widget_hub_visible">
+        <rule>
+            <condition>{item_path}==Weather</condition>
+            <value>Weather.IsFetched</value>
         </rule>
         <rule>
             <condition>True</condition>
@@ -167,6 +181,10 @@
     </rules>
     <rules name="widget_isautoscroll">
         <rule>
+            <condition>{item_path}==Weather</condition>
+            <value>False</value>
+        </rule>
+        <rule>
             <condition>{item_widget_autoscroll}==True</condition>
             <value>True</value>
         </rule>
@@ -177,6 +195,16 @@
     </rules>
     <value name="widget_detailed">False</value>
     <rules name="widget_custom_content">
+    </rules>
+    <rules name="widget_content_include">
+        <rule>
+            <condition>{item_path}==Weather</condition>
+            <value>Weather_Details_HighLow_Items</value>
+        </rule>
+        <rule>
+            <condition>True</condition>
+            <value>Object_Null</value>
+        </rule>
     </rules>
     <rules name="widget_custom_onclick">
         <rule>
