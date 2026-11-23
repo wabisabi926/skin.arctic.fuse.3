@@ -3659,6 +3659,30 @@ msgctxt "#31882"
 msgid "Pill"
 msgstr "胶囊标签"
 
+msgctxt "#31883"
+msgid "Choose which ratings are shown for episodes."
+msgstr "选择剧集显示的评分来源。"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31884"
+msgid "Anime"
+msgstr "动漫"
+
+#: /1080i/Dialog_DialogSubtitles.xml
+msgctxt "#31885"
+msgid "Change service"
+msgstr "更换服务"
+
+#: /1080i/Includes_Weather_Trend_UV.xml
+msgctxt "#31887"
+msgid "Very high"
+msgstr "很高"
+
+#: /1080i/Includes_Weather_Trend_UV.xml
+msgctxt "#31888"
+msgid "Moderate"
+msgstr "中等"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
