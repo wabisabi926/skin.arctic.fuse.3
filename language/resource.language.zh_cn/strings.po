@@ -3673,6 +3673,81 @@ msgctxt "#31888"
 msgid "Moderate"
 msgstr "中等"
 
+#: /1080i/Includes_Weather_Trend_UV.xml
+msgctxt "#31889"
+msgid "Extreme"
+msgstr "极端"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31890"
+msgid "Icon style"
+msgstr "图标样式"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31891"
+msgid "Orbit"
+msgstr "轨道"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31892"
+msgid "Filmstrip"
+msgstr "胶片条"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31893"
+msgid "Reflection"
+msgstr "倒影"
+
+#: /shortcuts/skinvariables-skinsettings.json
+msgctxt "#31894"
+msgid "Select how genres, studios, countries and items without artwork are shown."
+msgstr "选择流派、工作室、国家/地区以及无图项目的显示方式。"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31895"
+msgid "Aperture"
+msgstr "光圈"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31896"
+msgid "Contour"
+msgstr "轮廓"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31897"
+msgid "Halftone"
+msgstr "半色调"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31898"
+msgid "Blueprint"
+msgstr "蓝图"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31899"
+msgid "Sunburst"
+msgstr "放射纹"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31900"
+msgid "Corner Arc"
+msgstr "角弧"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31901"
+msgid "Fan"
+msgstr "扇形"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31902"
+msgid "Reveal"
+msgstr "渐显"
+
+#: /1080i/Custom_1138_Dialog_IconStyle.xml
+msgctxt "#31903"
+msgid "Wallpaper"
+msgstr "壁纸"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
