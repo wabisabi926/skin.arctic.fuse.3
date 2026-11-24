@@ -292,17 +292,6 @@
 
     <expression name="Hub_Spotlight_Visible_Expression">[Integer.IsEqual(Window.Property(TMDBHelper.WidgetContainer),301) + [!Integer.IsEqual(Container(301).NumItems,0) | Container(301).IsUpdating]]</expression>
 
-    <!-- Replaces the info panel with MyWeather's header and current conditions while a weather widget is focused -->
-    <include name="Hub_Weather_Info">
-        <definition>
-            <control type="group">
-                <visible>!$EXP[Exp_Hubs_SlideInfo] + !$EXP[Exp_InfoDialogs] + Integer.IsEqual(Window.Property(TMDBHelper.WidgetContainer),$PARAM[id]) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(is_weather))</visible>
-                <include>Weather_Trend_Header</include>
-                <include>Weather_Trend_Today</include>
-            </control>
-        </definition>
-    </include>
-
     <include name="Hub_Wall_Info">
         <control type="group">
             <animation effect="fade" start="0" end="100" delay="399" time="1" condition="!$EXP[Hub_Spotlight_Visible_Expression]">Conditional</animation>
@@ -319,9 +308,6 @@
                     <param name="container">Container($PARAM[id]).</param>
                 </include>
             </control>
-            <include content="Hub_Weather_Info">
-                <param name="id">$PARAM[id]</param>
-            </include>
         </control>
     </include>
 
@@ -357,9 +343,6 @@
                     <param name="container">Container($PARAM[id]).</param>
                 </include>
             </control>
-            <include content="Hub_Weather_Info">
-                <param name="id">$PARAM[id]</param>
-            </include>
         </control>
     </include>
 
