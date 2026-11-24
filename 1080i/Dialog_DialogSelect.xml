@@ -244,6 +244,7 @@
         <param name="id">3</param>
         <param name="current">Container(3).ListItem.IsSelected</param>
         <param name="itemlayout_include">Layout_ViewType</param>
+        <param name="itemlayout_preview">Wireframe_Preview</param>
         <param name="windowopen_delay">200</param>
         <param name="categories">false</param>
         <param name="focus_in_list">false</param>
@@ -305,12 +306,15 @@
                                     <itemlayout width="1000" height="580">
                                         <include content="$PARAM[itemlayout_include]">
                                             <param name="selected">false</param>
+                                            <param name="preview">$PARAM[itemlayout_preview]</param>
                                         </include>
                                     </itemlayout>
 
                                     <focusedlayout width="1000" height="580">
                                         <include content="$PARAM[itemlayout_include]">
                                             <param name="selected">$PARAM[focus_in_list]</param>
+                                            <param name="current">$PARAM[current]</param>
+                                            <param name="preview">$PARAM[itemlayout_preview]</param>
                                         </include>
                                     </focusedlayout>
 
@@ -919,13 +923,14 @@
         </definition>
     </include>
 
-    <!-- Opens the layout select dialog (1125) for a setting prefix, noting its current mode (combined/wall conditions, otherwise Standard) -->
+    <!-- Opens the layout select dialog (1125) for a setting prefix, noting its current mode (combined/wall/simple conditions, otherwise Standard) -->
     <include name="DialogSelect_WidgetMode_Onclick">
         <definition>
             <onclick>SetProperty(Dialog.1125.Value,$PARAM[setting],Home)</onclick>
             <onclick>SetProperty(Dialog.1125.Mode,Standard,Home)</onclick>
             <onclick condition="$PARAM[combined]">SetProperty(Dialog.1125.Mode,Combined,Home)</onclick>
             <onclick condition="$PARAM[wall]">SetProperty(Dialog.1125.Mode,Wall,Home)</onclick>
+            <onclick condition="$PARAM[simple]">SetProperty(Dialog.1125.Mode,Simple,Home)</onclick>
             <onclick>ActivateWindow(1125)</onclick>
         </definition>
     </include>
@@ -934,7 +939,6 @@
         <content>
             <item>
                 <label>$LOCALIZE[10037]</label>
-                <icon>special://skin/extras/modes/standard.jpg</icon>
                 <property name="mode">Standard</property>
                 <onclick>Close</onclick>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(Dialog.1125.Value)].Mode,Standard)</onclick>
@@ -942,7 +946,6 @@
 
             <item>
                 <label>$LOCALIZE[31845]</label>
-                <icon>special://skin/extras/modes/combined.jpg</icon>
                 <property name="mode">Combined</property>
                 <onclick>Close</onclick>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(Dialog.1125.Value)].Mode,Combined)</onclick>
@@ -950,10 +953,16 @@
 
             <item>
                 <label>$LOCALIZE[31008]</label>
-                <icon>special://skin/extras/modes/wall.jpg</icon>
                 <property name="mode">Wall</property>
                 <onclick>Close</onclick>
                 <onclick>Skin.SetString($INFO[Window(Home).Property(Dialog.1125.Value)].Mode,Wall)</onclick>
+            </item>
+
+            <item>
+                <label>$LOCALIZE[31438]</label>
+                <property name="mode">Simple</property>
+                <onclick>Close</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(Dialog.1125.Value)].Mode,Simple)</onclick>
             </item>
         </content>
     </include>

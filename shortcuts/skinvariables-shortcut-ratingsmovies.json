@@ -60,6 +60,12 @@
         "target": ""
     },
     {
+        "icon": "flags/monochrome/ratings/douban.png",
+        "label": "Douban",
+        "path": "douban_rating",
+        "target": ""
+    },
+    {
         "icon": "flags/monochrome/ratings/kodi.png",
         "label": "Kodi",
         "path": "Rating",

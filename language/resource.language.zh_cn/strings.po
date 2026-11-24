@@ -3748,6 +3748,21 @@ msgctxt "#31903"
 msgid "Wallpaper"
 msgstr "壁纸"
 
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31904"
+msgid "Fullscreen rows without an info panel"
+msgstr "无信息面板的全屏行视图"
+
+#: /shortcuts/skinvariables-skinsettings.json
+msgctxt "#31905"
+msgid "Show the next enabled rating in place of one that is unavailable, instead of only the first ratings in the list."
+msgstr "当某项评分不可用时，以列表中下一项已启用的评分替代，而不是只显示列表中最靠前的几项。"
+
+#: /shortcuts/skinvariables-skinsettings.json
+msgctxt "#31906"
+msgid "Show the 3D tag in the item information for stereoscopic videos."
+msgstr "在立体视频的项目信息中显示 3D 标签。"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"

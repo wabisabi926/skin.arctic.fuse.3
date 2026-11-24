@@ -8,7 +8,7 @@
         {
             "values": {
                 "order": [
-                    "Trakt:Trakt_Rating:Trakt:trakt,Metacritic:MetaCritic_Rating:Metacritic:metacritic,Awards:Oscar_Wins:$LOCALIZE[31064]:oscars,TMDb:TMDb_Rating:TMDb:tmdb,RottenTomatoesUser:RottenTomatoes_UserMeter:Rotten Tomatoes $LOCALIZE[31813]:popcorn,RottenTomatoesCritic:RottenTomatoes_Rating:Rotten Tomatoes $LOCALIZE[31030]:rtfresh,IMDb:IMDb_Rating:IMDb:imdb,MDBList:MDBList_Rating:MDBList:mdblist,Letterboxd:Letterboxd_Rating:Letterboxd:letterboxd,MyAnimeList:MyAnimeList_Rating:MyAnimeList:mal,"
+                    "Trakt:Trakt_Rating:Trakt:trakt,Metacritic:MetaCritic_Rating:Metacritic:metacritic,Awards:Oscar_Wins:$LOCALIZE[31064]:oscars,TMDb:TMDb_Rating:TMDb:tmdb,RottenTomatoesUser:RottenTomatoes_UserMeter:Rotten Tomatoes $LOCALIZE[31813]:popcorn,RottenTomatoesCritic:RottenTomatoes_Rating:Rotten Tomatoes $LOCALIZE[31030]:rtfresh,IMDb:IMDb_Rating:IMDb:imdb,MDBList:MDBList_Rating:MDBList:mdblist,Letterboxd:Letterboxd_Rating:Letterboxd:letterboxd,MyAnimeList:MyAnimeList_Rating:MyAnimeList:mal,Douban:douban_rating:Douban:douban,"
                 ]
             }
         },
