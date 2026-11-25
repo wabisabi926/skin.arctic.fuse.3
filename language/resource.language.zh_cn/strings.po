@@ -3763,6 +3763,11 @@ msgctxt "#31906"
 msgid "Show the 3D tag in the item information for stereoscopic videos."
 msgstr "在立体视频的项目信息中显示 3D 标签。"
 
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31907"
+msgid "Flixart Visibility"
+msgstr "FlixArt 显示方式"
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr "正在初始化"
