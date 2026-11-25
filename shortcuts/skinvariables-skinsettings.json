@@ -985,7 +985,7 @@
             "control": "button",
             "group": "details_ratings",
             "description": "$LOCALIZE[31696]",
-            "label2": "$INFO[Skin.String(CustomRating.Movies.Item01)]$INFO[Skin.String(CustomRating.Movies.Item02), • ,]$INFO[Skin.String(CustomRating.Movies.Item03), • ,]$INFO[Skin.String(CustomRating.Movies.Item04), • ,]$INFO[Skin.String(CustomRating.Movies.Item05), • ,]$INFO[Skin.String(CustomRating.Movies.Item06), • ,]",
+            "label2": "$INFO[Container(22030).ListItem(0).Label]$INFO[Container(22030).ListItem(1).Label, • ,]$INFO[Container(22030).ListItem(2).Label, • ,]$INFO[Container(22030).ListItem(3).Label, • ,]$INFO[Container(22030).ListItem(4).Label, • ,]$INFO[Container(22030).ListItem(5).Label, • ,]",
             "visible": "$EXP[Exp_TMDbHelper_IsData]",
             "onclick": [
                 {
@@ -1007,7 +1007,7 @@
             "control": "button",
             "group": "details_ratings",
             "description": "$LOCALIZE[31697]",
-            "label2": "$INFO[Skin.String(CustomRating.TVShows.Item01)]$INFO[Skin.String(CustomRating.TVShows.Item02), • ,]$INFO[Skin.String(CustomRating.TVShows.Item03), • ,]$INFO[Skin.String(CustomRating.TVShows.Item04), • ,]$INFO[Skin.String(CustomRating.TVShows.Item05), • ,]$INFO[Skin.String(CustomRating.TVShows.Item06), • ,]",
+            "label2": "$INFO[Container(22031).ListItem(0).Label]$INFO[Container(22031).ListItem(1).Label, • ,]$INFO[Container(22031).ListItem(2).Label, • ,]$INFO[Container(22031).ListItem(3).Label, • ,]$INFO[Container(22031).ListItem(4).Label, • ,]$INFO[Container(22031).ListItem(5).Label, • ,]",
             "visible": "$EXP[Exp_TMDbHelper_IsData]",
             "onclick": [
                 {
