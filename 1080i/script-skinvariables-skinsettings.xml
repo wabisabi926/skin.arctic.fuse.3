@@ -116,17 +116,6 @@
             <description>Setting Radiobutton</description>
         </include>
 
-        <!-- Hidden ratings menus for the settings summary. Each loads the enabled ratings of its menu so
-             the summary reads the same source as the ratings dialog instead of the legacy CustomRating strings. -->
-        <include content="Object_Hidden_List">
-            <param name="id">22030</param>
-            <content>plugin://script.skinvariables/?info=get_shortcuts_node&amp;skin=$VAR[Path_SkinVariables_SkinFolder]&amp;menu=ratingsmovies&amp;exclude_key=disabled&amp;exclude_value=True</content>
-        </include>
-        <include content="Object_Hidden_List">
-            <param name="id">22031</param>
-            <content>plugin://script.skinvariables/?info=get_shortcuts_node&amp;skin=$VAR[Path_SkinVariables_SkinFolder]&amp;menu=ratingstvshows&amp;exclude_key=disabled&amp;exclude_value=True</content>
-        </include>
-
     </controls>
 
 </window>
