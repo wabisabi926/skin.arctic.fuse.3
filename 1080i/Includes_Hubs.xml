@@ -123,11 +123,11 @@
         </definition>
     </include>
 
-    <!-- The menu keeps the Simple blur while its widgets are at the top and restores artwork for the spotlight and other layouts -->
+    <!-- The Simple menu follows the artwork visibility of its widget rows when the spotlight is out of view -->
     <include name="Hub_Simple_Menu_OnFocus">
         <definition>
-            <onfocus condition="$PARAM[condition] + !$EXP[Exp_Hubs_Spotlight_SlideDown]">SetProperty(Background.HideArtwork,True)</onfocus>
-            <onfocus condition="![$PARAM[condition] + !$EXP[Exp_Hubs_Spotlight_SlideDown]]">ClearProperty(Background.HideArtwork)</onfocus>
+            <onfocus condition="$PARAM[condition] + !$EXP[Exp_Hubs_Spotlight_SlideDown] + !$EXP[Exp_FlixArt_IsAlways]">SetProperty(Background.HideArtwork,True)</onfocus>
+            <onfocus condition="![$PARAM[condition] + !$EXP[Exp_Hubs_Spotlight_SlideDown] + !$EXP[Exp_FlixArt_IsAlways]]">ClearProperty(Background.HideArtwork)</onfocus>
         </definition>
     </include>
 
@@ -155,6 +155,9 @@
                     <onup>601</onup>
                     <include>$PARAM[include_action]</include>
                     <include>$PARAM[include_content]</include>
+                    <include content="Widget_Action_OnClick">
+                        <param name="window">$PARAM[window]</param>
+                    </include>
                     <include>Hub_Grouplist_OnLeftRight</include>
                     <onback condition="$EXP[Exp_Navigation_OnParent] + !Player.HasMedia">SetFocus($PARAM[id],0,absolute)</onback>
                     <include content="Action_Widget_OnBack">
@@ -217,6 +220,9 @@
                 <visible allowhiddenfocus="$PARAM[allowhiddenfocus]">$PARAM[visible]</visible>
 
                 <include>$PARAM[include_content]</include>
+                <include content="Widget_Action_OnClick">
+                    <param name="window">$PARAM[window]</param>
+                </include>
 
                 <include content="Defs_AutoScroll" condition="$PARAM[autoscroll]">
                     <param name="condition">[!Control.HasFocus($PARAM[id]) | System.IdleTime(3)]</param>

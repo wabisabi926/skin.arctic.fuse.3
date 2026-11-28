@@ -2538,7 +2538,7 @@ msgstr "预告片来源"
 
 #: /1080i/Dialog_DialogShortcuts.xml
 msgctxt "#31638"
-msgid "Hub type"
+msgid "Type"
 msgstr "分类中心类型"
 
 #: /1080i/Dialog_DialogShortcuts.xml
@@ -3767,6 +3767,134 @@ msgstr "在立体视频的项目信息中显示 3D 标签。"
 msgctxt "#31907"
 msgid "Flixart Visibility"
 msgstr "FlixArt 显示方式"
+
+msgctxt "#31908"
+msgid "One row of items below the details of the focused item."
+msgstr "在聚焦项目详情下方显示一行项目。"
+
+msgctxt "#31909"
+msgid "Rows of items that fill the screen below a section heading."
+msgstr "在分区标题下方以多行铺满屏幕展示项目。"
+
+msgctxt "#31910"
+msgid "One row of items below the details of the focused item, with categories above the row."
+msgstr "在聚焦项目详情下方显示一行项目，类别置于该行上方。"
+
+msgctxt "#31911"
+msgid "Rows of items that fill the screen, with categories above them."
+msgstr "以多行铺满屏幕展示项目，类别置于项目上方。"
+
+msgctxt "#31912"
+msgid "Items show square artwork with labels below."
+msgstr "项目以方形封面展示，标签置于下方。"
+
+msgctxt "#31913"
+msgid "Items show landscape artwork with labels below."
+msgstr "项目以横版封面展示，标签置于下方。"
+
+msgctxt "#31914"
+msgid "Items show poster artwork."
+msgstr "项目以海报展示。"
+
+msgctxt "#31915"
+msgid "Items show round artwork."
+msgstr "项目以圆形封面展示。"
+
+msgctxt "#31916"
+msgid "Items show wide board artwork."
+msgstr "项目以宽幅看板封面展示。"
+
+msgctxt "#31917"
+msgid "The focused item opens out into a wide card."
+msgstr "聚焦项目展开为宽卡片。"
+
+msgctxt "#31918"
+msgid "Items show poster artwork with labels over the bottom edge."
+msgstr "项目以海报展示，标签置于海报下边缘。"
+
+msgctxt "#31919"
+msgid "A list of items beside a large panel with the focused item's artwork."
+msgstr "在显示聚焦项目封面的大面板旁展示项目列表。"
+
+msgctxt "#31920"
+msgid "A wide list of items beside the focused item's poster."
+msgstr "在聚焦项目的海报旁展示宽幅项目列表。"
+
+msgctxt "#31921"
+msgid "A list of items with artwork and a short plot, beside the focused item's poster."
+msgstr "在聚焦项目的海报旁展示包含封面与简短剧情的项目列表。"
+
+msgctxt "#31922"
+msgid "A short list of items below the details of the focused item, beside its landscape artwork."
+msgstr "在聚焦项目详情下方、横版封面旁展示简短项目列表。"
+
+msgctxt "#31923"
+msgid "A short list of items below the details of the focused item, beside its landscape and poster artwork."
+msgstr "在聚焦项目详情下方、横版与海报封面旁展示简短项目列表。"
+
+msgctxt "#31924"
+msgid "A list of items beside the focused item's square artwork."
+msgstr "在聚焦项目的方形封面旁展示项目列表。"
+
+msgctxt "#31925"
+msgid "A list of categories beside the items in the selected category, with artwork and a short plot."
+msgstr "在选中类别的项目旁展示类别列表，项目包含封面与简短剧情。"
+
+msgctxt "#31926"
+msgid "Items with artwork and a short plot, with categories above them, beside the focused item's poster."
+msgstr "在聚焦项目的海报旁展示包含封面与简短剧情的项目列表，类别置于项目上方。"
+
+msgctxt "#31927"
+msgid "Play action"
+msgstr "播放操作"
+
+msgctxt "#31928"
+msgid "Context menu"
+msgstr "上下文菜单"
+
+msgctxt "#31929"
+msgid "Browse action"
+msgstr "浏览操作"
+
+msgctxt "#31930"
+msgid "Choose what happens when a playable library item in this hub's widgets is clicked."
+msgstr "选择在此分类中心的小组件中点击可播放的媒体库项目时执行的操作。"
+
+msgctxt "#31931"
+msgid "Choose what happens when a library folder item, such as a show or album, in this hub's widgets is clicked."
+msgstr "选择在此分类中心的小组件中点击媒体库文件夹项目（如电视剧或专辑）时执行的操作。"
+
+msgctxt "#31932"
+msgid "Choose the shortcut, path, label, icon and submenu of this hub."
+msgstr "选择此分类中心的快捷方式、路径、标签、图标与子菜单。"
+
+msgctxt "#31933"
+msgid "Menu"
+msgstr "菜单"
+
+msgctxt "#31934"
+msgid "This hub"
+msgstr "此分类中心"
+
+msgctxt "#31935"
+msgid "All hubs"
+msgstr "所有分类中心"
+
+msgctxt "#31936"
+msgid "Use this action for this hub only or for all hubs?"
+msgstr "此操作仅用于此分类中心，还是用于所有分类中心？"
+
+msgctxt "#31937"
+msgid "Department"
+msgstr "部门"
+
+msgctxt "#31938"
+msgid "Information line"
+msgstr "信息行"
+
+msgctxt "#31939"
+msgid "of 10 units used"
+msgstr " / 10 个单位已使用"
 
 msgctxt "#31980"
 msgid "Reticulating Splines"
